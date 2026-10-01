@@ -7,7 +7,7 @@ description: Hunter Douglas window treatments at Bed Back & Blinds in Dubuque, I
 <div class="container">
 <img class="brand-logo" src="/assets/img/brands/logo-hunter-douglas.jpg" alt="Hunter Douglas">
 <div class="split">
-<div><img class="rounded" src="/assets/img/gallery/img-1147.jpg" alt="Honeycomb shades installed by Bed Back & Blinds" loading="lazy"><p class="center" style="margin-top:1rem"><a class="btn" href="{{ site.consultation_form }}">Schedule a Complimentary Consultation</a></p></div>
+<div><img class="rounded" src="/assets/img/site/hunter-douglas-feature.jpg" alt="Hunter Douglas window treatments in a living space" width="1400" height="1050"><p class="center" style="margin-top:1rem"><a class="btn" href="{{ site.consultation_form }}">Schedule a Complimentary Consultation</a></p></div>
 <div class="prose">
 
 ## Hunter Douglas Window Fashions
