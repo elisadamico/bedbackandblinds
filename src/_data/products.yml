@@ -151,10 +151,9 @@
     - /assets/img/products/frwbyjwzhlra.jpg
     - /assets/img/products/frftuuybzrfe.jpg
   features:
-    - "4cm TEMPUR-ES®::The tighter, slightly rougher cell structure of TEMPUR-ES® creates a softer feel that works in combination with other layers to support and relax."
-    - "4cm Original TEMPUR®: Originally formulated to absorb the G-Force of NASA astronauts travelling into space and then perfected by us for sleepers-it's as comfortable and supportive as it is iconic."
-    - "Cool-To-Touch Cover: Premium knit technology for superior cool-to-touch feel. Crafted from ultra-high molecular weight yarn it moves heat away from your body."
-    - "11\" Height"
+    - "Original TEMPUR-Material™ that adapts to your weight, shape, and temperature"
+    - "Pressure relief to help reduce aches and pains"
+    - "Motion cancellation, so a partner's movements won't wake you"
 
 - slug: tempur-adapt-medium-hybrid
   name: "TEMPUR-Adapt® Medium Hybrid"
@@ -172,52 +171,10 @@
     - /assets/img/products/screenshot-2024-05-05-at-1-37-05-pm.jpg
     - /assets/img/products/screenshot-2024-05-05-at-1-37-59-pm.jpg
   features:
-    - "3cm TEMPUR-ES®: The tighter, slightly rougher cell structure of TEMPUR-ES® creates a softer feel that works in combination with other layers to support and relax."
-    - "5cm Original TEMPUR®: Originally formulated to absorb the G-Force of NASA astronauts travelling into space and then perfected by us for sleepers-it's as comfortable and supportive as it is iconic."
-    - "Hybrid Technology: 1000+ premium spring coils designed in-house to work with our proprietary material - made for easier movement."
-    - "Cool-To-Touch Cover: Premium knit technology for superior cool-to-touch feel. Crafted from ultra-high molecular weight yarn it moves heat away from your body."
-
-- slug: tempur-proadapt-firm
-  name: "TEMPUR-ProAdapt® Firm"
-  brand: "Tempur-Pedic®"
-  brand_page: /tempur-pedic/
-  collection: "TEMPUR-ProAdapt®"
-  type: mattress
-  feel: Firm
-  price: 3499
-  price_label: "Queen mattress"
-  images:
-    - /assets/img/products/tp-tempur-proadapt-firm.png
-    - /assets/img/products/frybalaspwsg.jpg
-    - /assets/img/products/frqhhhjhvlgb.jpg
-    - /assets/img/products/frnumkpyphft.jpg
-    - /assets/img/products/frecrpuxkeva.jpg
-  features:
-    - "5cm Original TEMPUR®: Originally formulated to absorb the G-Force of NASA astronauts travelling into space and then perfected by us for sleepers-it's as comfortable and supportive as it is iconic."
-    - "4cm TEMPUR-APRTM: Our latest innovation and our most pressure-relieving material ever - made for deeper, more rejuvenating sleep."
-    - "SmartClimate® Dual Cover System: Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner panel for convenience and comfort."
-    - "12\" Height"
-
-- slug: tempur-proadapt-medium
-  name: "TEMPUR-ProAdapt® Medium"
-  brand: "Tempur-Pedic®"
-  brand_page: /tempur-pedic/
-  collection: "TEMPUR-ProAdapt®"
-  type: mattress
-  feel: Medium
-  price: 3499
-  price_label: "Queen mattress"
-  images:
-    - /assets/img/products/tp-tempur-proadapt-medium.png
-    - /assets/img/products/freyugekbiyf.jpg
-    - /assets/img/products/fruzpelyiyqn.jpg
-    - /assets/img/products/frpmpcjctswx.jpg
-    - /assets/img/products/frrevrrjulua.jpg
-  features:
-    - "5cm Original TEMPUR®: Originally formulated to absorb the G-Force of NASA astronauts travelling into space and then perfected by us for sleepers-it's as comfortable and supportive as it is iconic."
-    - "5cm TEMPUR-APRTM: Our latest innovation and our most pressure-relieving material ever - made for deeper, more rejuvenating sleep."
-    - "Hybrid Technology: 1000+ premium spring coils designed in-house to work with our proprietary material - made for easier movement"
-    - "SmartClimate® Dual Cover System: Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner panel for convenience and comfort."
+    - "Original TEMPUR-Material™ that adapts to your weight, shape, and temperature"
+    - "Pressure relief to help reduce aches and pains"
+    - "Motion cancellation, so a partner's movements won't wake you"
+    - "Hybrid adds premium spring coils for extra bounce and edge support."
 
 - slug: tempur-proadapt-soft
   name: "TEMPUR-ProAdapt® Soft"
@@ -235,10 +192,29 @@
     - /assets/img/products/frdcryqyhwie.jpg
     - /assets/img/products/frhcyigkmbci.jpg
   features:
-    - "5cm TEMPUR-ES®: The tighter, slightly rougher cell structure of TEMPUR-ES® creates a softer feel that works in combination with other layers to support and relax."
-    - "5cm TEMPUR-APRTM: Our latest innovation and our most pressure-relieving material ever - made for deeper, more rejuvenating sleep."
-    - "SmartClimate® Dual Cover System: Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner panel for convenience and comfort."
-    - "12\" Height"
+    - "Tempur-Pedic's most popular mattress"
+    - "Adds a layer of Advanced Relief™ Material, Tempur-Pedic's most pressure-relieving material"
+    - "TEMPUR-Material™ that adapts to your body and absorbs motion"
+
+- slug: tempur-proadapt-medium
+  name: "TEMPUR-ProAdapt® Medium"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-ProAdapt®"
+  type: mattress
+  feel: Medium
+  price: 3499
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-proadapt-medium.png
+    - /assets/img/products/freyugekbiyf.jpg
+    - /assets/img/products/fruzpelyiyqn.jpg
+    - /assets/img/products/frpmpcjctswx.jpg
+    - /assets/img/products/frrevrrjulua.jpg
+  features:
+    - "Tempur-Pedic's most popular mattress"
+    - "Adds a layer of Advanced Relief™ Material, Tempur-Pedic's most pressure-relieving material"
+    - "TEMPUR-Material™ that adapts to your body and absorbs motion"
 
 - slug: tempur-proadapt-medium-hybrid
   name: "TEMPUR-ProAdapt® Medium Hybrid"
@@ -256,10 +232,30 @@
     - /assets/img/products/frplrhpmostq.jpg
     - /assets/img/products/frppcwoqicdj.jpg
   features:
-    - "6cm TEMPUR-ES®: The tighter, slightly rougher cell structure of TEMPUR-ES® creates a softer feel that works in combination with other layers to support and relax"
-    - "4cm TEMPUR-APRTM: Our latest innovation and our most pressure-relieving material ever - made for deeper, more rejuvenating sleep."
-    - "SmartClimate® Dual Cover System: Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner panel for convenience and comfort."
-    - "12\" Height"
+    - "Tempur-Pedic's most popular mattress"
+    - "Adds a layer of Advanced Relief™ Material, Tempur-Pedic's most pressure-relieving material"
+    - "TEMPUR-Material™ that adapts to your body and absorbs motion"
+    - "Hybrid adds premium spring coils for extra bounce and edge support."
+
+- slug: tempur-proadapt-firm
+  name: "TEMPUR-ProAdapt® Firm"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-ProAdapt®"
+  type: mattress
+  feel: Firm
+  price: 3499
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-proadapt-firm.png
+    - /assets/img/products/frybalaspwsg.jpg
+    - /assets/img/products/frqhhhjhvlgb.jpg
+    - /assets/img/products/frnumkpyphft.jpg
+    - /assets/img/products/frecrpuxkeva.jpg
+  features:
+    - "Tempur-Pedic's most popular mattress"
+    - "Adds a layer of Advanced Relief™ Material, Tempur-Pedic's most pressure-relieving material"
+    - "TEMPUR-Material™ that adapts to your body and absorbs motion"
 
 - slug: tempur-luxeadapt-soft
   name: "TEMPUR-LuxeAdapt® Soft"
@@ -283,10 +279,26 @@
     - /assets/img/products/frxtelnvkqoy.jpg
     - /assets/img/products/frzlkxziiszu.jpg
   features:
-    - "SMARTCLIMATE DUAL COVER SYSTEM - Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner layer for convenience and comfort."
-    - "TEMPUR-ES COMFOR LAYER - Softer feel works in combination with other materials to support and relax."
-    - "TEMPUR-APR+ SUPPORT LAYER - All the pressure relief of original TEMPUR-APR plus a more advanced cell structure for ultra-conforming comfort."
-    - "13\" PROFILE"
+    - "Tempur-Pedic's top pressure-relief and support mattress"
+    - "Advanced Relief™ Material plus a 5-zone Ergonomic Support Layer to help support your spine"
+    - "Layers of TEMPUR-Material™ that cradle pressure points"
+
+- slug: tempur-luxeadapt-medium-hybrid
+  name: "TEMPUR-LuxeAdapt® Medium Hybrid"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-LuxeAdapt®"
+  type: mattress
+  feel: Medium
+  price: 4899
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-luxeadapt-medium-hybrid.png
+  features:
+    - "Tempur-Pedic's top pressure-relief and support mattress"
+    - "Advanced Relief™ Material plus a 5-zone Ergonomic Support Layer to help support your spine"
+    - "Layers of TEMPUR-Material™ that cradle pressure points"
+    - "Hybrid adds premium spring coils for extra bounce and edge support."
 
 - slug: tempur-luxeadapt-firm
   name: "TEMPUR-LuxeAdapt® Firm"
@@ -306,16 +318,144 @@
     - /assets/img/products/fruajbvnvgoq.jpg
     - /assets/img/products/fruoonlsjqum.jpg
   features:
-    - "SMARTCLIMATE DUAL COVER SYSTEM - Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner layer for convenience and comfort."
-    - "TEMPUR-ES COMFOR LAYER - Softer feel works in combination with other materials to support and relax"
-    - "TEMPUR-APR+ SUPPORT LAYER - All the pressure relief of original TEMPUR-APR plus a more advanced cell structure for ultra-conforming comfort"
-    - "13\" PROFILE"
+    - "Tempur-Pedic's top pressure-relief and support mattress"
+    - "Advanced Relief™ Material plus a 5-zone Ergonomic Support Layer to help support your spine"
+    - "Layers of TEMPUR-Material™ that cradle pressure points"
 
-- slug: tempur-ergo-base
-  name: "TEMPUR-Ergo® Base"
+- slug: tempur-probreeze-medium
+  name: "TEMPUR-ProBreeze® Medium"
   brand: "Tempur-Pedic®"
   brand_page: /tempur-pedic/
-  collection: "TEMPUR-Ergo®"
+  collection: "TEMPUR-Breeze®"
+  type: mattress
+  feel: Medium
+  price: 4499
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-probreeze-medium.png
+  features:
+    - "Feels up to 5° cooler"
+    - "Cool-to-the-touch cover with Pure Cool® material that pulls heat away from your body"
+    - "Adaptive TEMPUR-Material™ pressure relief"
+
+- slug: tempur-probreeze-medium-hybrid
+  name: "TEMPUR-ProBreeze® Medium Hybrid"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Breeze®"
+  type: mattress
+  feel: Medium
+  price: 4499
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-probreeze-medium-hybrid.png
+  features:
+    - "Feels up to 5° cooler"
+    - "Cool-to-the-touch cover with Pure Cool® material that pulls heat away from your body"
+    - "Adaptive TEMPUR-Material™ pressure relief"
+    - "Hybrid adds premium spring coils for extra bounce and edge support."
+
+- slug: tempur-luxebreeze-soft
+  name: "TEMPUR-LuxeBreeze® Soft"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Breeze®"
+  type: mattress
+  feel: Soft
+  price: 5899
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-luxebreeze-soft.png
+  features:
+    - "Feels up to 10° cooler"
+    - "Pure Cool® Plus material and cool-to-the-touch covers, Tempur-Pedic's most advanced cooling"
+    - "Adaptive TEMPUR-Material™ pressure relief"
+
+- slug: tempur-luxebreeze-medium-hybrid
+  name: "TEMPUR-LuxeBreeze® Medium Hybrid"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Breeze®"
+  type: mattress
+  feel: Medium
+  price: 5899
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-luxebreeze-medium-hybrid.png
+  features:
+    - "Feels up to 10° cooler"
+    - "Pure Cool® Plus material and cool-to-the-touch covers, Tempur-Pedic's most advanced cooling"
+    - "Adaptive TEMPUR-Material™ pressure relief"
+    - "Hybrid adds premium spring coils for extra bounce and edge support."
+
+- slug: tempur-luxebreeze-firm
+  name: "TEMPUR-LuxeBreeze® Firm"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Breeze®"
+  type: mattress
+  feel: Firm
+  price: 5899
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-luxebreeze-firm.png
+  features:
+    - "Feels up to 10° cooler"
+    - "Pure Cool® Plus material and cool-to-the-touch covers, Tempur-Pedic's most advanced cooling"
+    - "Adaptive TEMPUR-Material™ pressure relief"
+
+- slug: tempur-cloud-medium
+  name: "TEMPUR-Cloud® Medium"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Cloud®"
+  type: mattress
+  feel: Medium
+  price: 1999
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-cloud-medium.png
+  features:
+    - "A mix of soft and firm TEMPUR-Material™ for a medium feel"
+    - "Conforming comfort and motion isolation"
+    - "360° stretch cover that wicks moisture"
+
+- slug: tempur-activebreeze-smart-bed
+  name: "TEMPUR-ActiveBreeze® Smart Bed"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-ActiveBreeze®"
+  type: mattress
+  feel: Medium
+  price: 10598
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/tp-tempur-activebreeze-smart-bed.png
+  features:
+    - "Dual-zone climate control: choose low, medium, or high cooling on each side of the bed"
+    - "Active bed-warming feature"
+    - "Adaptive TEMPUR-Material™ pressure relief"
+
+- slug: tempur-ease-power-base
+  name: "Ease® Power Base"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "Power Bases"
+  type: base
+  price: 999
+  price_label: "Queen base"
+  images:
+    - /assets/img/products/tp-tempur-ease-power-base.png
+  features:
+    - "Head and foot lifts"
+    - "Zero Gravity position"
+    - "Wireless remote"
+
+- slug: tempur-ergo-base
+  name: "TEMPUR-Ergo® Power Base"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "Power Bases"
   type: base
   price: 1699
   price_label: "Queen base"
@@ -326,16 +466,15 @@
     - /assets/img/products/frnprvyduatt.jpg
     - /assets/img/products/fruotwmxxyxh.jpg
   features:
-    - "WIRELESS REMOTE: Gently tilts your mattress to an anti-snore position"
-    - "ERGONOMIC POSITIONS: Raise head up to 57° and feet up to 46° for perfect support while sleeping, reading, watching TV or working"
-    - "ZERO GRAVITY PRESET: Elevates your head and feet to closely simulate weightlessness and help take the pressure off your back while you sleep"
-    - "OTHER FEATURES: Adjustable Legs, Underbed Lighting and USB Ports"
+    - "Head and foot lifts, Zero Gravity, and lumbar support"
+    - "Massage, underbed lighting, and USB and USB-C ports"
+    - "Quiet operation (QuietMode™) and wireless remote"
 
 - slug: tempur-ergo-smart-base
   name: "TEMPUR-Ergo® Smart Base"
   brand: "Tempur-Pedic®"
   brand_page: /tempur-pedic/
-  collection: "TEMPUR-Ergo®"
+  collection: "Power Bases"
   type: base
   price: 2199
   price_label: "Queen base"
@@ -345,31 +484,27 @@
     - /assets/img/products/frdadafqqlaz.jpg
     - /assets/img/products/fryaoiwvynoz.jpg
   features:
-    - "Sleeptracker®-AI"
-    - "QuietMode™ Technology"
-    - "Wireless Remote with Presets"
-    - "Head and Foot Lift"
+    - "Everything in the TEMPUR-Ergo® Power Base, with 2-zone massage"
+    - "Automatic Snore Response™ raises your head when it senses snoring"
+    - "Sleep tracking, sleep coaching, and a smart alarm"
 
-- slug: tempur-ergo-extend-smart-base
-  name: "TEMPUR-Ergo® Extend Smart Base"
+- slug: tempur-ergo-prosmart-base
+  name: "TEMPUR-Ergo® ProSmart® Base"
   brand: "Tempur-Pedic®"
   brand_page: /tempur-pedic/
-  collection: "TEMPUR-Ergo®"
+  collection: "Power Bases"
   type: base
-  price: 2549
+  price: 2699
   price_label: "Queen base"
   images:
-    - /assets/img/products/frishkgkqivv-1.jpg
-    - /assets/img/products/frfqkarorvkz.jpg
-    - /assets/img/products/frbgsaibrqoo.jpg
+    - /assets/img/products/tp-tempur-ergo-prosmart-base.png
   features:
-    - "Sleeptracker®-AI"
-    - "QuietMode™ Technology"
-    - "PerfectSeat™ Technology"
-    - "Wireless Remote with Presets"
+    - "Everything in the TEMPUR-Ergo® Smart Base"
+    - "WaveForm™ massage, SoundScape® mode, and Wind Down® program"
+    - "Automatic Snore Response™, sleep coaching, and smart alarm"
 
-- slug: tempur-flat-high-foundation
-  name: "TEMPUR-Flat High Foundation"
+- slug: tempur-flat-foundation
+  name: "TEMPUR-Flat® Foundation"
   brand: "Tempur-Pedic®"
   brand_page: /tempur-pedic/
   collection: "Foundations"
@@ -377,10 +512,11 @@
   price: 380
   price_label: "Queen foundation"
   images:
+    - /assets/img/products/tp-tempur-flat-foundation.png
     - /assets/img/products/freefybuvpmx.jpg
     - /assets/img/products/frtgkoekhqpl.jpg
   features:
-    - "Brand: TEMPUR-PEDIC"
-    - "Line: Tempur-Flat High"
-    - "Width: 60\""
-    - "Height: 80\""
+    - "Solid, flat support for a Tempur-Pedic® mattress"
+    - "Available in 9\" high, 5\" low, and 2\" ultra-low profiles"
+    - "10-year limited warranty"
+
