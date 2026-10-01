@@ -61,6 +61,11 @@
     });
   });
 
+  // --- Contact form: fill in the product someone asked about ---
+  var about = new URLSearchParams(location.search).get("about");
+  var msg = document.querySelector("[data-message]");
+  if (about && msg && !msg.value) msg.value = "Hi, I have a question about the " + about + ".\n\n";
+
   // --- Gallery viewer ---
   var viewer = document.querySelector("[data-viewer]");
   var viewerImg = viewer && viewer.querySelector("img");

@@ -35,7 +35,7 @@ eleventyComputed:
           <p class="big-price">{{ product.price | money }} <span>{{ product.price_label }}</span></p>
           <p class="price-note">Other sizes are available. Call or stop by for pricing, current sales, and 0% APR financing.</p>
           <div class="btn-row">
-            <a class="btn" href="mailto:{{ site.email }}?subject={{ ('Question about the ' + product.brand + ' ' + product.name) | urlencode }}">Ask about this {{ kind }}</a>
+            <a class="btn" href="/contact/?about={{ (product.brand + ' ' + product.name) | urlencode }}#form">Ask about this {{ kind }}</a>
             <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>
           </div>
           <ul class="perks">

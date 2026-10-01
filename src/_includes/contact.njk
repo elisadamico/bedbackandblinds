@@ -14,7 +14,33 @@
           <a class="btn btn-outline" href="{{ site.map }}">Get directions</a>
         </div>
       </div>
-      <iframe class="map-embed" title="Map to Bed Back & Blinds" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Bed+Back+%26+Blinds,+806+Wacker+Dr+Suite+142,+Dubuque,+IA+52002&output=embed"></iframe>
+            <form class="contact-card contact-form" action="{{ site.form_action }}" method="POST">
+        <h3>Send us a message</h3>
+        <input type="hidden" name="_subject" value="New message from the Bed Back &amp; Blinds website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="{{ site.url }}/thanks/">
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row">
+          <label>First name*<input type="text" name="First name" required autocomplete="given-name"></label>
+          <label>Last name*<input type="text" name="Last name" required autocomplete="family-name"></label>
+        </div>
+        <div class="form-row">
+          <label>Email*<input type="email" name="email" required autocomplete="email"></label>
+          <label>Phone<input type="tel" name="Phone" autocomplete="tel"></label>
+        </div>
+        <label>I'm interested in
+          <select name="Interested in">
+            <option>Mattresses &amp; adjustable bases</option>
+            <option>Window treatments / free consultation</option>
+            <option>Furniture</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Message*<textarea name="Message" rows="5" required data-message></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <p class="form-note">Your message goes straight to {{ site.email }}. We'll get back to you soon.</p>
+      </form>
     </div>
+    <iframe class="map-embed" style="margin-top:2rem;min-height:300px" title="Map to Bed Back & Blinds" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Bed+Back+%26+Blinds,+806+Wacker+Dr+Suite+142,+Dubuque,+IA+52002&output=embed"></iframe>
   </div>
 </section>
