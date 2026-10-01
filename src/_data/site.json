@@ -83,6 +83,10 @@
           "url": "/window-treatments/"
         },
         {
+          "label": "Motorization",
+          "url": "/motorization/"
+        },
+        {
           "label": "Alta Window Fashions",
           "url": "/alta-window-fashions/"
         },
@@ -139,5 +143,7 @@
       "url": "/gallery/"
     }
   ],
-  "form_action": "https://formsubmit.co/bedbackandblinds@msn.com"
+  "form_action": "https://formsubmit.co/bedbackandblinds@msn.com",
+  "hd_design_guide": "https://cdn.sanity.io/media-libraries/mlaYmzcGe9Fn/files/containers/33MikrDjHjwbeJWAPpyYg1sr38t",
+  "hd_design_guide_page": "https://www.hunterdouglas.com/window-treatment-catalog"
 }

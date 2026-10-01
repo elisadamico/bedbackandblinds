@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: Motorized Blinds & Shades
+description: Motorized blinds, shades, and drapery with Hunter Douglas PowerView Automation, installed by Bed Back & Blinds in Dubuque, Iowa.
+---
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h1>Motorization</h1><p>Motorized shades open and close at the touch of a button, on a schedule, or by voice. No cords to tangle, and no reaching for hard-to-get-to windows.</p></div>
+    <div class="split">
+      <div><img class="rounded" src="/assets/img/windows/hunter-douglas-powerview-1.jpg" alt="Hunter Douglas shades with PowerView Automation" width="1000" height="1000"></div>
+      <div class="prose">
+        <h2>Hunter Douglas PowerView<sup>®</sup> Automation</h2>
+        <p>PowerView is Hunter Douglas's motorization system. Set your shades to rise with the sun and close at sunset, protect your floors and furniture from afternoon glare, and set the mood for the evening, all without lifting a cord.</p>
+        <ul class="perks">
+          <li>Control your shades with the Pebble<sup>®</sup> remote, a wall switch, or the PowerView app</li>
+          <li>Set schedules and scenes so shades move on their own throughout the day</li>
+          <li>Works with Amazon Alexa and Google Assistant</li>
+          <li>Cordless, so it's safer for children and pets</li>
+          <li>Motorized drapery hardware is available too</li>
+        </ul>
+        <div class="btn-row" style="margin-top:1.5rem"><a class="btn" href="{{ site.consultation_form }}">Book a free consultation</a><a class="btn btn-cyan" href="tel:+1{{ site.consult_phone | replace('-', '') }}">Call Donna at {{ site.consult_phone }}</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container split">
+    <div class="center"><a href="{{ site.hd_design_guide }}#page=12"><img class="guide-cover" src="/assets/img/motorization/powerview-guide-page.jpg" alt="PowerView Automation pages from the Hunter Douglas design guide" width="450" height="585" loading="lazy"></a></div>
+    <div class="prose">
+      <h2>PowerView Brochure</h2>
+      <p>See how PowerView fits into a day at home, from morning light to evening privacy, in the automation pages of the Hunter Douglas design guide.</p>
+      <div class="btn-row"><a class="btn" href="{{ site.hd_design_guide }}#page=12">Open the PowerView brochure (PDF)</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Shades You Can Motorize</h2><p>These Hunter Douglas styles are available with PowerView. Tap one to see it on our Hunter Douglas page.</p></div>
+    <div class="chip-list">
+      {%- for g in windowlines["hunter-douglas"] %}{% for l in g.lines %}{% if l.name != "PowerView Automation" and ("PowerView motorization" in l.features | join("|")) %}<a class="chip" href="/hunter-douglas/">{{ l.name }}</a>{% endif %}{% endfor %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>Motorization From Our Other Brands</h2></div>
+    <div class="tiles">
+      <div class="tile"><h3><a href="/alta-window-fashions/">Alta</a></h3><p>Most Alta shades and blinds can be motorized with Alta's BLISS Automation or with Somfy motors.</p></div>
+      <div class="tile"><h3><a href="/graber-blinds/">Graber</a></h3><p>Many Graber shades come motorized, with app, remote, and wand controls.</p></div>
+      <div class="tile"><h3><a href="/carole-fabrics/">Carole Fabrics</a></h3><p>Carole drapery and Roman shades can be motorized with PowerView, Alta BLISS, or Kirsch motorized hardware.</p></div>
+      <div class="tile"><h3><a href="/draper-inc/">Draper</a></h3><p>Draper's motorized FlexShade roller shades are built for offices, schools, and other commercial spaces.</p></div>
+    </div>
+  </div>
+</section>
+{% include "contact.njk" %}
