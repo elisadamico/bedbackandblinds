@@ -1,0 +1,56 @@
+---
+layout: base.njk
+title: Mattresses & Adjustable Bases
+description: Shop Tempur-Pedic and Sealy mattresses and adjustable bases at Bed Back & Blinds in Dubuque, Iowa.
+sizes:
+  - { name: "Twin / Single", dims: "74.5\" L × 38\" W", range: "$199 – $3,699", img: "/assets/img/site/screenshot-2024-05-05-at-11-09-12-am.jpg" }
+  - { name: "Twin / Single Extra Long", dims: "79.5\" L × 38\" W", range: "$249 – $3,699", img: "/assets/img/site/screenshot-2024-05-05-at-11-12-42-am.jpg" }
+  - { name: "Double / Full", dims: "74.5\" L × 53\" W", range: "$299 – $3,249", img: "/assets/img/site/screenshot-2024-05-05-at-11-09-30-am.jpg" }
+  - { name: "Queen", dims: "79.5\" L × 60\" W", range: "$399 – $4,199", img: "/assets/img/site/screenshot-2024-05-05-at-11-09-43-am.jpg" }
+  - { name: "California King", dims: "83.5\" L × 72\" W", range: "$599 – $4,899", img: "/assets/img/site/screenshot-2024-05-05-at-11-10-09-am.jpg" }
+  - { name: "King", dims: "79.5\" L × 76\" W", range: "$599 – $4,899", img: "/assets/img/site/screenshot-2024-05-05-at-11-09-56-am.jpg" }
+---
+<section class="hero" style="background-image:url('/assets/img/site/matr.jpg')">
+  <div class="container"><h1>Mattresses &amp; Adjustable Bases</h1><p>Tempur-Pedic and Sealy mattresses, adjustable bases, and foundations. Come try them in our Dubuque showroom.</p></div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="shop-bar">
+      <div class="chips" role="group" aria-label="Filter products">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="Tempur-Pedic®" aria-pressed="false">Tempur-Pedic</button>
+        <button class="chip" type="button" data-filter="Sealy®" aria-pressed="false">Sealy</button>
+        <button class="chip" type="button" data-filter="mattress" aria-pressed="false">Mattresses</button>
+        <button class="chip" type="button" data-filter="base" aria-pressed="false">Adjustable bases</button>
+      </div>
+      <div><span class="count" data-count></span>
+        <label> · Sort by <select data-sort><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+      </div>
+    </div>
+    <p class="price-note">Prices shown are for Queen size. Call or stop by for other sizes, current sales, and financing.</p>
+    <div class="product-grid" data-product-grid>
+      {% for p in products %}{% include "product-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>Mattress Sizing &amp; Pricing</h2><p>Price ranges across all the mattresses we carry, by size</p></div>
+    <div class="sizes">
+      {% for s in sizes %}<div class="size"><img src="{{ s.img }}" alt="{{ s.name }} mattress diagram, {{ s.dims }}" loading="lazy"><strong>{{ s.name }}</strong><br><small>{{ s.dims }}</small><div class="range">{{ s.range }}</div></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Browse Our Mattress Brands</h2></div>
+    <div class="brand-cards">
+      <a class="brand-card" href="/tempur-pedic/"><img src="/assets/img/brands/tempurpedic-01.png" alt="Tempur-Pedic" loading="lazy">Browse Tempur-Pedic</a>
+      <a class="brand-card" href="/sealy/"><img src="/assets/img/brands/sealy.png" alt="Sealy" loading="lazy">Browse Sealy</a>
+    </div>
+  </div>
+</section>
+{% include "contact.njk" %}

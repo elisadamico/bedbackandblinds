@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Gallery
+heading: Explore Our Portfolio of Completed Window Treatments & More
+---
+<section class="section">
+  <div class="container">
+    <nav class="gallery-nav" aria-label="Gallery sections">
+      {% for sec in gallery %}<a class="chip" href="#{{ sec.title | slugify }}">{{ sec.title }}</a>{% endfor %}
+    </nav>
+    {% for sec in gallery %}
+    <h2 id="{{ sec.title | slugify }}">{{ sec.title }}</h2>
+    <div class="photo-grid">
+      {% for ph in sec.photos %}<a href="{{ ph }}" data-photo><img src="{{ ph }}" alt="{{ sec.title }}, photo {{ loop.index }}" loading="lazy"></a>{% endfor %}
+    </div>
+    {% endfor %}
+    <p class="center"><a class="btn" href="{{ site.consultation_form }}">Schedule a Complimentary Consultation</a></p>
+  </div>
+</section>
+<div class="viewer" data-viewer hidden role="dialog" aria-label="Photo viewer">
+  <button type="button" data-close aria-label="Close">×</button>
+  <button type="button" data-prev aria-label="Previous photo">‹</button>
+  <img src="" alt="">
+  <button type="button" data-next aria-label="Next photo">›</button>
+</div>

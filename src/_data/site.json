@@ -1,0 +1,44 @@
+{
+  "name": "Bed Back & Blinds",
+  "tagline": "Family Owned & Operated",
+  "url": "https://www.bedbackandblinds.com",
+  "description": "Family-owned mattress and window treatment store in Dubuque, Iowa, with Tempur-Pedic and Sealy mattresses, custom blinds, shades, shutters and draperies, and free in-home window consultations.",
+  "phone": "563-582-1828",
+  "phone_href": "tel:+15635821828",
+  "consult_phone": "563-213-1141",
+  "consult_contact": "Donna",
+  "email": "bedbackandblinds@msn.com",
+  "address": ["806 Wacker Dr, Suite 142", "Dubuque, IA 52002"],
+  "address_note": "On Hwy. 20 by Copyworks in Wacker Plaza",
+  "map": "https://maps.app.goo.gl/LqN1SG1GkRqLodnm7",
+  "consultation_form": "https://docs.google.com/forms/d/e/1FAIpQLSfU0LQ1IS-CSPBBQfQx6m2HscD9wBTFn2VABBuYnvjH8YypLA/viewform",
+  "facebook": "https://www.facebook.com/bedbackandblinds/",
+  "instagram": "https://www.instagram.com/bedbackandblinds/",
+  "hours": [
+    { "day": "Monday", "time": "10:00 AM – 6:00 PM" },
+    { "day": "Tuesday", "time": "10:00 AM – 6:00 PM" },
+    { "day": "Wednesday", "time": "10:00 AM – 6:00 PM" },
+    { "day": "Thursday", "time": "10:00 AM – 6:00 PM" },
+    { "day": "Friday", "time": "10:00 AM – 6:00 PM" },
+    { "day": "Saturday", "time": "10:00 AM – 4:00 PM" },
+    { "day": "Sunday", "time": "Closed" }
+  ],
+  "nav": [
+    { "label": "About", "url": "/about-us/" },
+    { "label": "Mattresses", "url": "/mattresses/", "children": [
+      { "label": "Shop All Mattresses", "url": "/mattresses/" },
+      { "label": "Tempur-Pedic", "url": "/tempur-pedic/" },
+      { "label": "Sealy", "url": "/sealy/" }
+    ]},
+    { "label": "Window Treatments", "url": "/window-treatments/", "children": [
+      { "label": "All Window Treatments", "url": "/window-treatments/" },
+      { "label": "Alta Window Fashions", "url": "/alta-window-fashions/" },
+      { "label": "Carole Fabrics", "url": "/carole-fabrics/" },
+      { "label": "Draper (Commercial)", "url": "/draper-inc/" },
+      { "label": "Graber", "url": "/graber-blinds/" },
+      { "label": "Norman Shutters", "url": "/norman-shutters/" }
+    ]},
+    { "label": "Furniture", "url": "/furniture/" },
+    { "label": "Gallery", "url": "/gallery/" }
+  ]
+}

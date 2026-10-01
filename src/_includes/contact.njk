@@ -1,0 +1,20 @@
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head"><h2>Contact Us</h2><p>Get in touch with us today! Stop by the showroom, call, or send us an email.</p></div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <ul class="contact-list">
+          <li><span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span><span><a href="{{ site.map }}">{{ site.address | join(", ") }}</a><br><small>{{ site.address_note }}</small></span></li>
+          <li><span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></span><span><a href="{{ site.phone_href }}">{{ site.phone }}</a><br><small>Window treatment consultations: call {{ site.consult_contact }} at {{ site.consult_phone }}</small></span></li>
+          <li><span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M3 5h18v14H3zm9 7L5 7v10h14V7z"/></svg></span><span><a href="mailto:{{ site.email }}">{{ site.email }}</a></span></li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn" href="mailto:{{ site.email }}?subject=Question%20for%20Bed%20Back%20%26%20Blinds">Email us</a>
+          <a class="btn btn-cyan" href="{{ site.consultation_form }}">Schedule a consultation</a>
+          <a class="btn btn-outline" href="{{ site.map }}">Get directions</a>
+        </div>
+      </div>
+      <iframe class="map-embed" title="Map to Bed Back & Blinds" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Bed+Back+%26+Blinds,+806+Wacker+Dr+Suite+142,+Dubuque,+IA+52002&output=embed"></iframe>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Tempur-Pedic Mattresses & Bases
+description: Shop Tempur-Pedic TEMPUR-Adapt, ProAdapt, and LuxeAdapt mattresses and TEMPUR-Ergo adjustable bases at Bed Back & Blinds in Dubuque, Iowa.
+---
+<section class="section">
+  <div class="container">
+    <img class="brand-logo" src="/assets/img/brands/tempurpedic-01.png" alt="Tempur-Pedic" width="340">
+    <div class="section-head"><h1>Tempur-Pedic Mattresses &amp; Bases</h1><p>Prices listed are for Queen size. Contact us for pricing on other sizes.</p></div>
+    <div class="product-grid">
+      {% for p in products | byBrand("Tempur-Pedic®") %}{% include "product-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>Solutions for Your Sleep Problems</h2></div>
+    <div class="tiles">
+      <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-1-29-56-pm.jpg" alt="Aches and pains: Tempur-Pedic mattresses are made with adaptable TEMPUR-Material that provides pressure relief" loading="lazy">
+      <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-1-30-15-pm.jpg" alt="Tempur-Pedic solution for a sleep problem" loading="lazy">
+      <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-1-30-26-pm.jpg" alt="Tempur-Pedic solution for a sleep problem" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div><h2>Tempur-Pedic® Power Bases</h2><h3>A personalized sleep experience</h3><p>Our power bases offer a multitude of positions and features that support personalized sleep. You’ll also discover your ideal settings for reading, working, streaming, texting, and talking. Get a power base and elevate your bed’s role in your day.</p><a class="btn" href="/mattresses/tempur-ergo-smart-base/">See the TEMPUR-Ergo® Smart Base</a></div>
+    <div><img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-1-28-08-pm.jpg" alt="TEMPUR-Ergo ProSmart Base with Snore Response, SoundScape Mode, and Wave Form Massage" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>Tempur-Pedic® Customer Reviews</h2></div>
+    <div class="tiles">
+      <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-1-16-40-pm.jpg" alt="Five stars. Best mattress we have ever owned! We no longer wake up with neck or back pain, and love how cool the mattress is. Janeen" loading="lazy">
+      <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-1-16-52-pm.jpg" alt="Five stars. Why did I wait so long? Best mattress I ever bought, and the power base's massage feature is amazing. Finally Happy" loading="lazy">
+      <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-1-17-02-pm.jpg" alt="Five stars. Best mattress ever. No more back pain or waking up in the middle of the night. Happy Customer" loading="lazy">
+    </div>
+  </div>
+</section>
+{% include "contact.njk" %}

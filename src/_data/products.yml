@@ -1,0 +1,376 @@
+# Products shown on the Mattresses pages.
+# To add a product, copy one block (from '- slug:' down to the next one), change the details,
+# and put its photos in src/assets/img/products/. Prices are for a Queen size.
+# The slug becomes the page address, so keep it lowercase with hyphens and no spaces.
+
+- slug: sealy-golden-elegance-stately
+  name: "Golden Elegance Stately"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Golden Elegance"
+  type: mattress
+  feel: Firm
+  price: 499
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/goldenelegance-b2-spring-tt-f-queen-flat-silo-threequarter-feb2023-5x7-090623133843344636-1024x1024.jpg
+    - /assets/img/products/goldenelegance-b2-spring-tt-f-queen-flat-silo-threequarter-feb2023-10-5-190523121623938050-1024x1024.jpg
+    - /assets/img/products/goldenelegance-b2-spring-tt-f-queen-flat-silo-topdown-feb2023-5x7-090623133843689413-1024x1024.jpg
+    - /assets/img/products/goldenelegance-b2-spring-tt-f-queen-flat-styledroom-headon-feb2023-5x7-090623133845182052-1024x1024.jpg
+    - /assets/img/products/goldenelegance-b2-spring-tt-f-queen-flat-styledroom-threequarter-feb2023-5x7-090623133846439312-1024x1024.jpg
+  features:
+    - "Comfort and Support: Precisely engineered open coils and layers of Sealy® gel foams respond to your movement to deliver comfort and foundational support for a firm feel throughout the night."
+    - "Durable Cover: A durable, soft knit-fabric cover helps keep your mattress protected."
+    - "Quality You Can Trust: Sealy® mattresses have been proudly designed, carefully assembled, and thoroughly tested right here in the USA."
+
+- slug: sealy-golden-elegance-featherton-hybrid
+  name: "Golden Elegance Featherton Hybrid"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Golden Elegance"
+  type: mattress
+  feel: Firm
+  price: 649
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/feath2-1080x.jpg
+    - /assets/img/products/feath1-1080x.jpg
+    - /assets/img/products/feath3-1080x.jpg
+    - /assets/img/products/featherton1-1080x.jpg
+  features:
+    - "10\" Profile: A firm yet accommodating height that supports a variety of sleep positions."
+    - "Stretch-Knit Cover: Enhanced with MoistureProtect™ & Surface-Guard Technology™, this cover wicks away moisture and provides antibacterial protection."
+    - "SealyComfort™ Foams: The mattress features layers of SealyComfort™ Gel Memory Foam and SealySupport™ Gel Foam, offering body-contouring comfort and sturdy support."
+    - "638 Coil Count: The Response Open Coil innerspring system provides balanced, all-over support to ensure a restorative sleep."
+    - "SolidEdge™ System: Reinforced edges deliver durability and additional sleep space, letting you stretch out in comfort.QUALITY YOU CAN TRUST—This Sealy mattress was proudly built, assembled, and tested in the USA, and is backed by a 10-year limited warranty."
+
+- slug: sealy-golden-elegance-featherton
+  name: "Golden Elegance Featherton"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Golden Elegance"
+  type: mattress
+  feel: Soft
+  price: 699
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/frurakzkaxaf.jpg
+    - /assets/img/products/froixroqszyb.jpg
+    - /assets/img/products/frdsmewyjacg-1.jpg
+    - /assets/img/products/frzdnyqlvhgq.jpg
+    - /assets/img/products/frxemkemyllu.jpg
+    - /assets/img/products/frrzhdsljhek.jpg
+    - /assets/img/products/frntipcprmlb.jpg
+    - /assets/img/products/frdsmewyjacg.jpg
+  features:
+    - "This innerspring mattress features cushioning comfort, thanks to a balance of our SealyComfort™ and SealySupport™ Gel Foams. The upgraded innerspring system reinforced with our SolidEdge™ foam border delivers soft support across the entire mattress, and the moisture-wicking, antibacterial cover helps keep you comfortable."
+
+- slug: sealy-golden-elegance-bridgerton
+  name: "Golden Elegance Bridgerton"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Golden Elegance"
+  type: mattress
+  feel: Firm
+  price: 749
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ic-a-01-ic1-silo3qtr-2000x2000.jpg
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ec-a-01-ec1-roomscene-970x300.jpg
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ec-a-01-ec2-explodedillustration-970x300.jpg
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ec-a-01-ec3-cornerlabel-970x300.jpg
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ic-a-01-ic2-room-1997x1997.jpg
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ic-a-01-ic3-feelscale-1997x1997.jpg
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ic-a-01-ic4-cutaway-1997x1997.jpg
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ic-a-01-ic5-room3qtr-1997x1997.jpg
+    - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ic-a-01-ic8-hilo-1997x1997.jpg
+  features:
+    - "12.5\" Thickness: Delivers firm support with a substantial cushioning layer, ensuring a comfortable yet supportive night's sleep."
+    - "SealyComfort™ Gel Foam: Offers a layer of firm, responsive comfort that helps maintain a cool sleeping environment."
+    - "SealyComfort™ Air Foam: Promotes airflow and breathability within the mattress for a cooler, more comfortable sleep."
+    - "Surface-Guard Technology™: An antimicrobial treatment that keeps the mattress surface fresh and hygienic."
+    - "Knit Cover with MoistureProtect™: A premium knit fabric cover that efficiently wicks away moisture, ensuring a dry and comfortable sleep environment."
+    - "SealyStability™ Coil: Precision-engineered coils offer deep support and reduce motion transfer across the mattress."
+    - "StableEdge™ Pro System: A reinforced edge system that increases the usable sleeping area and provides a solid edge for sitting."
+
+- slug: sealy-remington-soft-hybrid
+  name: "Remington Soft Hybrid"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Remington"
+  type: mattress
+  feel: Soft
+  price: 999
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/goldenelegance-b8-hybrid-s-queen-flat-silo-threequarter-feb2023-5x7-jpeg-1-22-2024-10-44-09-am-2000x.jpg
+    - /assets/img/products/remingtonsofthybridmattressbysealy-2000x.jpg
+    - /assets/img/products/remingtonsofthybridmattressconstruction-2000x.jpg
+    - /assets/img/products/remingtonsofthybridmattressfrontview-2000x.jpg
+  features:
+    - "The Remington Collection from Sealy includes a revolutionary line of mattresses designed with cutting-edge features that prioritize your comfort and well-being. With a range of soft to ultra firm, it’s easy to find the feel that’s right for you. Each mattress includes moisture protect technology to help regulate your body temperature throughout the night. The Duraflex Edge replaces the traditional foam rail with a double row of edge coils that provide superior durability, while also enhancing the compatibility with adjustable bases by 25%! The Sealy Stability Plus Coil is an advanced version of the standard coils you’d find in other Sealy mattresses. Standard coil is 660 while the Stability Plus is 911 coils for increased support and more personalized comfort. The thoughtful construction of these mattress help you discover a world of luxurious rest- it’s time to invest in the future of your sleep"
+
+- slug: sealy-remington-euro-pillow-top
+  name: "Remington Euro Pillow Top"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Remington"
+  type: mattress
+  feel: Soft
+  price: 1199
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/shopping-large.jpg
+    - /assets/img/products/download-large.jpg
+    - /assets/img/products/frzmqgysonqp.jpg
+    - /assets/img/products/frtedvbbkzng.jpg
+    - /assets/img/products/frljesxchmjr.jpg
+  features:
+    - "The Golden Elegance by Sealy collection features a unique assortment of mattresses to ensure every sleeper - regardless of shape, size, sleep style or budget - gets the restful night's sleep they deserve."
+    - "Enhanced support and durability across the entire sleeping surface."
+    - "Responsive, full-body comfort and support."
+    - "Protection of your mattress surface from common allergens and bacteria."
+    - "Traditional innerspring feel."
+    - "Stretch-Knit Cover with MoistureProtect and Surface-Guard Technology"
+    - "SealySupport Gel Foam"
+    - "15\" Height"
+
+- slug: tempur-adapt-medium
+  name: "TEMPUR-Adapt® Medium"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Adapt®"
+  type: mattress
+  feel: Medium
+  price: 2199
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/frweilxfufog.jpg
+    - /assets/img/products/frsfjeilrunl.jpg
+    - /assets/img/products/frwbyjwzhlra.jpg
+    - /assets/img/products/frftuuybzrfe.jpg
+  features:
+    - "4cm TEMPUR-ES®::The tighter, slightly rougher cell structure of TEMPUR-ES® creates a softer feel that works in combination with other layers to support and relax."
+    - "4cm Original TEMPUR®: Originally formulated to absorb the G-Force of NASA astronauts travelling into space and then perfected by us for sleepers-it's as comfortable and supportive as it is iconic."
+    - "Cool-To-Touch Cover: Premium knit technology for superior cool-to-touch feel. Crafted from ultra-high molecular weight yarn it moves heat away from your body."
+    - "11\" Height"
+
+- slug: tempur-adapt-medium-hybrid
+  name: "TEMPUR-Adapt® Medium Hybrid"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Adapt®"
+  type: mattress
+  feel: Medium
+  price: 2499
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/screenshot-2024-05-05-at-1-36-44-pm.jpg
+    - /assets/img/products/screenshot-2024-05-05-at-1-37-13-pm.jpg
+    - /assets/img/products/screenshot-2024-05-05-at-1-37-05-pm.jpg
+    - /assets/img/products/screenshot-2024-05-05-at-1-37-59-pm.jpg
+  features:
+    - "3cm TEMPUR-ES®: The tighter, slightly rougher cell structure of TEMPUR-ES® creates a softer feel that works in combination with other layers to support and relax."
+    - "5cm Original TEMPUR®: Originally formulated to absorb the G-Force of NASA astronauts travelling into space and then perfected by us for sleepers-it's as comfortable and supportive as it is iconic."
+    - "Hybrid Technology: 1000+ premium spring coils designed in-house to work with our proprietary material - made for easier movement."
+    - "Cool-To-Touch Cover: Premium knit technology for superior cool-to-touch feel. Crafted from ultra-high molecular weight yarn it moves heat away from your body."
+
+- slug: tempur-proadapt-firm
+  name: "TEMPUR-ProAdapt® Firm"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-ProAdapt®"
+  type: mattress
+  feel: Firm
+  price: 3399
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/frybalaspwsg.jpg
+    - /assets/img/products/frqhhhjhvlgb.jpg
+    - /assets/img/products/frnumkpyphft.jpg
+    - /assets/img/products/frecrpuxkeva.jpg
+  features:
+    - "5cm Original TEMPUR®: Originally formulated to absorb the G-Force of NASA astronauts travelling into space and then perfected by us for sleepers-it's as comfortable and supportive as it is iconic."
+    - "4cm TEMPUR-APRTM: Our latest innovation and our most pressure-relieving material ever - made for deeper, more rejuvenating sleep."
+    - "SmartClimate® Dual Cover System: Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner panel for convenience and comfort."
+    - "12\" Height"
+
+- slug: tempur-proadapt-medium
+  name: "TEMPUR-ProAdapt® Medium"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-ProAdapt®"
+  type: mattress
+  feel: Medium
+  price: 3399
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/freyugekbiyf.jpg
+    - /assets/img/products/fruzpelyiyqn.jpg
+    - /assets/img/products/frpmpcjctswx.jpg
+    - /assets/img/products/frrevrrjulua.jpg
+  features:
+    - "5cm Original TEMPUR®: Originally formulated to absorb the G-Force of NASA astronauts travelling into space and then perfected by us for sleepers-it's as comfortable and supportive as it is iconic."
+    - "5cm TEMPUR-APRTM: Our latest innovation and our most pressure-relieving material ever - made for deeper, more rejuvenating sleep."
+    - "Hybrid Technology: 1000+ premium spring coils designed in-house to work with our proprietary material - made for easier movement"
+    - "SmartClimate® Dual Cover System: Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner panel for convenience and comfort."
+
+- slug: tempur-proadapt-soft
+  name: "TEMPUR-ProAdapt® Soft"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-ProAdapt®"
+  type: mattress
+  feel: Soft
+  price: 3399
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/frkrkqallujx.jpg
+    - /assets/img/products/frcmujdhnsuz.jpg
+    - /assets/img/products/frdcryqyhwie.jpg
+    - /assets/img/products/frhcyigkmbci.jpg
+  features:
+    - "5cm TEMPUR-ES®: The tighter, slightly rougher cell structure of TEMPUR-ES® creates a softer feel that works in combination with other layers to support and relax."
+    - "5cm TEMPUR-APRTM: Our latest innovation and our most pressure-relieving material ever - made for deeper, more rejuvenating sleep."
+    - "SmartClimate® Dual Cover System: Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner panel for convenience and comfort."
+    - "12\" Height"
+
+- slug: tempur-proadapt-medium-hybrid
+  name: "TEMPUR-ProAdapt® Medium Hybrid"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-ProAdapt®"
+  type: mattress
+  feel: Medium
+  price: 3399
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/frqbosrhxlmw.jpg
+    - /assets/img/products/frkvdyxvdaid.jpg
+    - /assets/img/products/frplrhpmostq.jpg
+    - /assets/img/products/frppcwoqicdj.jpg
+  features:
+    - "6cm TEMPUR-ES®: The tighter, slightly rougher cell structure of TEMPUR-ES® creates a softer feel that works in combination with other layers to support and relax"
+    - "4cm TEMPUR-APRTM: Our latest innovation and our most pressure-relieving material ever - made for deeper, more rejuvenating sleep."
+    - "SmartClimate® Dual Cover System: Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner panel for convenience and comfort."
+    - "12\" Height"
+
+- slug: tempur-luxeadapt-soft
+  name: "TEMPUR-LuxeAdapt® Soft"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-LuxeAdapt®"
+  type: mattress
+  feel: Soft
+  price: 4199
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/frbyinhebsfn.jpg
+    - /assets/img/products/frkyuonurweq.jpg
+    - /assets/img/products/frthljhwfgst.jpg
+    - /assets/img/products/frmqigslszxl.jpg
+    - /assets/img/products/frnfkfsizyns.jpg
+    - /assets/img/products/frqpbgwomgfu.jpg
+    - /assets/img/products/frufyyggxtjs.jpg
+    - /assets/img/products/frwaimvuszvm.jpg
+    - /assets/img/products/frxtelnvkqoy.jpg
+    - /assets/img/products/frzlkxziiszu.jpg
+  features:
+    - "SMARTCLIMATE DUAL COVER SYSTEM - Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner layer for convenience and comfort."
+    - "TEMPUR-ES COMFOR LAYER - Softer feel works in combination with other materials to support and relax."
+    - "TEMPUR-APR+ SUPPORT LAYER - All the pressure relief of original TEMPUR-APR plus a more advanced cell structure for ultra-conforming comfort."
+    - "13\" PROFILE"
+
+- slug: tempur-luxeadapt-firm
+  name: "TEMPUR-LuxeAdapt® Firm"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-LuxeAdapt®"
+  type: mattress
+  feel: Firm
+  price: 4199
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/frcmtglcdphc.jpg
+    - /assets/img/products/frcqtvobxhtv.jpg
+    - /assets/img/products/frhexkgesmcd.jpg
+    - /assets/img/products/frmmahrrhiaa.jpg
+    - /assets/img/products/fruajbvnvgoq.jpg
+    - /assets/img/products/fruoonlsjqum.jpg
+  features:
+    - "SMARTCLIMATE DUAL COVER SYSTEM - Next-generation technology featuring a zip-off, cool-to-touch outer layer and super-stretch inner layer for convenience and comfort."
+    - "TEMPUR-ES COMFOR LAYER - Softer feel works in combination with other materials to support and relax"
+    - "TEMPUR-APR+ SUPPORT LAYER - All the pressure relief of original TEMPUR-APR plus a more advanced cell structure for ultra-conforming comfort"
+    - "13\" PROFILE"
+
+- slug: tempur-ergo-base
+  name: "TEMPUR-Ergo® Base"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Ergo®"
+  type: base
+  price: 1599
+  price_label: "Queen base"
+  images:
+    - /assets/img/products/frspfpiabsvt.jpg
+    - /assets/img/products/frzthvwycbxk.jpg
+    - /assets/img/products/frnprvyduatt.jpg
+    - /assets/img/products/fruotwmxxyxh.jpg
+  features:
+    - "WIRELESS REMOTE: Gently tilts your mattress to an anti-snore position"
+    - "ERGONOMIC POSITIONS: Raise head up to 57° and feet up to 46° for perfect support while sleeping, reading, watching TV or working"
+    - "ZERO GRAVITY PRESET: Elevates your head and feet to closely simulate weightlessness and help take the pressure off your back while you sleep"
+    - "OTHER FEATURES: Adjustable Legs, Underbed Lighting and USB Ports"
+
+- slug: tempur-ergo-smart-base
+  name: "TEMPUR-Ergo® Smart Base"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Ergo®"
+  type: base
+  price: 1999
+  price_label: "Queen base"
+  images:
+    - /assets/img/products/frrmazvcfuyl.jpg
+    - /assets/img/products/frdadafqqlaz.jpg
+    - /assets/img/products/fryaoiwvynoz.jpg
+  features:
+    - "Sleeptracker®-AI"
+    - "QuietMode™ Technology"
+    - "Wireless Remote with Presets"
+    - "Head and Foot Lift"
+
+- slug: tempur-ergo-extend-smart-base
+  name: "TEMPUR-Ergo® Extend Smart Base"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "TEMPUR-Ergo®"
+  type: base
+  price: 2549
+  price_label: "Queen base"
+  images:
+    - /assets/img/products/frishkgkqivv-1.jpg
+    - /assets/img/products/frfqkarorvkz.jpg
+    - /assets/img/products/frbgsaibrqoo.jpg
+  features:
+    - "Sleeptracker®-AI"
+    - "QuietMode™ Technology"
+    - "PerfectSeat™ Technology"
+    - "Wireless Remote with Presets"
+
+- slug: tempur-flat-high-foundation
+  name: "TEMPUR-Flat High Foundation"
+  brand: "Tempur-Pedic®"
+  brand_page: /tempur-pedic/
+  collection: "Foundations"
+  type: foundation
+  price: 350
+  price_label: "Queen foundation"
+  images:
+    - /assets/img/products/freefybuvpmx.jpg
+    - /assets/img/products/frtgkoekhqpl.jpg
+  features:
+    - "Brand: TEMPUR-PEDIC"
+    - "Line: Tempur-Flat High"
+    - "Width: 60\""
+    - "Height: 80\""

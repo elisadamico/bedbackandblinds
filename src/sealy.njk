@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Sealy Mattresses
+description: Shop Sealy Golden Elegance and Remington mattresses at Bed Back & Blinds in Dubuque, Iowa.
+---
+<section class="section">
+  <div class="container">
+    <img class="brand-logo" src="/assets/img/brands/sealy.png" alt="Sealy" width="340">
+    <div class="section-head"><h1>Sealy Mattresses</h1><p>Prices listed are for Queen size mattresses. Contact us for pricing on other mattress sizes.</p></div>
+    <div class="product-grid">
+      {% for p in products | byBrand("Sealy®") %}{% include "product-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container split">
+    <div class="prose"><h2>The Sealy® Story</h2>
+<p>Sealy® – a household name associated with quality, trust, and above all else, a great night’s sleep. With more than 140 years of expertise, we’re confident in providing our customers with the sleep they deserve. So how did one man from Sealy, Texas, turn cotton into a household mattress name?</p>
+<p>In 1881, Daniel Haynes of Sealy, Texas – a cotton gin builder – began making cotton-filled, non-tufted mattresses for his friends. Then, in 1889, Haynes developed a machine that compressed cotton, ultimately making the process easier and more efficient. With word quickly spreading, Haynes saw the machine’s potential for success and began licensing the machine to others. Those who paid royalties were able to make their own mattresses stating, “mattresses from Sealy.”</p>
+<p>During the Great Depression, Sealy® lost most of its licenses and just barely escaped bankruptcy. To help make it through, we combined our remaining licensees to form what is now known as Sealy, Inc. As the years went by, Sealy® continued to design incredible mattresses at an affordable price for our customers, all while seeking opportunities to further innovation. In 1950, Sealy® partnered with leading orthopedic surgeons to develop a mattress that provided better back support. The result? Our famous Posturepedic mattress line – which still exists in our portfolio today. This technology provides additional support in the center third of the mattress.</p>
+<p>By the 1950s, Sealy’s largest licensee – Ohio Mattress – began looking to expand. By the 1970s, they were a public company with a clear goal of acquiring other Sealy licensees to grow their operations. They were successful in doing so and acquired various licensees over time, including Stearns & Foster® in December of 1983. Finally, 3 short years later, they acquired the last Sealy® licensees leading to their succession. This effectively consolidated domestic Sealy® operations.</p>
+<p>By the mid-1990s, Sealy® maintained more than 20% of the US Bedding Market. In 1998, the company moved its headquarters from Cleveland, Ohio, to High Point, North Carolina, where we still operate today. Over the next 20 years, we expanded business relationships to Australia, Southeast Asia, Canada, and Europe – the list goes on.</p>
+<p>Today, Sealy® holds the title of America’s #1 Mattress Brand. We are rooted in innovation, determination, and passion that spans more than 140 years – and regardless of a customer’s journey with us during that time, our goal has always been the same: deliver quality sleep. Sealy® has been helping American families sleep better by designing high-quality, trusted mattresses since 1881 – and we don’t plan on stopping any time soon. Let us know how we can fit into your best night’s sleep!</p>
+    </div>
+    <div><img class="rounded" src="/assets/img/site/historical-photo-of-1880s-worker-making-mattr-width-1200.jpg" alt="Historical photo of a worker making a mattress" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container narrow">
+    <div class="section-head"><h2>Sealy® Customer Reviews</h2></div>
+    <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-2-49-31-pm.jpg" alt="Five-star Sealy customer review" loading="lazy" style="margin-bottom:1rem">
+    <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-2-49-14-pm.jpg" alt="Five-star Sealy customer review" loading="lazy" style="margin-bottom:1rem">
+    <img class="rounded" src="/assets/img/site/screenshot-2024-05-05-at-2-48-54-pm.jpg" alt="Sealy customer reviews" loading="lazy">
+  </div>
+</section>
+{% include "contact.njk" %}

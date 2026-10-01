@@ -1,0 +1,135 @@
+---
+layout: base.njk
+featured: [sealy-golden-elegance-stately, tempur-adapt-medium, tempur-proadapt-medium, tempur-ergo-smart-base]
+---
+{% if sale.show %}
+<section class="sale" aria-label="Current sale"><div class="container"><img src="{{ sale.image }}" alt="{{ sale.alt }}" width="996" height="672"></div></section>
+{% endif %}
+
+<section class="hero" style="background-image:url('/assets/img/site/temp-store-dark2.jpg')">
+  <div class="container">
+    <h1>Transform Your Home with Bed Back &amp; Blinds</h1>
+    <p>Discover high quality mattresses and custom window treatments at our mom and pop shop in Dubuque, Iowa.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn" href="/mattresses/">Shop mattresses</a>
+      <a class="btn btn-outline" href="{{ site.consultation_form }}">Book a free window consultation</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>Featured Brands</h2></div>
+    <div class="logo-grid">
+      <a href="/tempur-pedic/"><img src="/assets/img/brands/tmp.png" alt="Tempur-Pedic" loading="lazy"></a>
+      <a href="/sealy/"><img src="/assets/img/brands/sealy.png" alt="Sealy" loading="lazy"></a>
+      <a href="/graber-blinds/"><img src="/assets/img/brands/graber.jpg" alt="Graber" loading="lazy"></a>
+      <a href="/window-treatments/"><img src="/assets/img/brands/logo-hunter-douglas.jpg" alt="Hunter Douglas" loading="lazy"></a>
+      <a href="/alta-window-fashions/"><img src="/assets/img/brands/alta.png" alt="Alta Window Fashions" loading="lazy"></a>
+      <a href="/norman-shutters/"><img src="/assets/img/brands/norman-shutters.jpg" alt="Norman Shutters" loading="lazy"></a>
+      <a href="/carole-fabrics/"><img src="/assets/img/brands/carole.png" alt="Carole Fabrics" loading="lazy"></a>
+      <a href="/furniture/"><img src="/assets/img/brands/coaster.png" alt="Coaster Fine Furniture" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Why We Stand Out</h2></div>
+    <div class="features">
+      <div class="feature">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M3 11V6h2v3h14V6h2v12h-2v-3H5v3H3v-7zm4-4h4v2H7z"/></svg></div>
+        <h3>Wide Selection of High-Quality Mattresses</h3>
+        <p>At Bed Back &amp; Blinds, we offer a wide selection of high-quality mattresses to suit every individual's sleep needs. From memory foam to hybrid mattresses, our products are designed to provide ultimate comfort and support for a restful night's sleep.</p>
+      </div>
+      <div class="feature">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M4 3h16v2H4zm1 4h14v2H5zm0 4h14v2H5zm0 4h14v2H5zm6 4h2v2h-2z"/></svg></div>
+        <h3>Complimentary Consultations for Window Treatment Solutions</h3>
+        <p>Our dedicated consultant is committed to delivering personalized consultations tailored to your needs, whether for your <a href="/window-treatments/">home or business</a>. Recognizing the uniqueness of every space, we collaborate closely with you to suggest blinds or window treatments that not only enhance privacy and light control but also elevate the aesthetic appeal of your surroundings.</p>
+      </div>
+      <div class="feature">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M5 10V7a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3a2 2 0 0 1 2 2v5h-2v2h-2v-2H7v2H5v-2H3v-5a2 2 0 0 1 2-2zm2 0h10V7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1z"/></svg></div>
+        <h3>The Latest in Furniture, Pillows, and Bedding Accessories</h3>
+        <p>For all your remaining needs, we present our extensive array of pillows tailored to suit your sleep preferences, along with our premium bamboo sheets and elegant <a href="/furniture/">furniture</a> to enhance your living space.</p>
+      </div>
+      <div class="feature">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M11 3h2v2.1c1.9.4 3 1.6 3.2 3.4h-2.1c-.2-1-1-1.6-2.1-1.6-1.3 0-2.1.6-2.1 1.5 0 .8.6 1.2 2.4 1.7 2.4.6 4 1.4 4 3.6 0 1.7-1.2 2.9-3.3 3.2V19h-2v-2.1c-2.1-.4-3.4-1.7-3.5-3.6h2.1c.1 1.1 1 1.8 2.4 1.8s2.3-.6 2.3-1.6c0-.9-.7-1.3-2.5-1.8-2.3-.6-3.9-1.3-3.9-3.4 0-1.6 1.1-2.8 3-3.2z"/></svg></div>
+        <h3>Financing Available</h3>
+        <p>Discover our range of financing options tailored to suit your needs, including 0% APR plans. Get the flexibility you deserve while making your dream purchase a reality. <a href="#contact">Contact us</a> today to explore our financing solutions!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>Shop Mattresses &amp; Bases</h2><p>A few of our most popular picks. Prices are for Queen size.</p></div>
+    <div class="product-grid">
+      {% for p in products | bySlugs(featured) %}{% include "product-card.njk" %}{% endfor %}
+    </div>
+    <p class="center" style="margin-top:2rem"><a class="btn" href="/mattresses/">See all mattresses and bases</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Select Products</h2><p>Check out a few of our most popular offerings</p></div>
+    <div class="split highlight">
+      <div class="highlight-img"><img src="/assets/img/site/black-tempur-pedic-adjustable-beds-25552132-31-600.jpg" alt="Woman relaxing on a Tempur-Pedic mattress on an adjustable base" loading="lazy"></div>
+      <div><h3>Tempur-Pedic Mattresses</h3><p>Discover the epitome of comfort and support with our collection of Tempur-Pedic mattresses. Crafted with precision and innovation, each mattress offers a luxurious sleep experience like no other. Engineered to conform to your body's unique contours, Tempur-Pedic mattresses provide unparalleled pressure relief and relaxation, ensuring you wake up rejuvenated every morning. Explore our range today and elevate your sleep to new heights of comfort and indulgence.</p><a href="/tempur-pedic/">Shop Tempur-Pedic</a></div>
+    </div>
+    <div class="split highlight">
+      <div class="highlight-img"><img src="/assets/img/site/graber-drapery-02.jpg" alt="Dining room with Graber drapery and woven shades" loading="lazy"></div>
+      <div><h3>Graber Window Treatments</h3><p>With a wide range of styles, colors, and textures, Graber window treatments perfectly complete your unique space. A legacy of craftsmanship and dedicated expertise ensures a customized solution that is both beautiful and functional.</p><a href="/graber-blinds/">Explore Graber</a></div>
+    </div>
+    <div class="split highlight">
+      <div class="highlight-img"><img src="/assets/img/site/1200-x-900-insert-plantation-woodlore1-1024x768.jpg" alt="Kitchen with white Norman plantation shutters" loading="lazy"></div>
+      <div><h3>Norman Shutters</h3><p>With over 40 years of excellence in crafting fine window furnishings, Norman®'s quality has made it famous. It's what drives Norman® to innovate. And why you can see it in every detail. Few companies will farm their own wood, make their own components, or weave their own cords. At Norman®, everything matters. And anything's possible.</p><a href="/norman-shutters/">Explore Norman Shutters</a></div>
+    </div>
+    <div class="split highlight">
+      <div class="highlight-img"><img src="/assets/img/site/sealy-mattress-twin-sealy-posturepedic-memory-foam-medium-12-36644699504815.jpg" alt="Bedroom with a Sealy mattress" loading="lazy"></div>
+      <div><h3>Sealy Mattresses</h3><p>When you sleep on a Sealy®, you can be confident that it’s built to last. All our mattresses are engineered to exceed industry testing standards to ensure they’ll stand the test of time. It’s next-level support and all-over comfort, backed by quality you can trust.</p><a href="/sealy/">Shop Sealy</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>Gallery</h2><p>A peek into our store</p></div>
+    <div class="peek">
+      <img src="/assets/img/site/dsc-9065.jpg" alt="Bed Back & Blinds storefront in Wacker Plaza" loading="lazy">
+      <img src="/assets/img/site/2020-04-30.jpg" alt="Tempur-Pedic display in the showroom" loading="lazy">
+      <img src="/assets/img/site/2023-12-28.jpg" alt="Window treatment samples in the showroom" loading="lazy">
+    </div>
+    <p class="center" style="margin-top:1.5rem"><a class="btn btn-outline" href="/gallery/">View the full gallery</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Testimonials</h2><p>See what people are saying</p></div>
+    <div class="testimonials">
+      <figure class="testimonial">
+        <blockquote>Donna was VERY helpful when we were trying to decide what we wanted for window treatments in our remodeled bedroom. She helped us choose the perfect compliment to our decor. By showing us the difference between light filtering and light blocking, we were able to choose what worked for us! I can't wait for them to be installed!</blockquote>
+        <figcaption><img src="/assets/img/brands/c.png" alt="" loading="lazy">Colleen Heath</figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote>We received stellar service from the Dubuque, Iowa store. Donna was knowledgeable and thorough. We appreciated the assistance from purchase to install. They stand by their products. Highly recommend.</blockquote>
+        <figcaption><img src="/assets/img/brands/a.png" alt="" loading="lazy">Ann Bodnar-Donovan</figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote>Jim and Donna are great people who really care about making sure you get a great nights rest. I got a great deal on a Serta iComfort Matress with a adjustable base and we have been sleeping wonderfully since, no more restless nights. The delivery staff were super friendly and careful. They were on time, made sure we understood how to use it, and took away our old bed, no problem. When it's time for a new bed, we will be back to buy from Bed Back &amp; Blinds with Jim. Locally owned with great service!</blockquote>
+        <figcaption><img src="/assets/img/brands/unnamed.png" alt="" loading="lazy">R. Anglin</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container split">
+    <div><img src="/assets/img/brands/screenshot-2024-05-04-at-9-31-56-pm.jpg" alt="Bed Back & Blinds. Shop smart, buy local. For assistance, please call 563.582.1828" loading="lazy"></div>
+    <div><h2>Our Company</h2><p>Bed Back &amp; Blinds, a family-owned business with over 35 years of experience, offers top-quality mattresses including Tempur-Pedic and Sealy models. We also provide a range of bedding options such as sheets, pillows, and adjustable beds. Additionally, we offer window decorating services with a variety of blinds, shades, and custom drapery solutions.</p><a href="/about-us/">More about us</a></div>
+  </div>
+</section>
+
+{% include "contact.njk" %}

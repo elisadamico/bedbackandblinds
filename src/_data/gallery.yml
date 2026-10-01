@@ -1,0 +1,71 @@
+# Photos on the Gallery page, in sections. Add a photo to src/assets/img/gallery/ and list it here.
+
+- title: "Shutters"
+  photos:
+    - /assets/img/gallery/img-1012-2.jpg
+    - /assets/img/gallery/img-1127.jpg
+    - /assets/img/gallery/img-1139.jpg
+    - /assets/img/gallery/img-0169.jpg
+    - /assets/img/gallery/img-3233.jpg
+    - /assets/img/gallery/img-5755.jpg
+    - /assets/img/gallery/img-5756.jpg
+    - /assets/img/gallery/img-5758.jpg
+    - /assets/img/gallery/img-5759.jpg
+    - /assets/img/gallery/img-7010.jpg
+    - /assets/img/gallery/img-8985.jpg
+    - /assets/img/gallery/img-8989.jpg
+    - /assets/img/gallery/lp-image-2.jpg
+    - /assets/img/gallery/lp-image.jpg
+
+- title: "Draperies & Valances"
+  photos:
+    - /assets/img/gallery/img-0150.jpg
+    - /assets/img/gallery/img-2926.jpg
+    - /assets/img/gallery/img-0273.jpg
+    - /assets/img/gallery/img-1079.jpg
+    - /assets/img/gallery/img-0272.jpg
+    - /assets/img/gallery/img-0246.jpg
+    - /assets/img/gallery/img-0245.jpg
+    - /assets/img/gallery/img-0232.jpg
+    - /assets/img/gallery/img-0231.jpg
+    - /assets/img/gallery/img-0069.jpg
+    - /assets/img/gallery/img-0156.jpg
+    - /assets/img/gallery/img-0424.jpg
+    - /assets/img/gallery/img-0432.jpg
+    - /assets/img/gallery/img-2821.jpg
+    - /assets/img/gallery/img-2917.jpg
+
+- title: "Honeycomb Shades"
+  photos:
+    - /assets/img/gallery/img-1147.jpg
+    - /assets/img/gallery/img-0176.jpg
+    - /assets/img/gallery/img-0174.jpg
+    - /assets/img/gallery/img-0042.jpg
+    - /assets/img/gallery/img-0151.jpg
+    - /assets/img/gallery/img-2973.jpg
+    - /assets/img/gallery/img-2975.jpg
+    - /assets/img/gallery/img-7557.jpg
+
+- title: "Roller Shades & More"
+  photos:
+    - /assets/img/gallery/img-1012.jpg
+    - /assets/img/gallery/20180904-095333.jpg
+    - /assets/img/gallery/img-1023.jpg
+    - /assets/img/gallery/img-1323.jpg
+    - /assets/img/gallery/20180904-095150.jpg
+    - /assets/img/gallery/img-1784.jpg
+    - /assets/img/gallery/img-0008.jpg
+    - /assets/img/gallery/img-0035.jpg
+    - /assets/img/gallery/img-0157.jpg
+    - /assets/img/gallery/img-0168.jpg
+    - /assets/img/gallery/img-1654.jpg
+    - /assets/img/gallery/img-5728.jpg
+    - /assets/img/gallery/img-9874.jpg
+
+- title: "Custom Bedding & Cushions"
+  photos:
+    - /assets/img/gallery/img-0233.jpg
+    - /assets/img/gallery/img-1080.jpg
+    - /assets/img/gallery/img-0250.jpg
+    - /assets/img/gallery/img-0249.jpg
+    - /assets/img/gallery/img-1082.jpg

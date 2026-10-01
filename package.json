@@ -1,0 +1,14 @@
+{
+  "name": "bedbackandblinds-site",
+  "private": true,
+  "type": "module",
+  "description": "Website for Bed Back & Blinds, Dubuque, Iowa (bedbackandblinds.com)",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^5.4.2"
+  }
+}

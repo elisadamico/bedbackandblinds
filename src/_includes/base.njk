@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }} · Dubuque, Iowa</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if title %}{{ title }} · {% endif %}{{ site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ site.url }}{{ og_image or '/assets/img/site/temp-store-dark2.jpg' }}">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HomeGoodsStore","name":"{{ site.name }}","url":"{{ site.url }}","telephone":"+1-{{ site.phone }}","email":"{{ site.email }}",
+   "address":{"@type":"PostalAddress","streetAddress":"806 Wacker Dr, Suite 142","addressLocality":"Dubuque","addressRegion":"IA","postalCode":"52002","addressCountry":"US"},
+   "openingHours":["Mo-Fr 10:00-18:00","Sa 10:00-16:00"]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "header.njk" %}
+  <main id="main">
+    {% if heading %}<div class="page-title"><div class="container"><h1>{{ heading }}</h1>{% if subheading %}<p>{{ subheading }}</p>{% endif %}</div></div>{% endif %}
+    {{ content | safe }}
+  </main>
+  {% include "footer.njk" %}
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

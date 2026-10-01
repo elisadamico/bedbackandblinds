@@ -1,0 +1,6 @@
+{
+  "show": true,
+  "image": "/assets/img/site/fall-savings-event.jpg",
+  "alt": "Fall Savings Event at Bed Back & Blinds, sale ends November 23. Up to 12 months 0% APR. Sealy: save up to $500 on select adjustable mattress sets. Save 30% on blinds, shades, shutters and drapery with 0% APR financing and a free in-home consultation. Tempur-Breeze collection. Free delivery or bed frame, free in-home set up, and free removal.",
+  "note": "To change the sale banner, put the new image in src/assets/img/site/ and update image and alt here. Set show to false to hide it."
+}

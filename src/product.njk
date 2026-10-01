@@ -1,0 +1,65 @@
+---
+layout: base.njk
+pagination:
+  data: products
+  size: 1
+  alias: product
+permalink: "/mattresses/{{ product.slug }}/"
+eleventyComputed:
+  title: "{{ product.brand }} {{ product.name }}"
+  description: "{{ product.brand }} {{ product.name }}, {{ product.price_label }} {{ product.price | money }}, at Bed Back & Blinds in Dubuque, Iowa."
+  og_image: "{{ product.images[0] }}"
+---
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/mattresses/">Mattresses</a> › <a href="{{ product.brand_page }}">{{ product.brand }}</a> › {{ product.name }}</nav>
+    <div class="product-layout">
+      <div>
+        <div class="photo-main"><img data-main-photo src="{{ product.images[0] }}" alt="{{ product.brand }} {{ product.name }}"></div>
+        {% if product.images.length > 1 %}
+        <div class="thumbs">
+          {% for img in product.images %}<button type="button" data-thumb="{{ img }}" aria-current="{{ 'true' if loop.first else 'false' }}" aria-label="Show photo {{ loop.index }}"><img src="{{ img }}" alt="" loading="lazy"></button>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="product-info">
+        <p class="product-brand">{{ product.brand }} · {{ product.collection }}</p>
+        <h1>{{ product.name }}</h1>
+        <div class="tags">
+          {% if product.feel %}<span class="tag">{{ product.feel }} feel</span>{% endif %}
+          {% if "Hybrid" in product.name %}<span class="tag">Hybrid</span>{% endif %}
+          <span class="tag">{{ "Mattress" if product.type == "mattress" else ("Adjustable base" if product.type == "base" else "Foundation") }}</span>
+        </div>
+        {% set kind = "mattress" if product.type == "mattress" else ("base" if product.type == "base" else "foundation") %}
+        <div class="buy-box">
+          <p class="big-price">{{ product.price | money }} <span>{{ product.price_label }}</span></p>
+          <p class="price-note">Other sizes are available. Call or stop by for pricing, current sales, and 0% APR financing.</p>
+          <div class="btn-row">
+            <a class="btn" href="mailto:{{ site.email }}?subject={{ ('Question about the ' + product.brand + ' ' + product.name) | urlencode }}">Ask about this {{ kind }}</a>
+            <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>
+          </div>
+          <ul class="perks">
+            <li>Try it in our Dubuque showroom</li>
+            <li>Free delivery or bed frame, free in-home set up, and free removal of your old mattress (ask for details)</li>
+            <li>Financing available, including 0% APR plans</li>
+          </ul>
+        </div>
+        {% if product.features.length %}
+        <h2 style="font-size:1.4rem">Features</h2>
+        <ul class="features-list">{% for f in product.features %}<li>{{ f }}</li>{% endfor %}</ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set more = products | related(product) %}
+{% if more.length %}
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>More from {{ product.brand }}</h2></div>
+    <div class="product-grid">{% for p in more %}{% include "product-card.njk" %}{% endfor %}</div>
+    <p class="center" style="margin-top:1.5rem"><a class="btn btn-outline" href="{{ product.brand_page }}">See all {{ product.brand }}</a></p>
+  </div>
+</section>
+{% endif %}
