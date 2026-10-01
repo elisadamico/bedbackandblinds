@@ -1,0 +1,9 @@
+<article class="product-card" data-group="{{ f[groupBy] if groupBy else '' }}" data-colors="|{{ f.color_family | join('|') }}|" data-material="{{ f.material }}">
+  {% if f.new %}<span class="sale-tag new-tag">New</span>{% endif %}
+  <a class="product-thumb" href="/furniture/item/{{ f.slug }}/"><img src="{{ f.image }}" alt="Coaster {{ f.name }}" loading="lazy"></a>
+  <div class="product-body">
+    <p class="product-brand">Coaster{% if f.collection %} · {{ f.collection }}{% endif %}</p>
+    <h3><a href="/furniture/item/{{ f.slug }}/">{{ f.name }}</a></h3>
+    <p class="product-ask"><a href="/contact/?about={{ ('Coaster ' + f.name + ' (' + f.sku + ')') | urlencode }}#form">Ask about this piece</a></p>
+  </div>
+</article>

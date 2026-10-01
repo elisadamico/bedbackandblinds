@@ -1,0 +1,27 @@
+---js
+{
+  layout: "base.njk",
+  pagination: {
+    data: "furniture.rooms",
+    size: 1,
+    alias: "page_cat",
+    before: (rooms) => rooms.filter((r) => !r.single).flatMap((r) => r.cats.map((c) => ({ room: r, cat: c })))
+  },
+  permalink: (data) => `/furniture/${data.page_cat.room.slug}/${data.page_cat.cat.slug}/`,
+  eleventyComputed: {
+    title: (data) => `${data.page_cat.cat.title} · ${data.page_cat.room.title} Furniture`,
+    description: (data) => `Coaster ${data.page_cat.cat.title.toLowerCase()} at Bed Back & Blinds in Dubuque, Iowa. Call or stop by for pricing.`
+  }
+}
+---
+{% set room = page_cat.room %}{% set cat = page_cat.cat %}
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/furniture/">Furniture</a> › <a href="/furniture/{{ room.slug }}/">{{ room.title }}</a> › {{ cat.title }}</nav>
+    <div class="section-head"><h1>{{ cat.title }}</h1><p>Coaster {{ cat.title | lower }}. Call or stop by for pricing, and ask us about anything that isn't on our showroom floor.</p></div>
+    <nav class="sub-nav" aria-label="{{ room.title }} categories">{% for c in room.cats %}<a href="/furniture/{{ room.slug }}/{{ c.slug }}/"{% if c.slug == cat.slug %} aria-current="page"{% endif %}>{{ c.title }}</a>{% endfor %}</nav>
+    {% set list = furniture.items | furnitureIn(room.slug, cat.slug) %}{% set groupBy = "type" %}{% set groupLabel = "type" %}
+    {% include "furniture-grid.njk" %}
+  </div>
+</section>
+{% include "furniture-order-note.njk" %}

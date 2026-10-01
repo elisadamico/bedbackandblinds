@@ -51,6 +51,38 @@
     apply();
   }
 
+  // --- Furniture filters (type chips, color, material) ---
+  var fGrid = document.querySelector("[data-furniture-grid]");
+  if (fGrid) {
+    var fCards = Array.prototype.slice.call(fGrid.querySelectorAll(".product-card"));
+    var fChips = document.querySelectorAll("[data-group-chip]");
+    var fColor = document.querySelector("[data-color]");
+    var fMaterial = document.querySelector("[data-material]");
+    var fCount = document.querySelector("[data-count]");
+    var fEmpty = document.querySelector("[data-empty]");
+    function applyFurniture() {
+      var active = document.querySelector("[data-group-chip][aria-pressed='true']");
+      var g = active ? active.getAttribute("data-group-chip") : "all";
+      var shown = 0;
+      fCards.forEach(function (c) {
+        var ok = (g === "all" || c.dataset.group === g) &&
+          (!fColor.value || c.dataset.colors.indexOf("|" + fColor.value + "|") > -1) &&
+          (!fMaterial.value || c.dataset.material === fMaterial.value);
+        c.hidden = !ok; if (ok) shown++;
+      });
+      fCount.textContent = shown + (shown === 1 ? " piece" : " pieces");
+      fEmpty.hidden = shown > 0;
+    }
+    fChips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        fChips.forEach(function (c) { c.setAttribute("aria-pressed", "false"); });
+        chip.setAttribute("aria-pressed", "true"); applyFurniture();
+      });
+    });
+    fColor.addEventListener("change", applyFurniture);
+    fMaterial.addEventListener("change", applyFurniture);
+  }
+
   // --- Product photo switcher ---
   var main = document.querySelector("[data-main-photo]");
   document.querySelectorAll("[data-thumb]").forEach(function (t) {

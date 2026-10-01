@@ -106,7 +106,33 @@
     },
     {
       "label": "Furniture",
-      "url": "/furniture/"
+      "url": "/furniture/",
+      "children": [
+        {
+          "label": "All Furniture",
+          "url": "/furniture/"
+        },
+        {
+          "label": "Living Room",
+          "url": "/furniture/living-room/"
+        },
+        {
+          "label": "Bedroom",
+          "url": "/furniture/bedroom/"
+        },
+        {
+          "label": "Dining",
+          "url": "/furniture/dining/"
+        },
+        {
+          "label": "Home Office",
+          "url": "/furniture/home-office/"
+        },
+        {
+          "label": "Accents",
+          "url": "/furniture/accents/"
+        }
+      ]
     },
     {
       "label": "Gallery",

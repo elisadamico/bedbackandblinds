@@ -1,0 +1,17 @@
+{# Needs: list (the pieces), groupBy ("type" or "cat_title"), groupLabel #}
+{% set groups = list | uniqueValues(groupBy) %}{% set colors = list | uniqueValues("color_family") %}{% set materials = list | uniqueValues("material") %}
+<div class="shop-bar" data-furniture-filters>
+  {% if groups.length > 1 %}<div class="chips" role="group" aria-label="Filter by {{ groupLabel }}">
+    <button class="chip" type="button" data-group-chip="all" aria-pressed="true">All</button>
+    {% for g in groups %}<button class="chip" type="button" data-group-chip="{{ g }}" aria-pressed="false">{{ g }}</button>{% endfor %}
+  </div>{% endif %}
+  <div class="filter-selects">
+    <label>Color <select data-color><option value="">Any</option>{% for c in colors %}<option>{{ c }}</option>{% endfor %}</select></label>
+    <label>Material <select data-material><option value="">Any</option>{% for m in materials %}<option>{{ m }}</option>{% endfor %}</select></label>
+    <span class="count" data-count>{{ list.length }} pieces</span>
+  </div>
+</div>
+<div class="product-grid" data-furniture-grid>
+  {% for f in list %}{% include "furniture-card.njk" %}{% endfor %}
+</div>
+<p class="empty-note" data-empty hidden>Nothing matches those filters. Try another color or material.</p>

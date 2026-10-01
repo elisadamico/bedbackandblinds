@@ -33,6 +33,20 @@ export default function (eleventyConfig) {
     products.filter((p) => p.brand === product.brand && p.slug !== product.slug && (p.section !== "bedding" || p.collection === product.collection)).slice(0, n));
   eleventyConfig.addFilter("containsUrl", (items, url) => items.some((i) => i.url === url));
   eleventyConfig.addFilter("urlencode", (s) => encodeURIComponent(s));
+  // Furniture (Coaster catalog, see scripts/import-coaster.py)
+  eleventyConfig.addFilter("furnitureIn", (items, room, cat) => items.filter((i) => i.room === room && (!cat || i.cat === cat)));
+  eleventyConfig.addFilter("furnitureRoom", (rooms, slug) => rooms.find((r) => r.slug === slug));
+  eleventyConfig.addFilter("furnitureNew", (items, n) => {
+    const seen = new Set();
+    // The newest pieces, one per category so the row has some variety.
+    return items.filter((i) => i.new && !seen.has(i.cat) && seen.add(i.cat)).slice(0, n);
+  });
+  eleventyConfig.addFilter("furnitureRelated", (items, f, n = 4) => {
+    const same = items.filter((i) => i.slug !== f.slug && f.collection && i.collection === f.collection);
+    const pool = same.length ? same : items.filter((i) => i.slug !== f.slug && i.cat === f.cat && i.room === f.room);
+    return pool.slice(0, n);
+  });
+  eleventyConfig.addFilter("uniqueValues", (items, key) => [...new Set(items.flatMap((i) => [].concat(i[key] ?? [])))].filter(Boolean).sort());
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
 
   // Links that leave the site open in a new tab.

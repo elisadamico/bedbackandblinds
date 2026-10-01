@@ -1,0 +1,35 @@
+---
+layout: base.njk
+pagination:
+  data: furniture.rooms
+  size: 1
+  alias: room
+permalink: "/furniture/{{ room.slug }}/"
+eleventyComputed:
+  title: "{{ room.title }} Furniture"
+  description: "Coaster {{ room.title | lower }} furniture at Bed Back & Blinds in Dubuque, Iowa. {{ room.blurb }}"
+---
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/furniture/">Furniture</a> › {{ room.title }}</nav>
+    <div class="section-head"><h1>{{ room.title }}</h1><p>{{ room.blurb }} Every piece is from Coaster Fine Furniture, and we can order anything you see here.</p></div>
+    {% if room.single %}
+      {% set list = furniture.items | furnitureIn(room.slug) %}{% set groupBy = "cat_title" %}{% set groupLabel = "type" %}
+      {% include "furniture-grid.njk" %}
+    {% else %}
+      <div class="room-cards">
+        {% for c in room.cats %}<a class="room-card" href="/furniture/{{ room.slug }}/{{ c.slug }}/"><img src="{{ c.image }}" alt="" loading="lazy"><span class="room-name">{{ c.title }}</span><span class="more">{{ c.count }} pieces</span></a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+{% if not room.single %}{% set fresh = furniture.items | furnitureIn(room.slug) | furnitureNew(4) %}{% if fresh.length %}
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>New in {{ room.title }}</h2></div>
+    <div class="product-grid">{% for f in fresh %}{% include "furniture-card.njk" %}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}{% endif %}
+{% include "furniture-order-note.njk" %}

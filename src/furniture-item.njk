@@ -1,0 +1,63 @@
+---
+layout: base.njk
+pagination:
+  data: furniture.items
+  size: 1
+  alias: f
+permalink: "/furniture/item/{{ f.slug }}/"
+eleventyComputed:
+  title: "Coaster {{ f.name }}"
+  description: "{{ f.full_name }} from Coaster Fine Furniture, at Bed Back & Blinds in Dubuque, Iowa. Call or stop by for pricing."
+  og_image: "{{ f.image }}"
+---
+{% set room = furniture.rooms | furnitureRoom(f.room) %}
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/furniture/">Furniture</a> › <a href="/furniture/{{ f.room }}/">{{ f.room_title }}</a>{% if not room.single %} › <a href="/furniture/{{ f.room }}/{{ f.cat }}/">{{ f.cat_title }}</a>{% endif %} › {{ f.name }}</nav>
+    <div class="product-layout">
+      <div><div class="photo-main"><img src="{{ f.image }}" alt="Coaster {{ f.full_name }}"></div></div>
+      <div class="product-info">
+        <p class="product-brand">Coaster{% if f.collection %} · {{ f.collection }} collection{% endif %}</p>
+        <h1>{{ f.name }}</h1>
+        <p class="full-name">{{ f.full_name }}</p>
+        <div class="tags">
+          <span class="tag">{{ f.type }}</span>
+          {% if f.material %}<span class="tag">{{ f.material }}</span>{% endif %}
+          {% if f.color %}<span class="tag">{{ f.color }}</span>{% elif f.color_family.length %}<span class="tag">{{ f.color_family | join(" / ") }}</span>{% endif %}
+          {% if f.new %}<span class="tag">New arrival</span>{% endif %}
+        </div>
+        <div class="buy-box">
+          <p class="price-note">Call or stop by for pricing. If this piece isn't on our showroom floor, we can order it for you.</p>
+          <div class="btn-row">
+            <a class="btn" href="/contact/?about={{ ('Coaster ' + f.name + ' (' + f.sku + ')') | urlencode }}#form">Ask about this piece</a>
+            <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>
+          </div>
+          <p class="sku">Coaster item {{ f.sku }}</p>
+        </div>
+        {% if f.description %}<p>{{ f.description }}</p>{% endif %}
+        {% if f.pieces.length %}
+        <h2 class="spec-head">Dimensions</h2>
+        <table class="spec-table"><tbody>{% for x in f.pieces %}<tr><th scope="row">{{ x.name }}</th><td>{{ x.dims }}</td></tr>{% endfor %}</tbody></table>
+        {% elif f.dimensions %}<h2 class="spec-head">Dimensions</h2><p>{{ f.dimensions }}</p>{% endif %}
+        {% if f.variants.length %}
+        <h2 class="spec-head">Also available</h2>
+        <ul class="variants">{% for v in f.variants %}<li>{{ v }}</li>{% endfor %}</ul>
+        {% endif %}
+        {% if f.features.length %}
+        <h2 class="spec-head">Features</h2>
+        <ul class="features-list">{% for x in f.features %}<li>{{ x }}</li>{% endfor %}</ul>
+        {% endif %}
+        <p class="source-link"><a href="{{ f.coaster_url }}">See this piece on coasterfurniture.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+{% set more = furniture.items | furnitureRelated(f) %}
+{% if more.length %}
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>{% if f.collection and (more[0].collection == f.collection) %}More from the {{ f.collection }} collection{% else %}More {{ f.cat_title | lower }}{% endif %}</h2></div>
+    <div class="product-grid">{% for f in more %}{% include "furniture-card.njk" %}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}

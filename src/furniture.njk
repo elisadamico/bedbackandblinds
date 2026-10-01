@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: Furniture
+description: Coaster Fine Furniture at Bed Back & Blinds in Dubuque, Iowa. Browse living room, bedroom, dining, home office, and accent furniture.
+---
+<section class="section">
+  <div class="container">
+    <img class="brand-logo" src="/assets/img/brands/coaster-logo-new1-1.jpg" alt="Coaster Fine Furniture">
+    <div class="section-head"><h1>Furniture</h1><p>We carry Coaster Fine Furniture for every room in the house. Browse the full Coaster line below, then come see what's on our showroom floor. We can order any piece you see here.</p></div>
+    <div class="room-cards">
+      {% for room in furniture.rooms %}<a class="room-card" href="/furniture/{{ room.slug }}/"><img src="{{ room.image }}" alt="" loading="lazy"><span class="room-name">{{ room.title }}</span><span class="room-blurb">{{ room.blurb }}</span><span class="more">{{ room.count }} pieces</span></a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% set fresh = furniture.items | furnitureNew(8) %}
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>New from Coaster</h2><p>A few of the newest pieces in the Coaster line</p></div>
+    <div class="product-grid">{% for f in fresh %}{% include "furniture-card.njk" %}{% endfor %}</div>
+  </div>
+</section>
+{% include "furniture-order-note.njk" %}
+{% include "contact.njk" %}

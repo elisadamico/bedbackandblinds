@@ -18,3 +18,7 @@ Website for Bed Back & Blinds, Dubuque, Iowa. Built with [Eleventy](https://www.
 npm install     # first time only
 npm start       # then open http://localhost:8080
 ```
+
+## Furniture (Coaster)
+
+The Furniture section is built from Coaster's online catalog, collected into `~/Developer/bedbackandblinds-work/brands/coaster/`. To refresh it after a new collection, run `python3 scripts/import-coaster.py` from this folder. That rewrites `src/_data/furniture.json` and adds any new images to `src/assets/img/furniture/`. The rooms and categories are set at the top of that script. Coaster publishes no prices, so the pages ask people to call or send a question instead.
