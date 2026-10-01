@@ -2,6 +2,7 @@
 # To add one, copy a block and put it at the top. Keep each review word for word.
 - name: Jeni B.
   date: 2026
+  mattress: true
   text: "Cannot say enough great things about this business! We purchased our adjustable bed from Jim years ago and when something came up recently, Jim went above and beyond to get this resolved. Amazing customer service and really just a great guy. We've always said our adjustable bed was the best purchase we ever made and when the time comes to make another purchase, we will definitely go to Bed Back & Blinds."
 - name: Mark C.
   date: 2025
@@ -24,3 +25,21 @@
 - name: Ann B.
   date: 2017
   text: "We received stellar service from the Dubuque, Iowa store. Donna was knowledgeable and thorough. We appreciated the assistance from purchase to install. They stand by their products. Highly recommend."
+
+# Mattress reviews shown on the Sealy and Tempur-Pedic pages (mattress: true).
+- name: Timothy K.
+  date: 2024
+  mattress: true
+  text: "Thanks for helping me pick the right mattress for me."
+- name: Kymberly F.
+  date: 2019
+  mattress: true
+  text: "This is a nice family-owned small business. The guy is from Chicago- super friendly, very knowledgeable and helped us pick out just what we needed. We are going back this year to see about getting window treatments from his wife."
+- name: Mark W.
+  date: 2018
+  mattress: true
+  text: "Great place to buy a bed or blinds or both. Very helpful staff."
+- name: Chris P.
+  date: 2017
+  mattress: true
+  text: "The owners provide great service and prices to work with your budget. They are very knowledgeable about their products. They are a local business and not a big box mattress store. I believe in supporting local businesses in the community."

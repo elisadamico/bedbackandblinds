@@ -26,7 +26,6 @@ featured: [sealy-golden-elegance-stately, tempur-adapt-medium, tempur-proadapt-m
       <a href="/graber-blinds/"><img src="/assets/img/brands/graber.jpg" alt="Graber" loading="lazy"></a>
       <a href="/hunter-douglas/"><img src="/assets/img/brands/logo-hunter-douglas.jpg" alt="Hunter Douglas" loading="lazy"></a>
       <a href="/alta-window-fashions/"><img src="/assets/img/brands/alta.png" alt="Alta Window Fashions" loading="lazy"></a>
-      <a href="/norman-shutters/"><img src="/assets/img/brands/norman-shutters.jpg" alt="Norman Shutters" loading="lazy"></a>
       <a href="/carole-fabrics/"><img src="/assets/img/brands/carole.png" alt="Carole Fabrics" loading="lazy"></a>
       <a href="/mattresses/"><img src="/assets/img/brands/malouf.png" alt="Malouf" loading="lazy" style="max-height:34px"></a>
       <a href="/furniture/"><img src="/assets/img/brands/coaster.png" alt="Coaster Fine Furniture" loading="lazy"></a>
@@ -88,10 +87,6 @@ featured: [sealy-golden-elegance-stately, tempur-adapt-medium, tempur-proadapt-m
       <div><h3>Hunter Douglas</h3><p>We carry Hunter Douglas window fashions, including Silhouette®, Luminette®, Pirouette®, and Vignette® shadings and Architella® energy efficient honeycomb shades. Our decorator will help you choose the right style and light control for every room.</p><a href="/hunter-douglas/">Explore Hunter Douglas</a></div>
     </div>
     <div class="split highlight">
-      <div class="highlight-img"><img src="/assets/img/site/1200-x-900-insert-plantation-woodlore1-1024x768.jpg" alt="Kitchen with white Norman plantation shutters" loading="lazy"></div>
-      <div><h3>Norman Shutters</h3><p>With over 40 years of excellence in crafting fine window furnishings, Norman®'s quality has made it famous. It's what drives Norman® to innovate. And why you can see it in every detail. Few companies will farm their own wood, make their own components, or weave their own cords. At Norman®, everything matters. And anything's possible.</p><a href="/norman-shutters/">Explore Norman Shutters</a></div>
-    </div>
-    <div class="split highlight">
       <div class="highlight-img"><img src="/assets/img/site/sealy-mattress-twin-sealy-posturepedic-memory-foam-medium-12-36644699504815.jpg" alt="Bedroom with a Sealy mattress" loading="lazy"></div>
       <div><h3>Sealy Mattresses</h3><p>When you sleep on a Sealy®, you can be confident that it’s built to last. All our mattresses are engineered to exceed industry testing standards to ensure they’ll stand the test of time. It’s next-level support and all-over comfort, backed by quality you can trust.</p><a href="/sealy/">Shop Sealy</a></div>
     </div>
@@ -114,12 +109,12 @@ featured: [sealy-golden-elegance-stately, tempur-adapt-medium, tempur-proadapt-m
   <div class="container">
     <div class="section-head"><h2>What Our Customers Say</h2><p><span class="stars" aria-label="5 out of 5 stars">★★★★★</span> Five-star reviews on Google</p></div>
     <div class="testimonials">
-      {% for r in reviews %}<figure class="testimonial">
+      {% for r in reviews %}{% if not r.mattress or r.name == 'Jeni B.' %}<figure class="testimonial">
         <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
         <blockquote>{{ r.text }}</blockquote>
         <figcaption>{{ r.name }} <span class="review-date">· Google review, {{ r.date }}</span></figcaption>
       </figure>
-      {% endfor %}
+      {% endif %}{% endfor %}
     </div>
     <p class="center" style="margin-top:1.75rem"><a class="btn btn-outline" href="{{ site.map }}">Read all our reviews on Google</a></p>
   </div>

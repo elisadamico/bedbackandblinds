@@ -1,0 +1,14 @@
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head"><h2>What Our Customers Say</h2><p><span class="stars" aria-label="5 out of 5 stars">★★★★★</span> Five-star reviews of Bed Back &amp; Blinds on Google</p></div>
+    <div class="testimonials">
+      {% for r in reviews %}{% if r.mattress %}<figure class="testimonial">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>{{ r.text }}</blockquote>
+        <figcaption>{{ r.name }} <span class="review-date">· Google review, {{ r.date }}</span></figcaption>
+      </figure>
+      {% endif %}{% endfor %}
+    </div>
+    <p class="center" style="margin-top:1.75rem"><a class="btn btn-outline" href="{{ site.map }}">Read all our reviews on Google</a></p>
+  </div>
+</section>
