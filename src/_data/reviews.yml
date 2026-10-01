@@ -1,0 +1,26 @@
+# Customer reviews from Google, shown on the home page.
+# To add one, copy a block and put it at the top. Keep each review word for word.
+- name: Jeni B.
+  date: 2026
+  text: "Cannot say enough great things about this business! We purchased our adjustable bed from Jim years ago and when something came up recently, Jim went above and beyond to get this resolved. Amazing customer service and really just a great guy. We've always said our adjustable bed was the best purchase we ever made and when the time comes to make another purchase, we will definitely go to Bed Back & Blinds."
+- name: Mark C.
+  date: 2025
+  text: "We have bought patio door blinds, and picture window blinds from here. Fantastic service. They come measure, see what you want, show you your options and pricing, and do it quickly and extremely professional. They tell you when they will be in, then when they show up they work with you on installation time. They show up on time, and install with precision. They do everything the way they should and are sooo friendly. Wonderful experience, thank you."
+- name: Kyle B.
+  date: 2024
+  text: "Jim and Donna are the best in the business. They deal with everyone honestly and fairly and provide great products at great prices."
+- name: Chris P.
+  date: 2023
+  text: "I had tri light soft shades and a patio door treatment done by this business. The installation was perfect and I love the end result of light filtering shades that also provide privacy. I highly recommend this business for the quality of the product, the expert installation and wonderful service. I love doing business with them."
+- name: Peggy S.
+  date: 2023
+  text: "The owners gave me personalized attention. Coming to my home to make the best selections and later for installation. They also helped me to get a $1200 tax credit on my purchase."
+- name: Colleen H.
+  date: 2023
+  text: "Donna was VERY helpful when we were trying to decide what we wanted for window treatments in our remodeled bedroom. She helped us choose the perfect compliment to our decor. By showing us the difference between light filtering and light blocking, we were able to choose what worked for us! I can't wait for them to be installed!"
+- name: Monty A.
+  date: 2020
+  text: "Jim & Donna are the most down to earth small business owners you'll ever meet! I don't care where you live, I would drive to their store even if it was a 3 hour drive. High quality products, most affordable pricing & customer service is A+++. Rare find in today's society! I'll come back again & again!"
+- name: Ann B.
+  date: 2017
+  text: "We received stellar service from the Dubuque, Iowa store. Donna was knowledgeable and thorough. We appreciated the assistance from purchase to install. They stand by their products. Highly recommend."

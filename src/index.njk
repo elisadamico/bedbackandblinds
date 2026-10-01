@@ -107,21 +107,16 @@ featured: [sealy-golden-elegance-stately, tempur-adapt-medium, tempur-proadapt-m
 
 <section class="section">
   <div class="container">
-    <div class="section-head"><h2>Testimonials</h2><p>See what people are saying</p></div>
+    <div class="section-head"><h2>What Our Customers Say</h2><p><span class="stars" aria-label="5 out of 5 stars">★★★★★</span> Five-star reviews on Google</p></div>
     <div class="testimonials">
-      <figure class="testimonial">
-        <blockquote>Donna was VERY helpful when we were trying to decide what we wanted for window treatments in our remodeled bedroom. She helped us choose the perfect compliment to our decor. By showing us the difference between light filtering and light blocking, we were able to choose what worked for us! I can't wait for them to be installed!</blockquote>
-        <figcaption><img src="/assets/img/brands/c.png" alt="" loading="lazy">Colleen Heath</figcaption>
+      {% for r in reviews %}<figure class="testimonial">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>{{ r.text }}</blockquote>
+        <figcaption>{{ r.name }} <span class="review-date">· Google review, {{ r.date }}</span></figcaption>
       </figure>
-      <figure class="testimonial">
-        <blockquote>We received stellar service from the Dubuque, Iowa store. Donna was knowledgeable and thorough. We appreciated the assistance from purchase to install. They stand by their products. Highly recommend.</blockquote>
-        <figcaption><img src="/assets/img/brands/a.png" alt="" loading="lazy">Ann Bodnar-Donovan</figcaption>
-      </figure>
-      <figure class="testimonial">
-        <blockquote>Jim and Donna are great people who really care about making sure you get a great nights rest. I got a great deal on a Serta iComfort Matress with a adjustable base and we have been sleeping wonderfully since, no more restless nights. The delivery staff were super friendly and careful. They were on time, made sure we understood how to use it, and took away our old bed, no problem. When it's time for a new bed, we will be back to buy from Bed Back &amp; Blinds with Jim. Locally owned with great service!</blockquote>
-        <figcaption><img src="/assets/img/brands/unnamed.png" alt="" loading="lazy">R. Anglin</figcaption>
-      </figure>
+      {% endfor %}
     </div>
+    <p class="center" style="margin-top:1.75rem"><a class="btn btn-outline" href="{{ site.map }}">Read all our reviews on Google</a></p>
   </div>
 </section>
 
