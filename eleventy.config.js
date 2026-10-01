@@ -47,6 +47,10 @@ export default function (eleventyConfig) {
     return pool.slice(0, n);
   });
   eleventyConfig.addFilter("uniqueValues", (items, key) => [...new Set(items.flatMap((i) => [].concat(i[key] ?? [])))].filter(Boolean).sort());
+  // Window treatment lines that can be motorized, leaving out the brand's motorization system itself.
+  eleventyConfig.addFilter("motorLines", (groups, system) =>
+    groups.flatMap((g) => g.lines).filter((l) => l.name !== system && /motor|powerview|bliss|somfy|automat/i.test([l.summary, ...(l.features || [])].join(" "))));
+  eleventyConfig.addFilter("findLine", (groups, name) => groups.flatMap((g) => g.lines).find((l) => l.name === name));
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
 
   // Links that leave the site open in a new tab.

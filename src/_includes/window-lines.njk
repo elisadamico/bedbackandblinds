@@ -7,7 +7,7 @@
 <h3 id="{{ g.title | slugify }}" class="line-group">{{ g.title }}</h3>
 <div class="line-grid">
 {% for l in g.lines %}
-<article class="line-card">
+<article class="line-card" id="{{ l.name | slugify }}">
 {% if l.images.length %}<img src="{{ l.images[0] }}" alt="{{ l.name }} in a room" loading="lazy">{% endif %}
 <div class="line-body">
 <h4>{{ l.name }}</h4>

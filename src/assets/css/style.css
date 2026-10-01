@@ -281,6 +281,10 @@ p { margin: 0 0 1em; }
 .guide-cover { display: inline-block; max-width: 300px; width: 100%; border-radius: 4px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18); }
 .chip-list { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
 .chip-list .chip { text-decoration: none; }
+.chip-list.left { justify-content: flex-start; }
+.motor-styles { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; }
+.center-row { justify-content: center; }
+.brand-card span { font-size: 0.92rem; color: var(--muted); }
 .brand-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; }
 .brand-card { border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem; text-align: center; text-decoration: none; color: var(--ink); background: #fff; transition: box-shadow 0.15s ease; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
 .brand-card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); color: var(--ink); }
