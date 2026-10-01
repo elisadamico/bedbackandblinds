@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: Malouf Pillows, Sheets & Protectors
+description: Malouf pillows, sheets, and mattress protectors at Bed Back & Blinds in Dubuque, Iowa.
+---
+<section class="section">
+  <div class="container">
+    <img class="brand-logo" src="/assets/img/brands/malouf.png" alt="Malouf" width="340">
+    <div class="section-head"><h1>Malouf Pillows, Sheets &amp; Protectors</h1><p>Finish your new bed with Malouf pillows, sheets, and mattress protectors. Stop by the showroom and we'll help you find the right pillow for the way you sleep.</p></div>
+    {% set mal = products | byBrand("Malouf") %}
+    {% if mal.length %}
+    <div class="product-grid">{% for p in mal %}{% include "product-card.njk" %}{% endfor %}</div>
+    {% else %}
+    <p class="center"><a class="btn" href="/contact/?about=Malouf%20pillows%20and%20bedding#form">Ask about Malouf bedding</a></p>
+    {% endif %}
+  </div>
+</section>
+{% include "mattress-reviews.njk" %}
