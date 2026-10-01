@@ -21,3 +21,11 @@ Queen prices on tempurpedic.com. Prices on the site were updated to match for mo
 - TEMPUR-ActiveBreeze Smart Bed ($10,598)
 - Ease Power Base ($999)
 - Previous Generation Adapt closeouts at 30% off (Adapt Medium $1,539.30, ProAdapt from $2,379.30, LuxeAdapt $2,939.30)
+
+## Update (same day)
+At Elisa's request the site now lists all 21 current models from tempurpedic.com
+(Adapt, ProAdapt, LuxeAdapt, ProBreeze, LuxeBreeze, Cloud, ActiveBreeze, Ease, Ergo,
+Ergo Smart, Ergo ProSmart, TEMPUR-Flat Foundation). The Ergo Extend Smart Base was removed.
+Not added: the previous-generation Adapt closeouts (an online-only, all-sales-final
+promotion that tempurpedic.com says ends soon) and the TEMPUR-Cloud Medium Hybrid
+(sold as a $200 upgrade to the Cloud, $2,199 Queen).
