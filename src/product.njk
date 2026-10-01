@@ -32,7 +32,7 @@ eleventyComputed:
         </div>
         {% set kinds = {"mattress": "mattress", "base": "base", "foundation": "foundation", "pillow": "pillow", "sheets": "sheet set", "protector": "protector"} %}{% set kind = kinds[product.type] %}
         <div class="buy-box">
-          {% if sale.show and product.section != "bedding" %}<p class="sale-line"><span class="sale-tag inline">{{ sale.ribbon }}</span> {{ sale.ends }}. Ask us about current savings.</p>{% endif %}
+          {% if sale.show and product.section != "bedding" %}<p class="sale-line"><span class="sale-tag inline" data-sale-ribbon>{{ sale.ribbon }}</span> <span data-sale-ends>{{ sale.ends }}</span>. Ask us about current savings.</p>{% endif %}
           <p class="big-price">{% if product.price_from %}<span>From</span> {% endif %}{{ product.price | money }} <span>{{ product.price_label }}</span></p>
           <p class="price-note">{% if product.section == "bedding" %}Other sizes are available. Call or stop by for pricing.{% else %}Other sizes are available. Call or stop by for pricing, current sales, and 0% APR financing.{% endif %}</p>
           <div class="btn-row">

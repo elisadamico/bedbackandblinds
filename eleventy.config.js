@@ -1,8 +1,23 @@
+import { readFileSync } from "node:fs";
 import { load as loadYaml } from "js-yaml";
+
+// The same date schedule the browser uses to pick the live sale ad.
+const adSchedule = {};
+new Function("window", readFileSync("src/assets/js/ad-schedule.js", "utf8"))(adSchedule);
+const AD_OFFERS = "Save up to $500 on select adjustable mattress sets, buy more and save more on blinds, shades, shutters, and drapery, and get free delivery or a bed frame, free in-home setup, and free removal. For a free in-home window treatment consultation, call Donna at 563-213-1141.";
 
 export default function (eleventyConfig) {
   // Data files can be written as YAML (src/_data/*.yml), which is easier to edit by hand.
   eleventyConfig.addDataExtension("yml", (contents) => loadYaml(contents));
+
+  // The sale ad that is live on the day the site is built. The browser checks
+  // the date again (src/assets/js/site.js), so the ad changes on schedule anyway.
+  eleventyConfig.addGlobalData("sale", () => {
+    const { show, ads } = JSON.parse(readFileSync("src/_data/ads.json", "utf8"));
+    for (const ad of Object.values(ads)) ad.alt = `${ad.ribbon} at Bed Back & Blinds. ${AD_OFFERS}`;
+    const now = adSchedule.BBBAdSchedule.current(new Date());
+    return { show, ads, ...ads[now.id], ends: now.ends };
+  });
 
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({ "src/favicon.png": "favicon.png" });

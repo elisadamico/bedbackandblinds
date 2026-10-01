@@ -1,8 +1,14 @@
 {
   "show": true,
-  "image": "/assets/img/site/fall-savings-event.jpg",
-  "alt": "Fall Savings Event at Bed Back & Blinds, sale ends November 23. Up to 12 months 0% APR. Sealy: save up to $500 on select adjustable mattress sets. Save 30% on blinds, shades, shutters and drapery with 0% APR financing and a free in-home consultation. Tempur-Breeze collection. Free delivery or bed frame, free in-home set up, and free removal.",
-  "note": "To change the sale, put the new banner image in src/assets/img/site/ and update image, alt, ribbon, and ends here. Set show to false to hide the banner and the sale tags on products.",
-  "ribbon": "Fall Savings Event",
-  "ends": "Sale ends November 23"
+  "note": "One ad is live at a time and they switch automatically by date (the dates are worked out in src/assets/js/ad-schedule.js). To replace an ad, save the new image over the file in src/assets/img/ads/ with the same name. Set show to false to hide the banner and the sale tags on products.",
+  "ads": {
+    "presidents": { "image": "/assets/img/ads/presidents-day-sale.jpg", "ribbon": "Presidents' Day Sale" },
+    "spring": { "image": "/assets/img/ads/spring-savings-event.jpg", "ribbon": "Spring Savings Event" },
+    "memorial": { "image": "/assets/img/ads/memorial-day-sale.jpg", "ribbon": "Memorial Day Sale" },
+    "july4": { "image": "/assets/img/ads/fourth-of-july-sale.jpg", "ribbon": "4th of July Sale" },
+    "labor": { "image": "/assets/img/ads/labor-day-sale.jpg", "ribbon": "Labor Day Sale" },
+    "fall": { "image": "/assets/img/ads/fall-savings-event.jpg", "ribbon": "Fall Savings Event" },
+    "blackfriday": { "image": "/assets/img/ads/black-friday-sale.jpg", "ribbon": "Black Friday Sale" },
+    "holiday": { "image": "/assets/img/ads/holiday-savings-event.jpg", "ribbon": "Holiday Savings Event" }
+  }
 }

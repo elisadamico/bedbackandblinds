@@ -61,6 +61,17 @@
     });
   });
 
+  // --- Sale ad: show the one scheduled for today, even if the site was built earlier ---
+  var adData = document.getElementById("ad-data");
+  var live = adData && window.BBBAdSchedule && window.BBBAdSchedule.current(new Date());
+  var ad = live && JSON.parse(adData.textContent)[live.id];
+  if (ad) {
+    var adImg = document.querySelector("[data-sale-img]");
+    if (adImg && adImg.getAttribute("src") !== ad.image) { adImg.src = ad.image; adImg.alt = ad.alt; }
+    document.querySelectorAll("[data-sale-ribbon]").forEach(function (el) { el.textContent = ad.ribbon; });
+    document.querySelectorAll("[data-sale-ends]").forEach(function (el) { el.textContent = live.ends; });
+  }
+
   // --- Contact form: fill in the product someone asked about ---
   var about = new URLSearchParams(location.search).get("about");
   var msg = document.querySelector("[data-message]");

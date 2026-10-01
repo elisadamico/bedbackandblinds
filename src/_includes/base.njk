@@ -30,6 +30,8 @@
     {{ content | safe }}
   </main>
   {% include "footer.njk" %}
+  {% if sale.show %}<script type="application/json" id="ad-data">{{ sale.ads | dump | safe }}</script>
+  <script src="/assets/js/ad-schedule.js" defer></script>{% endif %}
   <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
