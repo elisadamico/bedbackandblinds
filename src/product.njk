@@ -34,7 +34,7 @@ eleventyComputed:
         <div class="buy-box">
           {% if sale.show and product.section != "bedding" %}<p class="sale-line"><span class="sale-tag inline" data-sale-ribbon>{{ sale.ribbon }}</span> <span data-sale-ends>{{ sale.ends }}</span>. Ask us about current savings.</p>{% endif %}
           <p class="big-price">{% if product.price_from %}<span>From</span> {% endif %}{{ product.price | money }} <span>{{ product.price_label }}</span></p>
-          <p class="price-note">{% if product.section == "bedding" %}Other sizes are available. Call or stop by for pricing.{% else %}Other sizes are available. Call or stop by for pricing, current sales, and financing.{% endif %}</p>
+          <p class="price-note">{% if product.section == "bedding" %}Other sizes are available. Call or stop by for pricing.{% else %}Other sizes are available. Call or stop by for pricing and current sales.{% endif %}</p>
           <div class="btn-row">
             <a class="btn" href="/contact/?about={{ (product.brand + ' ' + product.name) | urlencode }}#form">Ask about this {{ kind }}</a>
             <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>
@@ -43,7 +43,6 @@ eleventyComputed:
           <ul class="perks">
             <li>Try it in our Dubuque showroom</li>
             <li>Free delivery or bed frame, free in-home set up, and free removal of your old mattress (ask for details)</li>
-            <li>Financing available</li>
           </ul>{% endif %}
         </div>
         {% if product.features.length %}

@@ -94,10 +94,10 @@
     - "StableEdge™ Pro System: A reinforced edge system that increases the usable sleeping area and provides a solid edge for sitting."
 
 - slug: sealy-remington-soft-hybrid
-  name: "Remington Soft Hybrid"
+  name: "Remmington Soft Hybrid"
   brand: "Sealy®"
   brand_page: /sealy/
-  collection: "Remington"
+  collection: "Golden Elegance"
   type: mattress
   feel: Soft
   price: 999
@@ -111,10 +111,10 @@
     - "The Remington Collection from Sealy includes a revolutionary line of mattresses designed with cutting-edge features that prioritize your comfort and well-being. With a range of soft to ultra firm, it’s easy to find the feel that’s right for you. Each mattress includes moisture protect technology to help regulate your body temperature throughout the night. The Duraflex Edge replaces the traditional foam rail with a double row of edge coils that provide superior durability, while also enhancing the compatibility with adjustable bases by 25%! The Sealy Stability Plus Coil is an advanced version of the standard coils you’d find in other Sealy mattresses. Standard coil is 660 while the Stability Plus is 911 coils for increased support and more personalized comfort. The thoughtful construction of these mattress help you discover a world of luxurious rest- it’s time to invest in the future of your sleep"
 
 - slug: sealy-remington-euro-pillow-top
-  name: "Remington Euro Pillow Top"
+  name: "Remmington Euro Pillow Top"
   brand: "Sealy®"
   brand_page: /sealy/
-  collection: "Remington"
+  collection: "Golden Elegance"
   type: mattress
   feel: Soft
   price: 1199
@@ -134,6 +134,540 @@
     - "Stretch-Knit Cover with MoistureProtect and Surface-Guard Technology"
     - "SealySupport Gel Foam"
     - "15\" Height"
+
+- slug: sealy-posturepedic-spring-medium-tight-top
+  name: "Posturepedic Spring Medium (Tight Top)"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Spring"
+  type: mattress
+  feel: "Medium"
+  price: 799
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-spring-medium-tight-top-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-spring-medium-tight-top-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-spring-medium-tight-top-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-spring-medium-tight-top-4.jpg
+  features:
+    - "13\" profile"
+    - "Encased PrecisionFit coils with reinforced center-third support"
+    - "SealyComfort gel foam and SealySupport gel foam layers"
+    - "MoistureProtect cover with Surface-Guard Technology"
+    - "Coil edge for a solid seating surface"
+
+- slug: sealy-icon-firm
+  name: "Icon Firm"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Sealy Icon"
+  type: mattress
+  feel: "Firm"
+  price: 960
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-icon-firm-1.jpg
+    - /assets/img/products/sealy/sealy-icon-firm-2.jpg
+    - /assets/img/products/sealy/sealy-icon-firm-3.jpg
+    - /assets/img/products/sealy/sealy-icon-firm-4.jpg
+  features:
+    - "SealyStability coils with center-third support"
+    - "SealyComfort Air Foam, SealyComfort Gel Foam, and SealySupport Gel Foam layers"
+    - "MoistureProtect cover with Surface-Guard Technology"
+    - "Coil edge for a solid seating surface"
+
+- slug: sealy-icon-pillow-top-soft
+  name: "Icon Pillow Top Soft"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Sealy Icon"
+  type: mattress
+  feel: "Soft (Pillow Top)"
+  price: 1150
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-icon-pillow-top-soft-1.jpg
+    - /assets/img/products/sealy/sealy-icon-pillow-top-soft-2.jpg
+    - /assets/img/products/sealy/sealy-icon-pillow-top-soft-3.jpg
+  features:
+    - "Pillow top"
+    - "SealyStability coils with center-third support"
+    - "SealyComfort Air Foam, SealyComfort Gel Foam, and SealySupport Gel Foam layers"
+    - "MoistureProtect cover with Surface-Guard Technology"
+    - "Coil edge for a solid seating surface"
+
+- slug: sealy-icon-soft
+  name: "Icon Soft"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Sealy Icon"
+  type: mattress
+  feel: "Soft"
+  price: 960
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-icon-soft-1.jpg
+    - /assets/img/products/sealy/sealy-icon-soft-2.jpg
+    - /assets/img/products/sealy/sealy-icon-soft-3.jpg
+    - /assets/img/products/sealy/sealy-icon-soft-4.jpg
+  features:
+    - "SealyStability coils with center-third support"
+    - "SealyComfort Air Foam, SealyComfort Gel Foam, and SealySupport Gel Foam layers"
+    - "MoistureProtect cover with Surface-Guard Technology"
+    - "Coil edge for a solid seating surface"
+
+- slug: sealy-posturepedic-hybrid-firm
+  name: "Posturepedic Hybrid Firm"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Hybrid"
+  type: mattress
+  feel: "Firm"
+  price: 999
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-hybrid-firm-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-hybrid-firm-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-hybrid-firm-3.jpg
+  features:
+    - "12\" profile"
+    - "ComfortSense gel memory foam (about twice the conforming foam of Posturepedic Spring)"
+    - "PrecisionFit coils for targeted support"
+    - "MoistureProtect cover with Surface-Guard Technology"
+    - "Coil edge for a solid seating surface"
+
+- slug: sealy-posturepedic-hybrid-medium
+  name: "Posturepedic Hybrid Medium"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Hybrid"
+  type: mattress
+  feel: "Medium"
+  price: 999
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-hybrid-medium-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-hybrid-medium-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-hybrid-medium-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-hybrid-medium-4.jpg
+  features:
+    - "12\" profile"
+    - "ComfortSense gel memory foam (about twice the conforming foam of Posturepedic Spring)"
+    - "PrecisionFit coils for targeted support"
+    - "MoistureProtect cover with Surface-Guard Technology"
+    - "Coil edge for a solid seating surface"
+
+- slug: sealy-posturepedic-elite-hybrid-brenham-ii-firm
+  name: "Posturepedic Elite Hybrid Brenham II Firm"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Firm"
+  price: 2299
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-brenham-ii-firm-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-brenham-ii-firm-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-brenham-ii-firm-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-brenham-ii-firm-4.jpg
+  features:
+    - "2.5\" gel memory foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "ComfortSense gel memory foam"
+    - "SealyChill cool-to-the-touch cover"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-hybrid-high-point-ii-firm
+  name: "Posturepedic Elite Hybrid High Point II Firm"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Firm"
+  price: 2599
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-firm-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-firm-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-firm-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-firm-4.jpg
+  features:
+    - "up to 3.5\" gel memory foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "ComfortSense gel memory foam"
+    - "SealyChill advanced cooling cover plus cooling ComfortSense memory foam"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-hybrid-albany-ii-medium
+  name: "Posturepedic Elite Hybrid Albany II Medium"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Medium"
+  price: 1999
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-albany-ii-medium-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-albany-ii-medium-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-albany-ii-medium-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-albany-ii-medium-4.jpg
+  features:
+    - "2\" gel memory foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "ComfortSense gel memory foam"
+    - "SealyChill cool-to-the-touch cover"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-hybrid-high-point-ii-medium
+  name: "Posturepedic Elite Hybrid High Point II Medium"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Medium"
+  price: 2599
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-medium-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-medium-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-medium-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-medium-4.jpg
+  features:
+    - "up to 3.5\" gel memory foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "ComfortSense gel memory foam"
+    - "SealyChill advanced cooling cover plus cooling ComfortSense memory foam"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-hybrid-brenham-ii-soft
+  name: "Posturepedic Elite Hybrid Brenham II Soft"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Soft"
+  price: 2299
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-brenham-ii-soft-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-brenham-ii-soft-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-brenham-ii-soft-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-brenham-ii-soft-4.jpg
+  features:
+    - "2.5\" gel memory foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "ComfortSense gel memory foam"
+    - "SealyChill cool-to-the-touch cover"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-hybrid-high-point-ii-soft
+  name: "Posturepedic Elite Hybrid High Point II Soft"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Soft"
+  price: 2599
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-soft-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-soft-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-soft-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-hybrid-high-point-ii-soft-4.jpg
+  features:
+    - "up to 3.5\" gel memory foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "ComfortSense gel memory foam"
+    - "SealyChill advanced cooling cover plus cooling ComfortSense memory foam"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-spring-albany-ii-tight-top-firm
+  name: "Posturepedic Elite Spring Albany II Tight Top Firm"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Firm"
+  price: 1799
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-albany-ii-tight-top-firm-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-albany-ii-tight-top-firm-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-albany-ii-tight-top-firm-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-albany-ii-tight-top-firm-4.jpg
+  features:
+    - "up to 2.5\" gel foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "Gel foam comfort layers"
+    - "SealyChill cooling cover"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-spring-brenham-ii-tight-top-medium
+  name: "Posturepedic Elite Spring Brenham II Tight Top Medium"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Medium"
+  price: 2099
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-tight-top-medium-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-tight-top-medium-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-tight-top-medium-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-tight-top-medium-4.jpg
+  features:
+    - "up to 3\" gel foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "Gel foam comfort layers"
+    - "SealyChill cooling cover"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-spring-brenham-ii-pillow-top-firm
+  name: "Posturepedic Elite Spring Brenham II Pillow Top Firm"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Firm (Pillow Top)"
+  price: 2299
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-firm-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-firm-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-firm-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-firm-4.jpg
+  features:
+    - "up to 3\" gel foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "Gel foam comfort layers"
+    - "SealyChill cooling cover"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-spring-brenham-ii-pillow-top-medium
+  name: "Posturepedic Elite Spring Brenham II Pillow Top Medium"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Medium (Pillow Top)"
+  price: 2299
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-medium-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-medium-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-medium-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-medium-4.jpg
+  features:
+    - "up to 3\" gel foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "Gel foam comfort layers"
+    - "SealyChill cooling cover"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-spring-albany-ii-pillow-top-soft
+  name: "Posturepedic Elite Spring Albany II Pillow Top Soft"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Soft (Pillow Top)"
+  price: 1999
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-albany-ii-pillow-top-soft-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-albany-ii-pillow-top-soft-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-albany-ii-pillow-top-soft-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-albany-ii-pillow-top-soft-4.jpg
+  features:
+    - "up to 2.5\" gel foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "Gel foam comfort layers"
+    - "SealyChill cooling cover"
+    - "Coil edge support"
+
+- slug: sealy-posturepedic-elite-spring-brenham-ii-pillow-top-soft
+  name: "Posturepedic Elite Spring Brenham II Pillow Top Soft"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Posturepedic Elite"
+  type: mattress
+  feel: "Soft (Pillow Top)"
+  price: 2299
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-soft-1.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-soft-2.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-soft-3.jpg
+    - /assets/img/products/sealy/sealy-posturepedic-elite-spring-brenham-ii-pillow-top-soft-4.jpg
+  features:
+    - "up to 3\" gel foam layer"
+    - "PrecisionFit coils plus MaxSupport extra coils"
+    - "Gel foam comfort layers"
+    - "SealyChill cooling cover"
+    - "Coil edge support"
+
+- slug: cocoon-by-sealy-chill-hybrid
+  name: "Cocoon by Sealy Chill Hybrid"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Cocoon by Sealy"
+  type: mattress
+  feel: "Medium"
+  price: 1149
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-hybrid-1.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-hybrid-2.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-hybrid-3.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-hybrid-4.jpg
+  features:
+    - "12\" hybrid (memory foam over coils)"
+    - "Medium feel"
+    - "Over 900 individually encased coils"
+    - "Quantum Edge reinforced perimeter"
+    - "Cool-to-the-touch cover with phase change material"
+    - "100-night trial, 10-year warranty"
+
+- slug: cocoon-by-sealy-chill-memory-foam
+  name: "Cocoon by Sealy Chill Memory Foam"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Cocoon by Sealy"
+  type: mattress
+  feel: "Medium"
+  price: 919
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-memory-foam-1.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-memory-foam-2.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-memory-foam-3.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-memory-foam-4.jpg
+  features:
+    - "10\" all-foam mattress"
+    - "Medium feel"
+    - "Cool-to-the-touch cover with phase change material"
+    - "Perfect Fit memory foam over 8\" of support foam"
+    - "Ships compressed via UPS"
+    - "100-night trial, 10-year warranty"
+
+- slug: sealy-dreamlife-10-inch-foam-mattress
+  name: "Dreamlife 10-Inch Foam Mattress"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Dreamlife"
+  type: mattress
+  feel: "Medium"
+  price: 499
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-dreamlife-10-inch-foam-mattress-1.jpg
+    - /assets/img/products/sealy/sealy-dreamlife-10-inch-foam-mattress-2.jpg
+    - /assets/img/products/sealy/sealy-dreamlife-10-inch-foam-mattress-3.jpg
+  features:
+    - "10\" all-foam mattress, ships in a box"
+    - "Medium feel"
+    - "2\" SealyComfort gel memory foam over 8\" SealySupport foam"
+    - "Cool-to-the-touch knit cover with Surface-Guard Technology"
+
+- slug: sealy-dreamlife-8-inch-foam-mattress
+  name: "Dreamlife 8-Inch Foam Mattress"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Dreamlife"
+  type: mattress
+  feel: "Medium Firm"
+  price: 399
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-dreamlife-8-inch-foam-mattress-1.jpg
+    - /assets/img/products/sealy/sealy-dreamlife-8-inch-foam-mattress-2.jpg
+    - /assets/img/products/sealy/sealy-dreamlife-8-inch-foam-mattress-3.jpg
+  features:
+    - "8\" all-foam mattress, ships in a box"
+    - "Medium firm feel"
+    - "Breathable gel memory foam"
+    - "Cool-to-the-touch knit cover with Surface-Guard Technology"
+
+- slug: sealy-dreamlife-10-inch-hybrid-mattress
+  name: "Dreamlife 10-Inch Hybrid Mattress"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Dreamlife"
+  type: mattress
+  feel: "Medium Firm"
+  price: 699
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/sealy/sealy-dreamlife-10-inch-hybrid-mattress-1.jpg
+    - /assets/img/products/sealy/sealy-dreamlife-10-inch-hybrid-mattress-2.jpg
+    - /assets/img/products/sealy/sealy-dreamlife-10-inch-hybrid-mattress-3.jpg
+  features:
+    - "10\" hybrid, ships in a box"
+    - "Medium firm feel"
+    - "Gel memory foam over SealyResponsive encased coils"
+    - "Edge support coils"
+    - "Cool-to-the-touch knit cover with Surface-Guard Technology"
+
+- slug: sealy-ease-power-base
+  name: "Ease Power Base"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Ease Power Base"
+  type: base
+  price: 999
+  price_label: "Queen base"
+  images:
+    - /assets/img/products/sealy/sealy-ease-power-base-1.jpg
+    - /assets/img/products/sealy/sealy-ease-power-base-2.jpg
+    - /assets/img/products/sealy/sealy-ease-power-base-3.jpg
+    - /assets/img/products/sealy/sealy-ease-power-base-4.jpg
+  features:
+    - "Independent head and foot adjustment"
+    - "Wireless remote with Zero Gravity preset"
+    - "Stackable legs to set the height"
+    - "Split King option for independent sides"
+    - "25-year warranty, free in-home setup"
+
+- slug: sealy-stablesupport-foundation-5
+  name: "StableSupport Foundation (5\")"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "StableSupport Foundation"
+  type: foundation
+  price: 250
+  price_label: "Queen foundation"
+  images:
+    - /assets/img/products/sealy/sealy-stablesupport-foundation-5-1.jpg
+    - /assets/img/products/sealy/sealy-stablesupport-foundation-5-2.jpg
+    - /assets/img/products/sealy/sealy-stablesupport-foundation-5-3.jpg
+    - /assets/img/products/sealy/sealy-stablesupport-foundation-5-4.jpg
+  features:
+    - "Flat foundation built for Sealy mattresses"
+    - "Upholstered to match Sealy mattresses"
+    - "Free white-glove delivery and assembly"
+    - "10-year warranty"
+
+- slug: sealy-stablesupport-foundation-9
+  name: "StableSupport Foundation (9\")"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "StableSupport Foundation"
+  type: foundation
+  price: 250
+  price_label: "Queen foundation"
+  images:
+    - /assets/img/products/sealy/sealy-stablesupport-foundation-9-1.jpg
+    - /assets/img/products/sealy/sealy-stablesupport-foundation-9-2.jpg
+    - /assets/img/products/sealy/sealy-stablesupport-foundation-9-3.jpg
+    - /assets/img/products/sealy/sealy-stablesupport-foundation-9-4.jpg
+  features:
+    - "Flat foundation built for Sealy mattresses"
+    - "Upholstered to match Sealy mattresses"
+    - "Free white-glove delivery and assembly"
+    - "10-year warranty"
 
 - slug: tempur-adapt-medium
   name: "TEMPUR-Adapt® Medium"
