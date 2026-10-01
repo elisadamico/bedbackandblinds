@@ -1,4 +1,5 @@
 <article class="product-card" data-brand="{{ p.brand }}" data-type="{{ p.type }}" data-price="{{ p.price }}">
+  {% if sale.show %}<span class="sale-tag">{{ sale.ribbon }}</span>{% endif %}
   <a class="product-thumb" href="/mattresses/{{ p.slug }}/"><img src="{{ p.images[0] }}" alt="{{ p.brand }} {{ p.name }}" loading="lazy"></a>
   <div class="product-body">
     <p class="product-brand">{{ p.brand }}{% if p.feel %} · {{ p.feel }}{% endif %}{% if p.type != "mattress" %} · {{ "Adjustable base" if p.type == "base" else "Foundation" }}{% endif %}</p>

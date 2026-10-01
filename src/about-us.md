@@ -17,6 +17,7 @@ Our decorator will assist you with custom drapery, sheers, valances, bedding and
 
 </div>
 <div>
+<figure style="margin:0 0 1.25rem"><img class="rounded" src="/assets/img/site/donna-and-jim.jpg" alt="Donna and Jim, the owners of Bed Back & Blinds"><figcaption class="center" style="color:var(--muted);margin-top:0.5rem">Donna and Jim, owners of Bed Back &amp; Blinds</figcaption></figure>
 <img class="rounded" src="/assets/img/site/dsc-9065.jpg" alt="Bed Back & Blinds storefront in Wacker Plaza, Dubuque" style="margin-bottom:1.25rem">
 <div class="contact-card">
 <h2 style="font-size:1.5rem">Contact Us</h2>

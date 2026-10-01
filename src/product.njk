@@ -32,6 +32,7 @@ eleventyComputed:
         </div>
         {% set kind = "mattress" if product.type == "mattress" else ("base" if product.type == "base" else "foundation") %}
         <div class="buy-box">
+          {% if sale.show %}<p class="sale-line"><span class="sale-tag inline">{{ sale.ribbon }}</span> {{ sale.ends }}. Ask us about current savings.</p>{% endif %}
           <p class="big-price">{{ product.price | money }} <span>{{ product.price_label }}</span></p>
           <p class="price-note">Other sizes are available. Call or stop by for pricing, current sales, and 0% APR financing.</p>
           <div class="btn-row">
