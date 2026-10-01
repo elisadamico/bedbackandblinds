@@ -520,3 +520,544 @@
     - "Available in 9\" high, 5\" low, and 2\" ultra-low profiles"
     - "10-year limited warranty"
 
+
+# --- Malouf bedding (from maloufhome.com, 2026-10-01). Shown on the Malouf page, not in the mattress grid. ---
+- slug: malouf-quilted-convolution-pillow
+  name: "Quilted Convolution Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Plush to Medium Plush"
+  price: 119.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-quilted-convolution-pillow-1.jpg
+    - /assets/img/products/malouf-quilted-convolution-pillow-2.jpg
+    - /assets/img/products/malouf-quilted-convolution-pillow-3.jpg
+  features:
+    - "Light and airy HyperChill cover instantly cools"
+    - "Dual-sided design supports multiple sleep styles"
+    - "Gel Dough memory foam side cushions and contours"
+    - "Down alternative side is plush and fluffy"
+    - "3-Year Limited Warranty"
+
+- slug: malouf-hexcurve-pillow
+  name: "HexCurve Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Medium Plush"
+  price: 149.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-hexcurve-pillow-1.jpg
+    - /assets/img/products/malouf-hexcurve-pillow-2.jpg
+    - /assets/img/products/malouf-hexcurve-pillow-3.jpg
+  features:
+    - "OmniPhase grid creates an actively cooling network"
+    - "Ergonomic design creates different zones of support"
+    - "Lifted side boosts the head when side sleeping"
+    - "Central curve cradles the head and neck when back sleeping"
+    - "ActiveDough memory foam supports and contours"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-carboncool-pillow
+  name: "CarbonCool Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Medium"
+  price: 164.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-carboncool-pillow-1.jpg
+    - /assets/img/products/malouf-carboncool-pillow-2.jpg
+    - /assets/img/products/malouf-carboncool-pillow-3.jpg
+  features:
+    - "OmniPhase layer actively works to keep you cool all night"
+    - "Carbon infusion helps regulate temperature"
+    - "Ventilation increases airflow for breathability"
+    - "Plush memory foam cradles your head and neck"
+    - "Breathable cover made with TENCEL Lyocell fibers"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-zoned-dough-pillow
+  name: "Zoned Dough Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Medium"
+  price: 119.99
+  price_label: "Queen pillow"
+  price_from: true
+  images:
+    - /assets/img/products/malouf-zoned-dough-pillow-1.jpg
+    - /assets/img/products/malouf-zoned-dough-pillow-2.jpg
+    - /assets/img/products/malouf-zoned-dough-pillow-3.jpg
+  features:
+    - "Available in cooling gel, bamboo charcoal, lavender, and cbd infusions"
+    - "Dough memory foam has a classic, sink-in feel"
+    - "Zoned technology has a soft center to cradle your head and firmer edges to support your neck"
+    - "Breathable cover made with TENCEL Lyocell fibers"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-zoned-activedough-pillow
+  name: "Zoned ActiveDough Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Plush"
+  price: 119.99
+  price_label: "Queen pillow"
+  price_from: true
+  images:
+    - /assets/img/products/malouf-zoned-activedough-pillow-1.jpg
+    - /assets/img/products/malouf-zoned-activedough-pillow-2.jpg
+    - /assets/img/products/malouf-zoned-activedough-pillow-3.jpg
+  features:
+    - "Available in cooling gel, bamboo charcoal, lavender, and cbd infusions"
+    - "ActiveDough memory foam is light and bounces back faster than classic memory foam"
+    - "Zoned Technology has a soft center to cradle your head and firmer edges to support your neck"
+    - "Breathable cover made with TENCEL Lyocell fibers"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-ice-cloud-pillow
+  name: "Ice Cloud Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Medium"
+  price: 179.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-ice-cloud-pillow-1.jpg
+    - /assets/img/products/malouf-ice-cloud-pillow-2.jpg
+    - /assets/img/products/malouf-ice-cloud-pillow-3.jpg
+  features:
+    - "HyperChill is cool to the touch for an instant cooling effect"
+    - "OmniPhase layer actively works to keep you cool all night"
+    - "Ventilation channels increase airflow for breathability"
+    - "CoolSync memory foam is infused with liquid gel beads to sleep cooler"
+    - "Dual-sided design creates two unique feels"
+    - "3-Year Limited Warranty"
+
+- slug: malouf-flexfill-pillow
+  name: "FlexFill Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Plush"
+  price: 99.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-flexfill-pillow-1.jpg
+    - /assets/img/products/malouf-flexfill-pillow-2.jpg
+    - /assets/img/products/malouf-flexfill-pillow-3.jpg
+  features:
+    - "HyperChill is cool to the touch for an instant cooling effect"
+    - "Shapeable shredded memory foam and down-alternative fill"
+    - "Mixed fill creates a unique feel"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-shoulder-flexfill-pillow
+  name: "Shoulder FlexFill Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Plush"
+  price: 99.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-shoulder-flexfill-pillow-1.jpg
+    - /assets/img/products/malouf-shoulder-flexfill-pillow-2.jpg
+    - /assets/img/products/malouf-shoulder-flexfill-pillow-3.jpg
+  features:
+    - "Shoulder cutout is designed for side sleepers"
+    - "HyperChill is cool to the touch for an instant cooling effect"
+    - "Shapeable shredded memory foam and down-alternative fill"
+    - "Mixed fill creates a unique feel"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-convolution-pillow
+  name: "Convolution Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Plush"
+  price: 84.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-convolution-pillow-1.jpg
+    - /assets/img/products/malouf-convolution-pillow-2.jpg
+    - /assets/img/products/malouf-convolution-pillow-3.jpg
+  features:
+    - "Memory foam core is removable to create a low or high loft pillow"
+    - "Hypoallergenic fill mimics the feel of down without quills or allergens"
+    - "Breathable, 100% cotton cover"
+    - "3-Year Limited Warranty"
+
+- slug: malouf-gelled-microfiber-pillow
+  name: "Gelled Microfiber Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Plush"
+  price: 59.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-gelled-microfiber-pillow-1.jpg
+    - /assets/img/products/malouf-gelled-microfiber-pillow-2.jpg
+    - /assets/img/products/malouf-gelled-microfiber-pillow-3.jpg
+  features:
+    - "Hypoallergenic Gelled Microfiber fill mimics the feel of down without quills or allergens"
+    - "Keeps its shape without shifting and clumping"
+    - "Breathable, 100% cotton cover"
+    - "3-Year Limited Warranty"
+
+- slug: malouf-zoned-talalay-latex-pillow
+  name: "Zoned Talalay Latex Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Plush"
+  price: 149.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-zoned-talalay-latex-pillow-1.jpg
+    - /assets/img/products/malouf-zoned-talalay-latex-pillow-2.jpg
+    - /assets/img/products/malouf-zoned-talalay-latex-pillow-3.jpg
+  features:
+    - "Talalay latex fill that is airy, soft, and springy"
+    - "Holds its shape over time"
+    - "Made with biodegradable materials from renewable sources"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-shoulder-zoned-gel-activedough
+  name: "Shoulder Zoned Gel ActiveDough"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Plush"
+  price: 119.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-shoulder-zoned-gel-activedough-1.jpg
+    - /assets/img/products/malouf-shoulder-zoned-gel-activedough-2.jpg
+    - /assets/img/products/malouf-shoulder-zoned-gel-activedough-3.jpg
+  features:
+    - "Shoulder cutout is designed for side sleepers"
+    - "Cooling gel infusion helps regulate temperature"
+    - "ActiveDough memory foam is light and bounces back faster than classic memory foam"
+    - "Zoned Technology has a soft center to cradle your head and firmer edges to support your neck"
+    - "Breathable cover made with TENCEL Lyocell fibers"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-shoulder-carboncool-pillow
+  name: "Shoulder CarbonCool Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Medium"
+  price: 179.99
+  price_label: "Queen pillow"
+  images:
+    - /assets/img/products/malouf-shoulder-carboncool-pillow-1.jpg
+    - /assets/img/products/malouf-shoulder-carboncool-pillow-2.jpg
+    - /assets/img/products/malouf-shoulder-carboncool-pillow-3.jpg
+  features:
+    - "Shoulder cutout is designed for side sleepers"
+    - "OmniPhase layer actively works to keep you cool all night"
+    - "Carbon infusion helps regulate temperature"
+    - "Ventilation increases airflow for breathability"
+    - "Plush memory foam cradles your head and neck"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-shoulder-zoned-dough-pillow
+  name: "Shoulder Zoned Dough Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  feel: "Medium"
+  price: 119.99
+  price_label: "Queen pillow"
+  price_from: true
+  images:
+    - /assets/img/products/malouf-shoulder-zoned-dough-pillow-1.jpg
+    - /assets/img/products/malouf-shoulder-zoned-dough-pillow-2.jpg
+    - /assets/img/products/malouf-shoulder-zoned-dough-pillow-3.jpg
+  features:
+    - "Shoulder cutout is designed for side sleepers"
+    - "Available in cooling gel, bamboo charcoal, lavender infusions"
+    - "Dough memory foam has a classic, sink-in feel"
+    - "Zoned Technology has a soft center to cradle your head and firmer edges to support your neck"
+    - "Breathable cover made with TENCEL Lyocell fibers"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-smooth-bamboo-rayon-sheet-set
+  name: "Smooth Bamboo Rayon Sheet Set"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Sheets"
+  type: sheets
+  price: 194.99
+  price_label: "Queen sheet set"
+  images:
+    - /assets/img/products/malouf-smooth-bamboo-rayon-sheet-set-1.jpg
+    - /assets/img/products/malouf-smooth-bamboo-rayon-sheet-set-2.jpg
+    - /assets/img/products/malouf-smooth-bamboo-rayon-sheet-set-3.jpg
+  features:
+    - "Includes a fitted sheet, a flat sheet, and one or two matching pillowcases"
+    - "Available in four color options: White, Ash, Driftwood, or Rain"
+    - "Universal Fit deep pockets fit mattresses up to 14 inches deep, and thick elastic keeps the sheets in place"
+    - "OEKO-TEX certification"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-linen-blend-sheet-set
+  name: "Linen-Blend Sheet Set"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Sheets"
+  type: sheets
+  price: 194.99
+  price_label: "Queen sheet set"
+  images:
+    - /assets/img/products/malouf-linen-blend-sheet-set-1.jpg
+    - /assets/img/products/malouf-linen-blend-sheet-set-2.jpg
+    - /assets/img/products/malouf-linen-blend-sheet-set-3.jpg
+  features:
+    - "Universal Fit design and thick elastic band ensure a secure fit"
+    - "Naturally breathable design helps keep you cooler"
+    - "OEKO-TEX certification"
+    - "Includes a fitted sheet, a flat sheet, and one or two matching pillowcases"
+    - "3-Year Limited Warranty"
+
+- slug: malouf-botanical-sheet-set-with-tencel-lyocell-fiber
+  name: "Botanical Sheet Set with TENCEL Lyocell Fiber"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Sheets"
+  type: sheets
+  price: 194.99
+  price_label: "Queen sheet set"
+  images:
+    - /assets/img/products/malouf-botanical-sheet-set-with-tencel-lyocell-fiber-1.jpg
+    - /assets/img/products/malouf-botanical-sheet-set-with-tencel-lyocell-fiber-2.jpg
+    - /assets/img/products/malouf-botanical-sheet-set-with-tencel-lyocell-fiber-3.jpg
+  features:
+    - "Includes a fitted sheet, a flat sheet, and one or two matching pillowcases"
+    - "Available in four color options: White, Opal, Ecru, or Dusk"
+    - "Universal Fit deep pockets fit mattresses up to 14 inches deep, and thick elastic keeps the sheets in place"
+    - "OEKO-TEX certification"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-natural-supima-cotton-sheet-set
+  name: "Natural Supima Cotton Sheet Set"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Sheets"
+  type: sheets
+  price: 329.99
+  price_label: "Queen sheet set"
+  images:
+    - /assets/img/products/malouf-natural-supima-cotton-sheet-set-1.jpg
+    - /assets/img/products/malouf-natural-supima-cotton-sheet-set-2.jpg
+    - /assets/img/products/malouf-natural-supima-cotton-sheet-set-3.jpg
+  features:
+    - "Includes a fitted sheet, a flat sheet, and one or two matching pillowcases"
+    - "Available in four color options: White, Smoke, Charcoal, or Flax"
+    - "Universal Fit deep pockets fit mattresses up to 14 inches deep, and thick elastic keeps the sheets in place"
+    - "OEKO-TEX certification"
+    - "5-Year Limited Warranty"
+
+- slug: malouf-classic-cotton-sheet-set
+  name: "Classic Cotton Sheet Set"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Sheets"
+  type: sheets
+  price: 139.99
+  price_label: "Queen sheet set"
+  images:
+    - /assets/img/products/malouf-classic-cotton-sheet-set-1.jpg
+    - /assets/img/products/malouf-classic-cotton-sheet-set-2.jpg
+    - /assets/img/products/malouf-classic-cotton-sheet-set-3.jpg
+  features:
+    - "Includes a fitted sheet, a flat sheet, and one or two matching pillowcases"
+    - "Available in four color options: White, Cream, Charcoal, or Marine"
+    - "Universal Fit deep pockets fit mattresses up to 14 inches deep, and thick elastic keeps the sheets in place"
+    - "OEKO-TEX certification"
+    - "3-Year Limited Warranty"
+
+- slug: malouf-brushed-microfiber-sheet-set
+  name: "Brushed Microfiber Sheet Set"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Sheets"
+  type: sheets
+  price: 74.99
+  price_label: "Queen sheet set"
+  images:
+    - /assets/img/products/malouf-brushed-microfiber-sheet-set-1.jpg
+    - /assets/img/products/malouf-brushed-microfiber-sheet-set-2.jpg
+    - /assets/img/products/malouf-brushed-microfiber-sheet-set-3.jpg
+  features:
+    - "Includes a fitted sheet, a flat sheet, and one or two matching pillowcases"
+    - "Available in four color options: White, Ash, Driftwood, or Pacific"
+    - "Universal Fit deep pockets fit mattresses up to 14 inches deep, and thick elastic keeps the sheets in place"
+    - "OEKO-TEX certification"
+    - "3-Year Limited Warranty"
+
+- slug: malouf-prime-mattress-protector
+  name: "Prime Mattress Protector"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Protectors"
+  type: protector
+  price: 64.99
+  price_label: "Queen mattress protector"
+  images:
+    - /assets/img/products/malouf-prime-mattress-protector-1.jpg
+    - /assets/img/products/malouf-prime-mattress-protector-2.jpg
+    - /assets/img/products/malouf-prime-mattress-protector-3.jpg
+  features:
+    - "H2Pro membrane is 100% liquid proof to guard against spills, sweat, and accidents"
+    - "Protects the top of your mattress"
+    - "The lightweight fabric is quiet and doesn’t change the feel of your mattress"
+    - "Universal Fit design has extra-deep pockets and thick elastic to keep your protector in place"
+    - "Machine washable and dryer safe"
+    - "15-Year Limited Warranty"
+
+- slug: malouf-five-sided-omniphase-mattress-protector
+  name: "Five Sided + OmniPhase Mattress Protector"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Protectors"
+  type: protector
+  price: 124.99
+  price_label: "Queen mattress protector"
+  images:
+    - /assets/img/products/malouf-five-sided-omniphase-mattress-protector-1.jpg
+    - /assets/img/products/malouf-five-sided-omniphase-mattress-protector-2.jpg
+    - /assets/img/products/malouf-five-sided-omniphase-mattress-protector-3.jpg
+  features:
+    - "H2Pro membrane is 100% liquid proof to guard against spills, sweat, and accidents"
+    - "Five-sided protection shields the top and sides of your mattress"
+    - "OmniPhase technology actively works to keep you cool all night"
+    - "The cover features cotton and TENCEL Lyocell fibers for a cool, silky feel"
+    - "Universal Fit design has extra-deep pockets and thick elastic to keep your protector in place"
+    - "15-Year Limited Warranty"
+
+- slug: malouf-five-sided-hyperchill-mattress-protector
+  name: "Five Sided + HyperChill Mattress Protector"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Protectors"
+  type: protector
+  price: 244.99
+  price_label: "Queen mattress protector"
+  images:
+    - /assets/img/products/malouf-five-sided-hyperchill-mattress-protector-1.jpg
+    - /assets/img/products/malouf-five-sided-hyperchill-mattress-protector-2.jpg
+    - /assets/img/products/malouf-five-sided-hyperchill-mattress-protector-3.jpg
+  features:
+    - "H2Pro membrane is 100% liquid proof to guard against spills, sweat, and accidents"
+    - "Five-sided protection shields the top and sides of your mattress"
+    - "HyperChill is cool to the touch for an instant cooling effect"
+    - "Universal Fit design has extra-deep pockets and thick elastic to keep your protector in place"
+    - "Machine washable and dryer safe"
+    - "15-Year Limited Warranty"
+
+- slug: malouf-encase-360-mattress-protector
+  name: "Encase 360° Mattress Protector"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Protectors"
+  type: protector
+  price: 119.99
+  price_label: "Queen mattress protector"
+  images:
+    - /assets/img/products/malouf-encase-360-mattress-protector-1.jpg
+    - /assets/img/products/malouf-encase-360-mattress-protector-2.jpg
+    - /assets/img/products/malouf-encase-360-mattress-protector-3.jpg
+  features:
+    - "Fully encases the mattress on all six sides"
+    - "Guards against bed bugs, dust mites, allergens, and accidents"
+    - "360-degree MicroTite zipper lets the top half zip off for laundering"
+    - "15-Year Limited Warranty"
+
+- slug: malouf-prime-pillow-protector
+  name: "Prime Pillow Protector"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Protectors"
+  type: protector
+  price: 54.99
+  price_label: "Queen pillow protector"
+  images:
+    - /assets/img/products/malouf-prime-pillow-protector-1.jpg
+    - /assets/img/products/malouf-prime-pillow-protector-2.jpg
+    - /assets/img/products/malouf-prime-pillow-protector-3.jpg
+  features:
+    - "H2Pro membrane is 100% liquid proof to guard against spills, sweat, and accidents"
+    - "The lightweight fabric is quiet and doesn’t change the feel of your pillow"
+    - "Machine washable and dryer safe"
+    - "15-Year Limited Warranty"
+
+- slug: malouf-five-sided-hyperchill-pillow-protector
+  name: "Five Sided + HyperChill Pillow Protector"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Protectors"
+  type: protector
+  price: 134.99
+  price_label: "Queen pillow protector"
+  images:
+    - /assets/img/products/malouf-five-sided-hyperchill-pillow-protector-1.jpg
+    - /assets/img/products/malouf-five-sided-hyperchill-pillow-protector-2.jpg
+    - /assets/img/products/malouf-five-sided-hyperchill-pillow-protector-3.jpg
+  features:
+    - "H2Pro membrane is 100% liquid proof to guard against spills, sweat, and accidents"
+    - "HyperChill is cool to the touch for an instant cooling effect"
+    - "Machine washable and dryer safe"
+    - "15-Year Limited Warranty"
+

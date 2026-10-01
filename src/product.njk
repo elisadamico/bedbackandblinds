@@ -4,7 +4,7 @@ pagination:
   data: products
   size: 1
   alias: product
-permalink: "/mattresses/{{ product.slug }}/"
+permalink: "/{{ product.section or 'mattresses' }}/{{ product.slug }}/"
 eleventyComputed:
   title: "{{ product.brand }} {{ product.name }}"
   description: "{{ product.brand }} {{ product.name }}, {{ product.price_label }} {{ product.price | money }}, at Bed Back & Blinds in Dubuque, Iowa."
@@ -12,7 +12,7 @@ eleventyComputed:
 ---
 <section class="section">
   <div class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/mattresses/">Mattresses</a> › <a href="{{ product.brand_page }}">{{ product.brand }}</a> › {{ product.name }}</nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb">{% if product.section == "bedding" %}<a href="/malouf/">Malouf Bedding</a> › {{ product.collection }}{% else %}<a href="/mattresses/">Mattresses</a> › <a href="{{ product.brand_page }}">{{ product.brand }}</a>{% endif %} › {{ product.name }}</nav>
     <div class="product-layout">
       <div>
         <div class="photo-main"><img data-main-photo src="{{ product.images[0] }}" alt="{{ product.brand }} {{ product.name }}"></div>
@@ -26,24 +26,25 @@ eleventyComputed:
         <p class="product-brand">{{ product.brand }} · {{ product.collection }}</p>
         <h1>{{ product.name }}</h1>
         <div class="tags">
-          {% if product.feel %}<span class="tag">{{ product.feel }} feel</span>{% endif %}
+          {% if product.feel %}<span class="tag">{{ product.feel }}{% if product.section != "bedding" %} feel{% endif %}</span>{% endif %}
           {% if "Hybrid" in product.name %}<span class="tag">Hybrid</span>{% endif %}
-          <span class="tag">{{ "Mattress" if product.type == "mattress" else ("Adjustable base" if product.type == "base" else "Foundation") }}</span>
+          {% set tagnames = {"mattress": "Mattress", "base": "Adjustable base", "foundation": "Foundation", "pillow": "Pillow", "sheets": "Sheet set", "protector": "Protector"} %}<span class="tag">{{ tagnames[product.type] }}</span>
         </div>
-        {% set kind = "mattress" if product.type == "mattress" else ("base" if product.type == "base" else "foundation") %}
+        {% set kinds = {"mattress": "mattress", "base": "base", "foundation": "foundation", "pillow": "pillow", "sheets": "sheet set", "protector": "protector"} %}{% set kind = kinds[product.type] %}
         <div class="buy-box">
-          {% if sale.show %}<p class="sale-line"><span class="sale-tag inline">{{ sale.ribbon }}</span> {{ sale.ends }}. Ask us about current savings.</p>{% endif %}
-          <p class="big-price">{{ product.price | money }} <span>{{ product.price_label }}</span></p>
-          <p class="price-note">Other sizes are available. Call or stop by for pricing, current sales, and 0% APR financing.</p>
+          {% if sale.show and product.section != "bedding" %}<p class="sale-line"><span class="sale-tag inline">{{ sale.ribbon }}</span> {{ sale.ends }}. Ask us about current savings.</p>{% endif %}
+          <p class="big-price">{% if product.price_from %}<span>From</span> {% endif %}{{ product.price | money }} <span>{{ product.price_label }}</span></p>
+          <p class="price-note">{% if product.section == "bedding" %}Other sizes are available. Call or stop by for pricing.{% else %}Other sizes are available. Call or stop by for pricing, current sales, and 0% APR financing.{% endif %}</p>
           <div class="btn-row">
             <a class="btn" href="/contact/?about={{ (product.brand + ' ' + product.name) | urlencode }}#form">Ask about this {{ kind }}</a>
             <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>
           </div>
+          {% if product.section == "bedding" %}<ul class="perks"><li>See it in our Dubuque showroom</li><li>We'll help you choose the right pillow for the way you sleep</li></ul>{% else %}
           <ul class="perks">
             <li>Try it in our Dubuque showroom</li>
             <li>Free delivery or bed frame, free in-home set up, and free removal of your old mattress (ask for details)</li>
             <li>Financing available, including 0% APR plans</li>
-          </ul>
+          </ul>{% endif %}
         </div>
         {% if product.features.length %}
         <h2 style="font-size:1.4rem">Features</h2>
@@ -58,7 +59,7 @@ eleventyComputed:
 {% if more.length %}
 <section class="section section-soft">
   <div class="container">
-    <div class="section-head"><h2>More from {{ product.brand }}</h2></div>
+    <div class="section-head"><h2>More from {{ product.brand }}{% if product.section == 'bedding' %} {{ product.collection }}{% endif %}</h2></div>
     <div class="product-grid">{% for p in more %}{% include "product-card.njk" %}{% endfor %}</div>
     <p class="center" style="margin-top:1.5rem"><a class="btn btn-outline" href="{{ product.brand_page }}">See all {{ product.brand }}</a></p>
   </div>

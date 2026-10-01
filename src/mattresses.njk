@@ -30,7 +30,7 @@ sizes:
     </div>
     <p class="price-note">Prices shown are for Queen size. Call or stop by for other sizes, current sales, and financing.</p>
     <div class="product-grid" data-product-grid>
-      {% for p in products %}{% include "product-card.njk" %}{% endfor %}
+      {% for p in products | mattressesOnly %}{% include "product-card.njk" %}{% endfor %}
     </div>
   </div>
 </section>

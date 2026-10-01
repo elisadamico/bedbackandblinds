@@ -218,6 +218,7 @@ p { margin: 0 0 1em; }
 .product-card h3 a { color: var(--ink); text-decoration: none; }
 .product-card h3 a:hover { color: var(--cyan-dark); }
 .product-price { margin: auto 0 0; font-family: var(--font-head); font-size: 1.35rem; color: var(--ink); }
+.product-price .from { font-family: var(--font-body); font-size: 0.85rem; color: var(--muted); margin: 0 0.2rem 0 0; }
 .product-price span { font-family: var(--font-body); font-size: 0.85rem; color: var(--muted); margin-left: 0.25rem; }
 .price-note { color: var(--muted); font-size: 0.95rem; }
 

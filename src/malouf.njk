@@ -7,12 +7,12 @@ description: Malouf pillows, sheets, and mattress protectors at Bed Back & Blind
   <div class="container">
     <img class="brand-logo" src="/assets/img/brands/malouf.png" alt="Malouf" width="340">
     <div class="section-head"><h1>Malouf Pillows, Sheets &amp; Protectors</h1><p>Finish your new bed with Malouf pillows, sheets, and mattress protectors. Stop by the showroom and we'll help you find the right pillow for the way you sleep.</p></div>
-    {% set mal = products | byBrand("Malouf") %}
-    {% if mal.length %}
-    <div class="product-grid">{% for p in mal %}{% include "product-card.njk" %}{% endfor %}</div>
-    {% else %}
-    <p class="center"><a class="btn" href="/contact/?about=Malouf%20pillows%20and%20bedding#form">Ask about Malouf bedding</a></p>
-    {% endif %}
+    <nav class="gallery-nav" aria-label="Malouf categories"><a class="chip" href="#pillows">Pillows</a><a class="chip" href="#sheets">Sheets</a><a class="chip" href="#protectors">Protectors</a></nav>
+    <p class="price-note center">Prices shown are for Queen size. Call or stop by for other sizes.</p>
+    {% for c in ["Pillows", "Sheets", "Protectors"] %}
+    <h2 id="{{ c | lower }}" style="margin-top:2rem">{{ c }}</h2>
+    <div class="product-grid">{% for p in products | byBrand("Malouf") | inCollection(c) %}{% include "product-card.njk" %}{% endfor %}</div>
+    {% endfor %}
   </div>
 </section>
 {% include "mattress-reviews.njk" %}

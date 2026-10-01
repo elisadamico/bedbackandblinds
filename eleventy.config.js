@@ -8,11 +8,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/favicon.png": "favicon.png" });
 
   // 1599 -> "$1,599"
-  eleventyConfig.addFilter("money", (n) => "$" + Number(n).toLocaleString("en-US"));
+  eleventyConfig.addFilter("money", (n) => "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: Number.isInteger(Number(n)) ? 0 : 2, maximumFractionDigits: 2 }));
+  eleventyConfig.addFilter("mattressesOnly", (products) => products.filter((p) => p.section !== "bedding"));
+  eleventyConfig.addFilter("inCollection", (products, c) => products.filter((p) => p.collection === c));
+  eleventyConfig.addFilter("productUrl", (p) => `/${p.section || "mattresses"}/${p.slug}/`);
   eleventyConfig.addFilter("byBrand", (products, brand) => products.filter((p) => p.brand === brand));
   eleventyConfig.addFilter("bySlugs", (products, slugs) => slugs.map((s) => products.find((p) => p.slug === s)).filter(Boolean));
   eleventyConfig.addFilter("related", (products, product, n = 3) =>
-    products.filter((p) => p.brand === product.brand && p.slug !== product.slug).slice(0, n));
+    products.filter((p) => p.brand === product.brand && p.slug !== product.slug && (p.section !== "bedding" || p.collection === product.collection)).slice(0, n));
   eleventyConfig.addFilter("containsUrl", (items, url) => items.some((i) => i.url === url));
   eleventyConfig.addFilter("urlencode", (s) => encodeURIComponent(s));
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
