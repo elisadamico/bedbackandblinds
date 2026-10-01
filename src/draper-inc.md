@@ -21,5 +21,8 @@ title: Draper Commercial Shades
 </div>
 </div>
 </section>
+{% set lines = windowlines["draper"] %}{% set lines_brand = "Draper" %}{% set lines_title = "Draper Shade Families" %}
+{% include "window-lines.njk" %}
+
 <section class="section section-cyan"><div class="container center"><h2>Preview the Novel Bottom-Up FlexShade</h2>
 <iframe class="video" loading="lazy" src="https://www.youtube-nocookie.com/embed/8WhAUxabNz4" title="Draper bottom-up FlexShade" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></section>

@@ -14,5 +14,8 @@ title: Graber Blinds, Shades, Shutters & Drapery
 <p class="center" style="margin-top:1.5rem"><a class="btn" href="{{ site.consultation_form }}">Schedule a Complimentary Consultation</a></p>
 </div>
 </section>
+{% set lines = windowlines["graber"] %}{% set lines_brand = "Graber" %}{% set lines_title = "Graber Products" %}
+{% include "window-lines.njk" %}
+
 <section class="section section-cyan"><div class="container center"><h2>Preview the Roman Shade Option</h2>
 <iframe class="video" loading="lazy" src="https://www.youtube-nocookie.com/embed/No7ZHj0VBD8" title="Graber Roman shades" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></section>

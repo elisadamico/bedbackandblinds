@@ -27,3 +27,6 @@ With nearly 10,000 on-trend fabrics in stock, in addition to various hardware an
 </div>
 </div>
 </section>
+{% set lines = windowlines["carole"] %}{% set lines_brand = "Carole Fabrics" %}{% set lines_title = "Carole Fabrics Products" %}
+{% include "window-lines.njk" %}
+

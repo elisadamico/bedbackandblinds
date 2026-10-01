@@ -1,0 +1,24 @@
+{# Product lines for one window-treatment brand. Set "lines" to windowlines["<brand>"] before including. Edit src/_data/windowlines.json to change. #}
+<section class="section section-soft">
+<div class="container">
+<div class="section-head"><h2>{{ lines_title }}</h2><p>Every treatment is custom made to fit your windows. Call or book a free in-home consultation and our decorator will bring samples to you.</p></div>
+<nav class="gallery-nav" aria-label="Product types">{% for g in lines %}<a class="chip" href="#{{ g.title | slugify }}">{{ g.title }}</a>{% endfor %}</nav>
+{% for g in lines %}
+<h3 id="{{ g.title | slugify }}" class="line-group">{{ g.title }}</h3>
+<div class="line-grid">
+{% for l in g.lines %}
+<article class="line-card">
+{% if l.images.length %}<img src="{{ l.images[0] }}" alt="{{ l.name }} in a room" loading="lazy">{% endif %}
+<div class="line-body">
+<h4>{{ l.name }}</h4>
+<p>{{ l.summary }}</p>
+{% if l.features.length %}<details><summary>Features</summary><ul>{% for f in l.features %}<li>{{ f }}</li>{% endfor %}</ul></details>{% endif %}
+<a class="line-ask" href="/contact/?about={{ (lines_brand + ' ' + l.name) | urlencode }}#form">Ask about {{ l.name }}</a>
+</div>
+</article>
+{% endfor %}
+</div>
+{% endfor %}
+<p class="center" style="margin-top:2rem"><a class="btn" href="{{ site.consultation_form }}">Schedule a Complimentary Consultation</a></p>
+</div>
+</section>

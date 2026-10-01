@@ -295,3 +295,17 @@ p { margin: 0 0 1em; }
 .hours th, .hours td { text-align: left; padding: 0.35rem 0.9rem 0.35rem 0; border-bottom: 1px solid var(--line); font-weight: 400; }
 .hours th { padding-right: 2rem; }
 .copyright { text-align: center; color: var(--muted); font-size: 0.88rem; margin: 2rem 0 0; }
+
+/* Window treatment product lines ------------------------------------------- */
+.line-group { margin: 2.25rem 0 1rem; font-size: 1.6rem; }
+.line-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+.line-card { background: #fff; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; }
+.line-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.line-body { padding: 1rem 1.15rem 1.2rem; display: flex; flex-direction: column; flex: 1; }
+.line-body h4 { font-family: var(--font-head); font-weight: 400; font-size: 1.2rem; color: var(--ink); margin: 0 0 0.5rem; }
+.line-body p { font-size: 0.95rem; line-height: 1.55; margin-bottom: 0.75rem; }
+.line-body details { font-size: 0.92rem; margin-bottom: 0.9rem; }
+.line-body summary { cursor: pointer; color: var(--cyan-dark); font-weight: 600; }
+.line-body ul { padding-left: 1.1rem; margin: 0.5rem 0 0; }
+.line-body li { margin-bottom: 0.25rem; }
+.line-ask { margin-top: auto; font-weight: 700; font-size: 0.95rem; }

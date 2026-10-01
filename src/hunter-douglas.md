@@ -12,13 +12,16 @@ description: Hunter Douglas window treatments at Bed Back & Blinds in Dubuque, I
 
 ## Hunter Douglas Window Fashions
 
-Bed Back &amp; Blinds carries Hunter Douglas window treatments, including Silhouette®, Luminette®, Pirouette®, and Vignette® shadings, and Architella® energy efficient honeycomb shades.
+Bed Back &amp; Blinds is a Hunter Douglas dealer. Hunter Douglas makes custom shades, blinds, shutters, and drapery, from Silhouette® and Luminette® sheers to Duette® honeycomb shades and PowerView® motorization.
 
 Our decorator will help you choose the right style, fabric, and light control for each room, and our professional installers will take care of the rest. Ask about cordless and motorized options.
 
-See more of our completed projects in the [gallery](/gallery/).
+Browse the full Hunter Douglas lineup below, and see our completed projects in the [gallery](/gallery/).
 
 </div>
 </div>
 </div>
 </section>
+{% set lines = windowlines["hunter-douglas"] %}{% set lines_brand = "Hunter Douglas" %}{% set lines_title = "Hunter Douglas Products" %}
+{% include "window-lines.njk" %}
+

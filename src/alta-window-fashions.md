@@ -25,6 +25,9 @@ title: Alta Window Fashions
 </div>
 </div>
 </section>
+{% set lines = windowlines["alta"] %}{% set lines_brand = "Alta" %}{% set lines_title = "Alta Products" %}
+{% include "window-lines.njk" %}
+
 <section class="section section-cyan"><div class="container center"><h2>Preview Our Innovative Dual Shades</h2>
 <iframe class="video" loading="lazy" src="https://www.youtube-nocookie.com/embed/3xS3KHyVRSg" title="Alta Banded Shades overview" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></section>
 <section class="section section-yellow"><div class="container center"><h2>Find Out More About Our State of the Art Automation</h2>
