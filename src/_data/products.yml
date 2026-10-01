@@ -142,9 +142,10 @@
   collection: "TEMPUR-Adapt®"
   type: mattress
   feel: Medium
-  price: 2199
+  price: 2299
   price_label: "Queen mattress"
   images:
+    - /assets/img/products/tp-tempur-adapt-medium.png
     - /assets/img/products/frweilxfufog.jpg
     - /assets/img/products/frsfjeilrunl.jpg
     - /assets/img/products/frwbyjwzhlra.jpg
@@ -162,9 +163,10 @@
   collection: "TEMPUR-Adapt®"
   type: mattress
   feel: Medium
-  price: 2499
+  price: 2599
   price_label: "Queen mattress"
   images:
+    - /assets/img/products/tp-tempur-adapt-medium-hybrid.png
     - /assets/img/products/screenshot-2024-05-05-at-1-36-44-pm.jpg
     - /assets/img/products/screenshot-2024-05-05-at-1-37-13-pm.jpg
     - /assets/img/products/screenshot-2024-05-05-at-1-37-05-pm.jpg
@@ -182,9 +184,10 @@
   collection: "TEMPUR-ProAdapt®"
   type: mattress
   feel: Firm
-  price: 3399
+  price: 3499
   price_label: "Queen mattress"
   images:
+    - /assets/img/products/tp-tempur-proadapt-firm.png
     - /assets/img/products/frybalaspwsg.jpg
     - /assets/img/products/frqhhhjhvlgb.jpg
     - /assets/img/products/frnumkpyphft.jpg
@@ -202,9 +205,10 @@
   collection: "TEMPUR-ProAdapt®"
   type: mattress
   feel: Medium
-  price: 3399
+  price: 3499
   price_label: "Queen mattress"
   images:
+    - /assets/img/products/tp-tempur-proadapt-medium.png
     - /assets/img/products/freyugekbiyf.jpg
     - /assets/img/products/fruzpelyiyqn.jpg
     - /assets/img/products/frpmpcjctswx.jpg
@@ -222,9 +226,10 @@
   collection: "TEMPUR-ProAdapt®"
   type: mattress
   feel: Soft
-  price: 3399
+  price: 3499
   price_label: "Queen mattress"
   images:
+    - /assets/img/products/tp-tempur-proadapt-soft.png
     - /assets/img/products/frkrkqallujx.jpg
     - /assets/img/products/frcmujdhnsuz.jpg
     - /assets/img/products/frdcryqyhwie.jpg
@@ -242,9 +247,10 @@
   collection: "TEMPUR-ProAdapt®"
   type: mattress
   feel: Medium
-  price: 3399
+  price: 3499
   price_label: "Queen mattress"
   images:
+    - /assets/img/products/tp-tempur-proadapt-medium-hybrid.png
     - /assets/img/products/frqbosrhxlmw.jpg
     - /assets/img/products/frkvdyxvdaid.jpg
     - /assets/img/products/frplrhpmostq.jpg
@@ -262,9 +268,10 @@
   collection: "TEMPUR-LuxeAdapt®"
   type: mattress
   feel: Soft
-  price: 4199
+  price: 4899
   price_label: "Queen mattress"
   images:
+    - /assets/img/products/tp-tempur-luxeadapt-soft.png
     - /assets/img/products/frbyinhebsfn.jpg
     - /assets/img/products/frkyuonurweq.jpg
     - /assets/img/products/frthljhwfgst.jpg
@@ -288,9 +295,10 @@
   collection: "TEMPUR-LuxeAdapt®"
   type: mattress
   feel: Firm
-  price: 4199
+  price: 4899
   price_label: "Queen mattress"
   images:
+    - /assets/img/products/tp-tempur-luxeadapt-firm.png
     - /assets/img/products/frcmtglcdphc.jpg
     - /assets/img/products/frcqtvobxhtv.jpg
     - /assets/img/products/frhexkgesmcd.jpg
@@ -309,9 +317,10 @@
   brand_page: /tempur-pedic/
   collection: "TEMPUR-Ergo®"
   type: base
-  price: 1599
+  price: 1699
   price_label: "Queen base"
   images:
+    - /assets/img/products/tp-tempur-ergo-base.png
     - /assets/img/products/frspfpiabsvt.jpg
     - /assets/img/products/frzthvwycbxk.jpg
     - /assets/img/products/frnprvyduatt.jpg
@@ -328,9 +337,10 @@
   brand_page: /tempur-pedic/
   collection: "TEMPUR-Ergo®"
   type: base
-  price: 1999
+  price: 2199
   price_label: "Queen base"
   images:
+    - /assets/img/products/tp-tempur-ergo-smart-base.png
     - /assets/img/products/frrmazvcfuyl.jpg
     - /assets/img/products/frdadafqqlaz.jpg
     - /assets/img/products/fryaoiwvynoz.jpg
@@ -364,7 +374,7 @@
   brand_page: /tempur-pedic/
   collection: "Foundations"
   type: foundation
-  price: 350
+  price: 380
   price_label: "Queen foundation"
   images:
     - /assets/img/products/freefybuvpmx.jpg

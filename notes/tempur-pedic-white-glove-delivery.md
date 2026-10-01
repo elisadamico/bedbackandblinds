@@ -20,3 +20,8 @@ and free removal of your old mattress (ask for details)."
 
 ## This folder
 Files in `notes/` are for planning only. They are not part of the website.
+
+## Found on tempurpedic.com (2026-10-01)
+The TEMPUR-Flat® Foundation page says "White Glove Delivery: FREE with your foundation
+purchase" and "FREE DELIVERY, Arrives in 1-2 Weeks". That is Tempur-Pedic's own online
+offer; confirm whether Bed Back & Blinds offers the same before putting it on the site.
