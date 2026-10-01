@@ -1,4 +1,4 @@
-# Customer reviews from Google, shown on the home page.
+# Customer reviews from Google (and Yelp, marked with source), shown on the home page.
 # To add one, copy a block and put it at the top. Keep each review word for word.
 - name: Jeni B.
   date: 2026
@@ -25,6 +25,10 @@
 - name: Ann B.
   date: 2017
   text: "We received stellar service from the Dubuque, Iowa store. Donna was knowledgeable and thorough. We appreciated the assistance from purchase to install. They stand by their products. Highly recommend."
+- name: Chris P.
+  date: 2016
+  source: Yelp
+  text: "This family run business gives great service. Jim can steer you to the right mattress for your needs. Donna is expert at helping you pick the best window treatments for your home or business. Don't forget to shop local."
 
 # Mattress reviews shown on the Sealy and Tempur-Pedic pages (mattress: true).
 - name: Timothy K.

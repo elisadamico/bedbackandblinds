@@ -5,7 +5,7 @@
       {% for r in reviews %}{% if r.mattress %}<figure class="testimonial">
         <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
         <blockquote>{{ r.text }}</blockquote>
-        <figcaption>{{ r.name }} <span class="review-date">· Google review, {{ r.date }}</span></figcaption>
+        <figcaption>{{ r.name }} <span class="review-date">· {{ r.source or 'Google' }} review, {{ r.date }}</span></figcaption>
       </figure>
       {% endif %}{% endfor %}
     </div>
