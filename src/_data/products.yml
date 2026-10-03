@@ -88,6 +88,27 @@
     - "SealyStability™ Coil: Precision-engineered coils offer deep support and reduce motion transfer across the mattress."
     - "StableEdge™ Pro System: A reinforced edge system that increases the usable sleeping area and provides a solid edge for sitting."
 
+- slug: sealy-golden-elegance-featherton
+  name: "Golden Elegance Featherton Soft"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Golden Elegance"
+  type: mattress
+  feel: Soft
+  price: 699
+  price_label: "Queen mattress"
+  images:
+    - /assets/img/products/frurakzkaxaf.jpg
+    - /assets/img/products/froixroqszyb.jpg
+    - /assets/img/products/frdsmewyjacg-1.jpg
+    - /assets/img/products/frzdnyqlvhgq.jpg
+    - /assets/img/products/frxemkemyllu.jpg
+    - /assets/img/products/frrzhdsljhek.jpg
+    - /assets/img/products/frntipcprmlb.jpg
+    - /assets/img/products/frdsmewyjacg.jpg
+  features:
+    - "This innerspring mattress features cushioning comfort, thanks to a balance of our SealyComfort™ and SealySupport™ Gel Foams. The upgraded innerspring system reinforced with our SolidEdge™ foam border delivers soft support across the entire mattress, and the moisture-wicking, antibacterial cover helps keep you comfortable."
+
 - slug: sealy-golden-elegance-featherton-euro-pillow-top
   name: "Golden Elegance Featherton Euro Pillow Top"
   brand: "Sealy®"
@@ -106,15 +127,18 @@
     - { size: "King / CA King, 2 bases", mattress: 1199, foundation: 1549, ease: 2997 }
     - { size: "Split King / CA King", mattress: 1298, foundation: 1648, ease: 3096 }
   images:
-    - /assets/img/products/frurakzkaxaf.jpg
-    - /assets/img/products/froixroqszyb.jpg
-    - /assets/img/products/frdsmewyjacg-1.jpg
-    - /assets/img/products/frzdnyqlvhgq.jpg
-    - /assets/img/products/frxemkemyllu.jpg
-    - /assets/img/products/frrzhdsljhek.jpg
-    - /assets/img/products/frntipcprmlb.jpg
-    - /assets/img/products/frdsmewyjacg.jpg
-
+    - /assets/img/products/sealy/golden-elegance-featherton-ept-1.jpg
+    - /assets/img/products/sealy/golden-elegance-featherton-ept-2.jpg
+    - /assets/img/products/sealy/golden-elegance-featherton-ept-3.jpg
+    - /assets/img/products/sealy/golden-elegance-featherton-ept-4.jpg
+    - /assets/img/products/sealy/golden-elegance-featherton-ept-5.jpg
+    - /assets/img/products/sealy/golden-elegance-featherton-ept-6.jpg
+    - /assets/img/products/sealy/golden-elegance-featherton-ept-7.jpg
+  features:
+    - "Two layers of Sealy gel foams work together with responsive coils and a thick Euro Pillow Top for a soft feel"
+    - "Precisely engineered coils respond to movement to support you through the night"
+    - "Soft knit cover with MoistureProtect and Surface-Guard Technology wicks moisture away and helps protect against odors and stains"
+    - "Designed, assembled, and tested in the USA"
 - slug: sealy-remington-soft-hybrid
   name: "Remmington Soft Hybrid"
   brand: "Sealy®"
