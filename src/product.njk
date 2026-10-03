@@ -34,7 +34,7 @@ eleventyComputed:
         <div class="buy-box">
           {% if sale.show and product.section != "bedding" %}<p class="sale-line"><span class="sale-tag inline" data-sale-ribbon>{{ sale.ribbon }}</span> <span data-sale-ends>{{ sale.ends }}</span>. Ask us about current savings.</p>{% endif %}
           <p class="big-price">{% if product.price_from %}<span>From</span> {% endif %}{{ product.price | money }} <span>{{ product.price_label }}</span></p>
-          <p class="price-note">{% if product.section == "bedding" %}Other sizes are available. Call or stop by for pricing.{% else %}Other sizes are available. Call or stop by for pricing and current sales.{% endif %}</p>
+          <p class="price-note">{% if product.section == "bedding" %}Other sizes are available. Call or stop by for pricing.{% elif product.size_prices %}Prices for every size are listed below. Call or stop by to ask about current sales.{% else %}Other sizes are available. Call or stop by for pricing and current sales.{% endif %}</p>
           <div class="btn-row">
             <a class="btn" href="/contact/?about={{ (product.brand + ' ' + product.name) | urlencode }}#form">Ask about this {{ kind }}</a>
             <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>
@@ -45,6 +45,13 @@ eleventyComputed:
             <li>Free delivery or bed frame, free in-home set up, and free removal of your old mattress (ask for details)</li>
           </ul>{% endif %}
         </div>
+        {% if product.size_prices %}
+        <h2 style="font-size:1.4rem">Prices by Size</h2>
+        <div class="table-scroll"><table class="spec-table size-prices">
+          <thead><tr><th scope="col">Size</th><th scope="col">Mattress only</th><th scope="col">With flat foundation</th><th scope="col">With Ease<sup>®</sup> power base</th></tr></thead>
+          <tbody>{% for r in product.size_prices %}<tr><th scope="row">{{ r.size }}</th><td>{{ r.mattress | money }}</td><td>{{ r.foundation | money if r.foundation else "—" }}</td><td>{{ r.ease | money }}</td></tr>{% endfor %}</tbody>
+        </table></div>
+        {% endif %}
         {% if product.features.length %}
         <h2 style="font-size:1.4rem">Features</h2>
         <ul class="features-list">{% for f in product.features %}<li>{{ f }}</li>{% endfor %}</ul>

@@ -275,6 +275,9 @@ p { margin: 0 0 1em; }
 .spec-table th, .spec-table td { text-align: left; padding: 0.45rem 0.5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
 .spec-table th { font-weight: 600; width: 38%; }
 .variants { font-size: 0.95rem; padding-left: 1.2rem; }
+.table-scroll { overflow-x: auto; margin-bottom: 1.5rem; }
+.size-prices th[scope="col"] { font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+.size-prices td { white-space: nowrap; }
 .source-link { font-size: 0.92rem; margin-top: 1.5rem; }
 
 /* Window treatments, furniture --------------------------------------------- */

@@ -3,6 +3,7 @@
 # and put its photos in src/assets/img/products/. Prices are for a Queen size.
 # The slug becomes the page address, so keep it lowercase with hyphens and no spaces.
 
+# Golden Elegance prices come from the 2026 Sealy price sheets (effective Jul 9, 2026). Stately had no sheet.
 - slug: sealy-golden-elegance-stately
   name: "Golden Elegance Stately"
   brand: "Sealy®"
@@ -30,8 +31,15 @@
   collection: "Golden Elegance"
   type: mattress
   feel: Firm
-  price: 649
+  price: 749
   price_label: "Queen mattress"
+  size_prices:
+    - { size: "Twin", mattress: 499, foundation: 674, ease: 1398 }
+    - { size: "Twin XL", mattress: 549, foundation: 724, ease: 1448 }
+    - { size: "Full", mattress: 649, foundation: 899, ease: 1648 }
+    - { size: "Queen", mattress: 749, foundation: 999, ease: 1748 }
+    - { size: "King / CA King, 1 base", mattress: 999, foundation: null, ease: 2498 }
+    - { size: "King / CA King, 2 bases", mattress: 999, foundation: 1349, ease: 2797 }
   images:
     - /assets/img/products/feath2-1080x.jpg
     - /assets/img/products/feath1-1080x.jpg
@@ -45,14 +53,22 @@
     - "SolidEdge™ System: Reinforced edges deliver durability and additional sleep space, letting you stretch out in comfort.QUALITY YOU CAN TRUST—This Sealy mattress was proudly built, assembled, and tested in the USA, and is backed by a 10-year limited warranty."
 
 - slug: sealy-golden-elegance-featherton
-  name: "Golden Elegance Featherton"
+  name: "Golden Elegance Featherton Euro Pillow Top"
   brand: "Sealy®"
   brand_page: /sealy/
   collection: "Golden Elegance"
   type: mattress
   feel: Soft
-  price: 699
+  price: 799
   price_label: "Queen mattress"
+  size_prices:
+    - { size: "Twin", mattress: 599, foundation: 774, ease: 1498 }
+    - { size: "Twin XL", mattress: 649, foundation: 824, ease: 1548 }
+    - { size: "Full", mattress: 749, foundation: 999, ease: 1748 }
+    - { size: "Queen", mattress: 799, foundation: 1049, ease: 1798 }
+    - { size: "King / CA King, 1 base", mattress: 1199, foundation: null, ease: 2698 }
+    - { size: "King / CA King, 2 bases", mattress: 1199, foundation: 1549, ease: 2997 }
+    - { size: "Split King / CA King", mattress: 1298, foundation: 1648, ease: 3096 }
   images:
     - /assets/img/products/frurakzkaxaf.jpg
     - /assets/img/products/froixroqszyb.jpg
@@ -72,8 +88,16 @@
   collection: "Golden Elegance"
   type: mattress
   feel: Firm
-  price: 749
+  price: 799
   price_label: "Queen mattress"
+  size_prices:
+    - { size: "Twin", mattress: 549, foundation: 724, ease: 1448 }
+    - { size: "Twin XL", mattress: 599, foundation: 774, ease: 1498 }
+    - { size: "Full", mattress: 699, foundation: 949, ease: 1698 }
+    - { size: "Queen", mattress: 799, foundation: 1049, ease: 1798 }
+    - { size: "King / CA King, 1 base", mattress: 1099, foundation: null, ease: 2598 }
+    - { size: "King / CA King, 2 bases", mattress: 1099, foundation: 1449, ease: 2897 }
+    - { size: "Split King / CA King", mattress: 1198, foundation: 1548, ease: 2996 }
   images:
     - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ic-a-01-ic1-silo3qtr-2000x2000.jpg
     - /assets/img/products/33541-05-sea-bg2023launchcollectionpdp-ge-bridgerton-s6ttf-ec-a-01-ec1-roomscene-970x300.jpg
@@ -100,8 +124,16 @@
   collection: "Golden Elegance"
   type: mattress
   feel: Soft
-  price: 999
+  price: 1099
   price_label: "Queen mattress"
+  size_prices:
+    - { size: "Twin", mattress: 799, foundation: 974, ease: 1698 }
+    - { size: "Twin XL", mattress: 849, foundation: 1024, ease: 1748 }
+    - { size: "Full", mattress: 999, foundation: 1249, ease: 1998 }
+    - { size: "Queen", mattress: 1099, foundation: 1349, ease: 2098 }
+    - { size: "King / CA King, 1 base", mattress: 1399, foundation: null, ease: 2898 }
+    - { size: "King / CA King, 2 bases", mattress: 1399, foundation: 1749, ease: 3197 }
+    - { size: "Split King / CA King", mattress: 1698, foundation: 2048, ease: 3496 }
   images:
     - /assets/img/products/goldenelegance-b8-hybrid-s-queen-flat-silo-threequarter-feb2023-5x7-jpeg-1-22-2024-10-44-09-am-2000x.jpg
     - /assets/img/products/remingtonsofthybridmattressbysealy-2000x.jpg
@@ -119,6 +151,14 @@
   feel: Soft
   price: 1199
   price_label: "Queen mattress"
+  size_prices:
+    - { size: "Twin", mattress: 849, foundation: 1024, ease: 1748 }
+    - { size: "Twin XL", mattress: 899, foundation: 1074, ease: 1798 }
+    - { size: "Full", mattress: 1049, foundation: 1299, ease: 2048 }
+    - { size: "Queen", mattress: 1199, foundation: 1449, ease: 2198 }
+    - { size: "King / CA King, 1 base", mattress: 1499, foundation: null, ease: 2998 }
+    - { size: "King / CA King, 2 bases", mattress: 1499, foundation: 1849, ease: 3297 }
+    - { size: "Split King / CA King", mattress: 1698, foundation: 2048, ease: 3496 }
   images:
     - /assets/img/products/shopping-large.jpg
     - /assets/img/products/download-large.jpg
