@@ -127,13 +127,7 @@
     - { size: "King / CA King, 2 bases", mattress: 1199, foundation: 1549, ease: 2997 }
     - { size: "Split King / CA King", mattress: 1298, foundation: 1648, ease: 3096 }
   images:
-    - /assets/img/products/sealy/golden-elegance-featherton-ept-1.jpg
-    - /assets/img/products/sealy/golden-elegance-featherton-ept-2.jpg
-    - /assets/img/products/sealy/golden-elegance-featherton-ept-3.jpg
-    - /assets/img/products/sealy/golden-elegance-featherton-ept-4.jpg
-    - /assets/img/products/sealy/golden-elegance-featherton-ept-5.jpg
-    - /assets/img/products/sealy/golden-elegance-featherton-ept-6.jpg
-    - /assets/img/products/sealy/golden-elegance-featherton-ept-7.jpg
+    - /assets/img/products/sealy/golden-elegance-featherton-ept.jpg
   features:
     - "Two layers of Sealy gel foams work together with responsive coils and a thick Euro Pillow Top for a soft feel"
     - "Precisely engineered coils respond to movement to support you through the night"
