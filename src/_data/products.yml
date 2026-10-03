@@ -52,35 +52,6 @@
     - "638 Coil Count: The Response Open Coil innerspring system provides balanced, all-over support to ensure a restorative sleep."
     - "SolidEdge™ System: Reinforced edges deliver durability and additional sleep space, letting you stretch out in comfort.QUALITY YOU CAN TRUST—This Sealy mattress was proudly built, assembled, and tested in the USA, and is backed by a 10-year limited warranty."
 
-- slug: sealy-golden-elegance-featherton
-  name: "Golden Elegance Featherton Euro Pillow Top"
-  brand: "Sealy®"
-  brand_page: /sealy/
-  collection: "Golden Elegance"
-  type: mattress
-  feel: Soft
-  price: 799
-  price_label: "Queen mattress"
-  size_prices:
-    - { size: "Twin", mattress: 599, foundation: 774, ease: 1498 }
-    - { size: "Twin XL", mattress: 649, foundation: 824, ease: 1548 }
-    - { size: "Full", mattress: 749, foundation: 999, ease: 1748 }
-    - { size: "Queen", mattress: 799, foundation: 1049, ease: 1798 }
-    - { size: "King / CA King, 1 base", mattress: 1199, foundation: null, ease: 2698 }
-    - { size: "King / CA King, 2 bases", mattress: 1199, foundation: 1549, ease: 2997 }
-    - { size: "Split King / CA King", mattress: 1298, foundation: 1648, ease: 3096 }
-  images:
-    - /assets/img/products/frurakzkaxaf.jpg
-    - /assets/img/products/froixroqszyb.jpg
-    - /assets/img/products/frdsmewyjacg-1.jpg
-    - /assets/img/products/frzdnyqlvhgq.jpg
-    - /assets/img/products/frxemkemyllu.jpg
-    - /assets/img/products/frrzhdsljhek.jpg
-    - /assets/img/products/frntipcprmlb.jpg
-    - /assets/img/products/frdsmewyjacg.jpg
-  features:
-    - "This innerspring mattress features cushioning comfort, thanks to a balance of our SealyComfort™ and SealySupport™ Gel Foams. The upgraded innerspring system reinforced with our SolidEdge™ foam border delivers soft support across the entire mattress, and the moisture-wicking, antibacterial cover helps keep you comfortable."
-
 - slug: sealy-golden-elegance-bridgerton
   name: "Golden Elegance Bridgerton"
   brand: "Sealy®"
@@ -116,6 +87,33 @@
     - "Knit Cover with MoistureProtect™: A premium knit fabric cover that efficiently wicks away moisture, ensuring a dry and comfortable sleep environment."
     - "SealyStability™ Coil: Precision-engineered coils offer deep support and reduce motion transfer across the mattress."
     - "StableEdge™ Pro System: A reinforced edge system that increases the usable sleeping area and provides a solid edge for sitting."
+
+- slug: sealy-golden-elegance-featherton-euro-pillow-top
+  name: "Golden Elegance Featherton Euro Pillow Top"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Golden Elegance"
+  type: mattress
+  feel: Soft
+  price: 799
+  price_label: "Queen mattress"
+  size_prices:
+    - { size: "Twin", mattress: 599, foundation: 774, ease: 1498 }
+    - { size: "Twin XL", mattress: 649, foundation: 824, ease: 1548 }
+    - { size: "Full", mattress: 749, foundation: 999, ease: 1748 }
+    - { size: "Queen", mattress: 799, foundation: 1049, ease: 1798 }
+    - { size: "King / CA King, 1 base", mattress: 1199, foundation: null, ease: 2698 }
+    - { size: "King / CA King, 2 bases", mattress: 1199, foundation: 1549, ease: 2997 }
+    - { size: "Split King / CA King", mattress: 1298, foundation: 1648, ease: 3096 }
+  images:
+    - /assets/img/products/frurakzkaxaf.jpg
+    - /assets/img/products/froixroqszyb.jpg
+    - /assets/img/products/frdsmewyjacg-1.jpg
+    - /assets/img/products/frzdnyqlvhgq.jpg
+    - /assets/img/products/frxemkemyllu.jpg
+    - /assets/img/products/frrzhdsljhek.jpg
+    - /assets/img/products/frntipcprmlb.jpg
+    - /assets/img/products/frdsmewyjacg.jpg
 
 - slug: sealy-remington-soft-hybrid
   name: "Remmington Soft Hybrid"
@@ -174,7 +172,6 @@
     - "Stretch-Knit Cover with MoistureProtect and Surface-Guard Technology"
     - "SealySupport Gel Foam"
     - "15\" Height"
-
 - slug: sealy-posturepedic-spring-medium-tight-top
   name: "Posturepedic Spring Medium (Tight Top)"
   brand: "Sealy®"
