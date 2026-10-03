@@ -1,20 +1,17 @@
 ---
 layout: base.njk
 title: Sealy Mattresses
-description: Shop Sealy Posturepedic, Posturepedic Elite, Icon, Cocoon, Dreamlife, and Golden Elegance mattresses at Bed Back & Blinds in Dubuque, Iowa.
+description: Shop Sealy Golden Elegance, Posturepedic, and Posturepedic Elite mattresses at Bed Back & Blinds in Dubuque, Iowa.
 sealyGroups:
   - { id: golden-elegance, title: "Golden Elegance", blurb: "Sealy's line for local mattress stores, including the Stately, Featherton, Bridgerton, and Remmington models.", collections: ["Golden Elegance"] }
   - { id: posturepedic, title: "Posturepedic", blurb: "Sealy's classic Posturepedic support, as an innerspring or a hybrid.", collections: ["Posturepedic Spring", "Posturepedic Hybrid"] }
   - { id: posturepedic-elite, title: "Posturepedic Elite", blurb: "The Albany II, Brenham II, and High Point II, in spring and hybrid builds.", collections: ["Posturepedic Elite"] }
-  - { id: icon, title: "Sealy Icon", blurb: "Sealy's newest collection.", collections: ["Sealy Icon"] }
-  - { id: cocoon, title: "Cocoon by Sealy", blurb: "Cooling memory foam and hybrid mattresses.", collections: ["Cocoon by Sealy"] }
-  - { id: dreamlife, title: "Dreamlife", blurb: "Affordable foam and hybrid mattresses.", collections: ["Dreamlife"] }
   - { id: bases, title: "Bases & Foundations", blurb: "The Ease power base and StableSupport foundations.", collections: ["Ease Power Base", "StableSupport Foundation"] }
 ---
 <section class="section">
   <div class="container">
     <img class="brand-logo" src="/assets/img/brands/sealy.png" alt="Sealy" width="340">
-    <div class="section-head"><h1>Sealy Mattresses</h1><p>We carry the full Sealy line. Prices listed are for Queen size. Contact us for pricing on other sizes.</p></div>
+    <div class="section-head"><h1>Sealy Mattresses</h1><p>We carry Sealy's Golden Elegance, Posturepedic, and Posturepedic Elite mattresses. Prices listed are for Queen size. Contact us for pricing on other sizes.</p></div>
     <nav class="sub-nav" aria-label="Sealy collections">{% for c in sealyGroups %}<a href="#{{ c.id }}">{{ c.title }}</a>{% endfor %}</nav>
   </div>
 </section>
