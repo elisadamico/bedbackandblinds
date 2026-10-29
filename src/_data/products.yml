@@ -504,6 +504,56 @@
     - "SealyChill cooling cover"
     - "Coil edge support"
 
+- slug: cocoon-by-sealy-chill-hybrid
+  name: "Cocoon by Sealy Chill Hybrid"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Cocoon by Sealy"
+  type: mattress
+  feel: "Medium"
+  price: 1149
+  price_label: "Queen mattress"
+  # Tempur Sealy ships Cocoon free by UPS in the lower 48 states. We order it on the B2B portal
+  # with the customer's address after they pay online.
+  ship_free: true
+  images:
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-hybrid-1.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-hybrid-2.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-hybrid-3.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-hybrid-4.jpg
+  features:
+    - "12\" hybrid (memory foam over coils)"
+    - "Medium feel"
+    - "Over 900 individually encased coils"
+    - "Quantum Edge reinforced perimeter"
+    - "Cool-to-the-touch cover with phase change material"
+    - "10-year limited warranty"
+
+- slug: cocoon-by-sealy-chill-memory-foam
+  name: "Cocoon by Sealy Chill Memory Foam"
+  brand: "Sealy®"
+  brand_page: /sealy/
+  collection: "Cocoon by Sealy"
+  type: mattress
+  feel: "Medium"
+  price: 919
+  price_label: "Queen mattress"
+  # Tempur Sealy ships Cocoon free by UPS in the lower 48 states. We order it on the B2B portal
+  # with the customer's address after they pay online.
+  ship_free: true
+  images:
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-memory-foam-1.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-memory-foam-2.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-memory-foam-3.jpg
+    - /assets/img/products/sealy/cocoon-by-sealy-chill-memory-foam-4.jpg
+  features:
+    - "10\" all-foam mattress"
+    - "Medium feel"
+    - "Cool-to-the-touch cover with phase change material"
+    - "Perfect Fit memory foam over 8\" of support foam"
+    - "Ships compressed via UPS"
+    - "10-year limited warranty"
+
 - slug: sealy-ease-power-base
   name: "Ease Power Base"
   brand: "Sealy®"
@@ -1035,6 +1085,7 @@
       - { name: "Cooling gel", sku: ZZQQMPZG }
       - { name: "Bamboo charcoal", sku: ZZQQMPZB }
       - { name: "Lavender", sku: ZZQQMPASZL }
+      - { name: "Peppermint", sku: ZZQQMPASZP }
       - { name: "CBD", sku: ZZQQMPASZS, price: 149.99 }
   price_from: true
   images:
@@ -1064,6 +1115,7 @@
       - { name: "Cooling gel", sku: ZZQQMPADZG }
       - { name: "Bamboo charcoal", sku: ZZQQMPADZB }
       - { name: "Lavender", sku: ZZQQMPADASZL }
+      - { name: "Peppermint", sku: ZZQQMPADASZP }
       - { name: "CBD", sku: ZZQQMPADASZS }
   price_from: true
   images:
@@ -1272,6 +1324,7 @@
     choices:
       - { name: "Bamboo charcoal", sku: ZZQQSCMPZB }
       - { name: "Lavender", sku: ZZQQSCMPASZL }
+      - { name: "Peppermint", sku: ZZQQSCMPASZP }
       - { name: "CBD", sku: ZZQQSCMPASZS, price: 149.99 }
   price_from: true
   images:

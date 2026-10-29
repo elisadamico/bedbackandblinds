@@ -27,7 +27,11 @@ sizes:
         <li>{% if shop.checkout_url %}Order online here, or call us at <a href="{{ site.phone_href }}">{{ site.phone }}</a>{% else %}Call us at <a href="{{ site.phone_href }}">{{ site.phone }}</a> to order{% endif %}</li>
       </ul>
     </div>
-    <div class="product-grid bib-grid">{% for p in boxed %}{% include "product-card.njk" %}{% endfor %}</div>
+    <div class="slider" data-slider>
+      <button class="slider-btn prev" type="button" data-slide="-1" aria-label="Previous mattress" hidden><svg viewBox="0 0 10 16" width="10" height="16" aria-hidden="true"><path d="M8 2 2 8l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="slider-track" data-slider-track>{% for p in boxed %}<div class="slide">{% include "product-card.njk" %}</div>{% endfor %}</div>
+      <button class="slider-btn next" type="button" data-slide="1" aria-label="Next mattress" hidden><svg viewBox="0 0 10 16" width="10" height="16" aria-hidden="true"><path d="m2 2 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
   </div>
 </section>
 {% endif %}

@@ -112,6 +112,27 @@
     el.classList.toggle("promo-live", today >= localDay(d[0]) && today <= localDay(d[1]));
   });
 
+  // --- Sliders (swipe on phones, arrow buttons when the cards don't all fit) ---
+  document.querySelectorAll("[data-slider]").forEach(function (slider) {
+    var track = slider.querySelector("[data-slider-track]");
+    var prev = slider.querySelector("[data-slide='-1']"), next = slider.querySelector("[data-slide='1']");
+    function update() {
+      var max = track.scrollWidth - track.clientWidth - 2;
+      prev.hidden = next.hidden = max <= 0;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max;
+    }
+    [prev, next].forEach(function (b) {
+      b.addEventListener("click", function () {
+        var slide = track.querySelector(".slide");
+        track.scrollBy({ left: +b.getAttribute("data-slide") * (slide ? slide.offsetWidth + 16 : track.clientWidth), behavior: "smooth" });
+      });
+    });
+    track.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  });
+
   // --- Contact form: fill in the product someone asked about ---
   var about = new URLSearchParams(location.search).get("about");
   var msg = document.querySelector("[data-message]");

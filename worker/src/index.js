@@ -84,7 +84,7 @@ async function createCheckout({ items, method, zip, agreed }, env) {
     params.metadata.zip = zip;
     params.shipping_address_collection = { allowed_countries: ["US"] };
     params.shipping_options = [{ shipping_rate_data: { type: "fixed_amount", display_name: catalog.ship_label, fixed_amount: { amount: 0, currency: "usd" } } }];
-    params.custom_text = { shipping_address: { message: `Tax was worked out for ZIP code ${zip}, so please ship to an address in that ZIP code. Your mattress ships by UPS straight from Tempur-Pedic.` } };
+    params.custom_text = { shipping_address: { message: `Tax was worked out for ZIP code ${zip}, so please ship to an address in that ZIP code. Your mattress ships by UPS straight from the manufacturer.` } };
   } else if (method === "pickup") {
     params.custom_text = { submit: { message: `${catalog.pickup_label}. We'll call when your order is ready.` } };
   } else {

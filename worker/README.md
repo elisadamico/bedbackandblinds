@@ -36,6 +36,6 @@ Each paid order arrives as a Stripe email and shows in the Stripe dashboard unde
 with the customer's phone number, the method (pickup, delivery, or ship), and the address.
 
 - Pickup and delivery: call the customer to schedule.
-- Ship (free UPS, TEMPUR-Cloud only for now): log into the Tempur Sealy B2B portal, order the
+- Ship (free UPS, TEMPUR-Cloud and Cocoon by Sealy): log into the Tempur Sealy B2B portal, order the
   mattress on the dealer account, and paste the customer's shipping address from Stripe.
   To make another product ship free, add `ship_free: true` to it in `src/_data/products.yml`.

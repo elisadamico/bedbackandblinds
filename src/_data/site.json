@@ -49,28 +49,6 @@
   ],
   "nav": [
     {
-      "label": "About",
-      "url": "/about-us/"
-    },
-    {
-      "label": "Mattresses",
-      "url": "/mattresses/",
-      "children": [
-        {
-          "label": "All Mattresses & Bases",
-          "url": "/mattresses/"
-        },
-        {
-          "label": "Tempur-Pedic",
-          "url": "/tempur-pedic/"
-        },
-        {
-          "label": "Sealy",
-          "url": "/sealy/"
-        }
-      ]
-    },
-    {
       "label": "Window Treatments",
       "url": "/window-treatments/",
       "children": [
@@ -101,6 +79,24 @@
         {
           "label": "Hunter Douglas",
           "url": "/hunter-douglas/"
+        }
+      ]
+    },
+    {
+      "label": "Mattresses",
+      "url": "/mattresses/",
+      "children": [
+        {
+          "label": "All Mattresses & Bases",
+          "url": "/mattresses/"
+        },
+        {
+          "label": "Tempur-Pedic",
+          "url": "/tempur-pedic/"
+        },
+        {
+          "label": "Sealy",
+          "url": "/sealy/"
         }
       ]
     },
@@ -155,6 +151,10 @@
           "url": "/malouf/#protectors"
         }
       ]
+    },
+    {
+      "label": "About",
+      "url": "/about-us/"
     },
     {
       "label": "Gallery",
