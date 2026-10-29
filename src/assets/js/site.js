@@ -19,27 +19,29 @@
   document.addEventListener("click", function (e) { if (nav && !nav.contains(e.target)) closeSubs(null); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeSubs(null); closeViewer(); } });
 
-  // --- Product filters and sorting (Mattresses page) ---
-  var grid = document.querySelector("[data-product-grid]");
-  if (grid) {
-    var cards = Array.prototype.slice.call(grid.querySelectorAll(".product-card"));
+  // --- Product filters and sorting (Mattresses page: the brand chips and sort apply to every grid) ---
+  var grids = Array.prototype.slice.call(document.querySelectorAll("[data-product-grid]"));
+  if (grids.length) {
     var chips = document.querySelectorAll("[data-filter]");
     var sort = document.querySelector("[data-sort]");
-    var count = document.querySelector("[data-count]");
+    var counts = document.querySelectorAll("[data-count]");
+    var lists = grids.map(function (g) { return Array.prototype.slice.call(g.querySelectorAll(".product-card")); });
     function apply() {
       var active = document.querySelector("[data-filter][aria-pressed='true']");
       var f = active ? active.getAttribute("data-filter") : "all";
-      var shown = 0;
-      cards.forEach(function (c) {
-        var ok = f === "all" || c.dataset.brand === f || c.dataset.type === f;
-        c.hidden = !ok; if (ok) shown++;
-      });
       var how = sort ? sort.value : "featured";
-      var sorted = cards.slice();
-      if (how === "low") sorted.sort(function (a, b) { return a.dataset.price - b.dataset.price; });
-      if (how === "high") sorted.sort(function (a, b) { return b.dataset.price - a.dataset.price; });
-      sorted.forEach(function (c) { grid.appendChild(c); });
-      if (count) count.textContent = shown + (shown === 1 ? " product" : " products");
+      grids.forEach(function (grid, i) {
+        var shown = 0;
+        lists[i].forEach(function (c) {
+          var ok = f === "all" || c.dataset.brand === f || c.dataset.type === f;
+          c.hidden = !ok; if (ok) shown++;
+        });
+        var sorted = lists[i].slice();
+        if (how === "low") sorted.sort(function (a, b) { return a.dataset.price - b.dataset.price; });
+        if (how === "high") sorted.sort(function (a, b) { return b.dataset.price - a.dataset.price; });
+        sorted.forEach(function (c) { grid.appendChild(c); });
+        if (counts[i]) counts[i].textContent = shown + (shown === 1 ? " product" : " products");
+      });
     }
     chips.forEach(function (chip) {
       chip.addEventListener("click", function () {
@@ -48,6 +50,9 @@
       });
     });
     if (sort) sort.addEventListener("change", apply);
+    // A menu link like /mattresses/?brand=Malouf starts on that brand.
+    var want = new URLSearchParams(location.search).get("brand");
+    chips.forEach(function (c) { if (want && c.textContent.trim() === want) { chips.forEach(function (o) { o.setAttribute("aria-pressed", "false"); }); c.setAttribute("aria-pressed", "true"); } });
     apply();
   }
 

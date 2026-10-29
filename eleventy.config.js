@@ -22,6 +22,7 @@ export default function (eleventyConfig) {
   // The manufacturer promotion a product is in (src/_data/promos.yml), if any. "live" is for the
   // day the site is built. The browser checks the dates again (site.js), so promos switch on schedule.
   const promos = loadYaml(readFileSync("src/_data/promos.yml", "utf8")) || [];
+  const furnitureSale = JSON.parse(readFileSync("src/_data/furniture_sale.json", "utf8"));
   const localDay = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
   eleventyConfig.addFilter("promo", (p) => {
     for (const promo of promos) {
@@ -69,14 +70,20 @@ export default function (eleventyConfig) {
     for (const f of furniture.items) {
       const fp = fprices[f.sku];
       if (!fp) continue;
-      items[`f:${f.sku}`] = { name: `Coaster ${f.full_name} (item ${f.sku})`, price: fp.sale || fp.price,
-        ...(fp.sale && { was: fp.price }), image: f.image, url: `/furniture/item/${f.slug}/` };
+      // A sale price works like a promo: the regular price, less the savings between the sale dates.
+      const fsale = fp.sale && { off: Math.round((fp.price - fp.sale) * 100) / 100, start: furnitureSale.start, end: furnitureSale.end };
+      items[`f:${f.sku}`] = { name: `Coaster ${f.full_name} (item ${f.sku})`, price: fp.price,
+        ...(fsale && { promo: fsale }), image: f.image, url: `/furniture/item/${f.slug}/` };
     }
     const { note, checkout_url, ...settings } = shop;
     return { ...settings, zips, items };
   });
 
   // Furniture sale percent off, rounded down so it never overstates the savings.
+  // Whether a { start, end } date range includes the day the site is built (site.js checks again in the browser).
+  // "2026-12-01" -> "December 1"
+  eleventyConfig.addFilter("monthDay", (s) => { const d = localDay(s); return `${d.toLocaleString("en-US", { month: "long" })} ${d.getDate()}`; });
+  eleventyConfig.addFilter("liveNow", (r) => { const t = new Date(); t.setHours(0, 0, 0, 0); return t >= localDay(r.start) && t <= localDay(r.end); });
   eleventyConfig.addFilter("percentOff", (fp) => Math.floor(100 * (1 - fp.sale / fp.price)));
   // Furniture with a sale price in furniture_prices.yml, biggest percent off first.
   eleventyConfig.addFilter("furnitureOnSale", (items, prices) =>
@@ -87,6 +94,7 @@ export default function (eleventyConfig) {
 
   // 1599 -> "$1,599"
   eleventyConfig.addFilter("money", (n) => "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: Number.isInteger(Number(n)) ? 0 : 2, maximumFractionDigits: 2 }));
+  eleventyConfig.addFilter("ofType", (products, types) => products.filter((p) => types.includes(p.type)));
   eleventyConfig.addFilter("shipsFree", (products) => products.filter((p) => p.ship_free));
   eleventyConfig.addFilter("mattressesOnly", (products) => products.filter((p) => p.section !== "bedding"));
   eleventyConfig.addFilter("inCollection", (products, c) => products.filter((p) => p.collection === c));

@@ -15,10 +15,21 @@ description: Coaster Fine Furniture at Bed Back & Blinds in Dubuque, Iowa. Brows
 </section>
 {% set list = furniture.items | furnitureOnSale(furniture_prices) %}
 {% if list.length %}
-<section class="section" id="sale">
+<div class="{% if furniture_sale | liveNow %}promo-live{% endif %}" data-promo="{{ furniture_sale.start }}|{{ furniture_sale.end }}">
+<section class="section promo-only" id="sale">
   <div class="container">
-    <div class="section-head"><h2>Furniture on Sale</h2><p>{{ list.length }} pieces at sale prices, biggest savings first. Call or stop by to see them.</p></div>
+    <div class="section-head"><h2>Furniture on Sale</h2><p>{{ list.length }} pieces at sale prices through {{ furniture_sale.end | monthDay }}, biggest savings first. Call or stop by to see them.</p></div>
     {% set groupBy = "cat_title" %}{% set groupLabel = "type" %}{% include "furniture-grid.njk" %}
+  </div>
+</section>
+</div>
+{% endif %}
+{% set frames = products | byBrand("Malouf") | inCollection("Headboards & Frames") %}
+{% if frames.length %}
+<section class="section" id="malouf-headboards-frames">
+  <div class="container">
+    <div class="section-head"><h2>Headboards &amp; Bed Frames from Malouf</h2><p>Upholstered headboards, platform bases, and steel frames. Prices are for Queen size.</p></div>
+    <div class="product-grid">{% for p in frames %}{% include "product-card.njk" %}{% endfor %}</div>
   </div>
 </section>
 {% endif %}

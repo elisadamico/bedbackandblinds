@@ -26,10 +26,10 @@ eleventyComputed:
           {% if f.color %}<span class="tag">{{ f.color }}</span>{% elif f.color_family.length %}<span class="tag">{{ f.color_family | join(" / ") }}</span>{% endif %}
           {% if f.new %}<span class="tag">New arrival</span>{% endif %}
         </div>
-        <div class="buy-box">
-          {% set fp = furniture_prices[f.sku] %}
-          {% if fp %}{% if fp.sale %}<p class="sale-line"><span class="sale-tag inline">Save {{ fp | percentOff }}%</span> Sale price</p>{% endif %}
-          <p class="big-price">{% if fp.sale %}<s class="was">{{ fp.price | money }}</s> <b class="now">{{ fp.sale | money }}</b>{% else %}{{ fp.price | money }}{% endif %}</p>
+        {% set fp = furniture_prices[f.sku] %}{% set onsale = fp and fp.sale %}
+        <div class="buy-box{% if onsale and (furniture_sale | liveNow) %} promo-live{% endif %}"{% if onsale %} data-promo="{{ furniture_sale.start }}|{{ furniture_sale.end }}"{% endif %}>
+          {% if fp %}{% if onsale %}<p class="sale-line promo-only"><span class="sale-tag inline">Save {{ fp | percentOff }}%</span> {{ furniture_sale.name }} through {{ furniture_sale.end | monthDay }}.</p>{% endif %}
+          <p class="big-price">{% if onsale %}<s class="was promo-only">{{ fp.price | money }}</s> <b class="now promo-only">{{ fp.sale | money }}</b><b class="promo-hide">{{ fp.price | money }}</b>{% else %}{{ fp.price | money }}{% endif %}</p>
           <p class="price-note">Call or stop by to see it. If this piece isn't on our showroom floor, we can order it for you.</p>
           {% else %}<p class="price-note">Call or stop by for pricing. If this piece isn't on our showroom floor, we can order it for you.</p>{% endif %}
           {% if shop.checkout_url and fp %}<div class="cart-add">

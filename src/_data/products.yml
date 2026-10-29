@@ -1626,7 +1626,7 @@
   name: "E255 Adjustable Bed Base"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Adjustable Bases"
   type: base
   price: 1229.99
@@ -1647,7 +1647,7 @@
   name: "E455 Smart Adjustable Bed Base"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Adjustable Bases"
   type: base
   price: 1489.99
@@ -1668,7 +1668,7 @@
   name: "M455 Smart Adjustable Bed Base"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Adjustable Bases"
   type: base
   price: 1669.99
@@ -1689,7 +1689,7 @@
   name: "M555 Smart Adjustable Bed Base"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Adjustable Bases"
   type: base
   price: 1929.99
@@ -1710,7 +1710,7 @@
   name: "S655 Smart Adjustable Bed Base"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Adjustable Bases"
   type: base
   price: 2099.99
@@ -1731,7 +1731,7 @@
   name: "S755 Smart Adjustable Bed Base"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Adjustable Bases"
   type: base
   price: 2799.99
@@ -1754,7 +1754,7 @@
   name: "Neve 10\" CoolSync All-Foam Mattress"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Mattresses"
   type: mattress
   feel: "Medium Firm"
@@ -1774,7 +1774,7 @@
   name: "Neve 12\" ActivAir All-Foam Mattress"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Mattresses"
   type: mattress
   feel: "Medium"
@@ -1795,7 +1795,7 @@
   name: "Polaris 12\" CoolSync Hybrid Mattress"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Mattresses"
   type: mattress
   feel: "Medium"
@@ -1816,7 +1816,7 @@
   name: "Polaris 12\" ActivAir Hybrid Mattress"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Mattresses"
   type: mattress
   feel: "Medium Plush"
@@ -1837,7 +1837,7 @@
   name: "Polaris 12\" AeroFlex Hybrid Mattress"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Mattresses"
   type: mattress
   feel: "Firm"
@@ -1858,7 +1858,7 @@
   name: "Ice Cloud 14\" CoolSync Hybrid Mattress"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Mattresses"
   type: mattress
   feel: "Medium Plush"
@@ -1879,7 +1879,7 @@
   name: "Ice Cloud 13\" ActivAir Hybrid Mattress"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Mattresses"
   type: mattress
   feel: "Ultra Plush"
@@ -1900,7 +1900,7 @@
   name: "Ice Cloud 14\" AeroFlex Hybrid Mattress"
   brand: "Malouf"
   brand_page: /malouf/
-  section: bedding
+  section: mattresses
   collection: "Mattresses"
   type: mattress
   feel: "Medium"

@@ -49,7 +49,7 @@ eleventyComputed:
           </div>
           {% if product.section == "bedding" %}<ul class="perks"><li>Ask us about it in our Dubuque showroom</li>{% if product.type == "pillow" %}<li>We'll help you choose the right pillow for the way you sleep</li>{% endif %}</ul>{% else %}
           <ul class="perks">
-            <li>Try it in our Dubuque showroom</li>
+            <li>{% if product.brand == "Malouf" %}Ask us about it in our Dubuque showroom{% else %}Try it in our Dubuque showroom{% endif %}</li>
             {% if product.ship_free %}<li>Ships free by UPS anywhere in the lower 48 states</li>{% endif %}
             {% if promo %}<li class="promo-only">On sale in our store: free delivery or bed frame, free in-home set up, and free removal of your old mattress (ask for details)</li>{% endif %}
           </ul>{% endif %}

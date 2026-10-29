@@ -415,3 +415,5 @@ button.btn { font: inherit; font-weight: 700; cursor: pointer; }
 .slider-btn.prev { left: -14px; }
 .slider-btn.next { right: -14px; }
 @media (max-width: 760px) { .slide { flex-basis: 78%; } .slider-btn { display: none; } }
+.grid-head { display: flex; align-items: baseline; gap: 0.75rem; margin: 2.25rem 0 1rem; scroll-margin-top: 1rem; }
+.grid-head .count { font-family: var(--font-body); font-size: 0.95rem; font-weight: 400; color: var(--muted); }

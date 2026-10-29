@@ -1,11 +1,12 @@
-<article class="product-card" data-group="{{ f[groupBy] if groupBy else '' }}" data-colors="|{{ f.color_family | join('|') }}|" data-material="{{ f.material }}">
-  {% set fp = furniture_prices[f.sku] %}
-  {% if fp and fp.sale %}<span class="sale-tag">Save {{ fp | percentOff }}%</span>{% elif f.new %}<span class="sale-tag new-tag">New</span>{% endif %}
+{% set fp = furniture_prices[f.sku] %}{% set onsale = fp and fp.sale %}
+<article class="product-card{% if onsale and (furniture_sale | liveNow) %} promo-live{% endif %}" data-group="{{ f[groupBy] if groupBy else '' }}" data-colors="|{{ f.color_family | join('|') }}|" data-material="{{ f.material }}"{% if onsale %} data-promo="{{ furniture_sale.start }}|{{ furniture_sale.end }}"{% endif %}>
+  {% if onsale %}<span class="sale-tag promo-only">Save {{ fp | percentOff }}%</span>{% endif %}
+  {% if f.new %}<span class="sale-tag new-tag{% if onsale %} promo-hide{% endif %}">New</span>{% endif %}
   <a class="product-thumb" href="/furniture/item/{{ f.slug }}/"><img src="{{ f.image }}" alt="Coaster {{ f.name }}" loading="lazy"></a>
   <div class="product-body">
     <p class="product-brand">Coaster{% if f.collection %} · {{ f.collection }}{% endif %}</p>
     <h3><a href="/furniture/item/{{ f.slug }}/">{{ f.name }}</a></h3>
-    {% if fp %}<p class="product-price furniture-price">{% if fp.sale %}<s class="was">{{ fp.price | money }}</s> <b class="now">{{ fp.sale | money }}</b>{% else %}{{ fp.price | money }}{% endif %}</p>{% endif %}
+    {% if fp %}<p class="product-price furniture-price">{% if onsale %}<s class="was promo-only">{{ fp.price | money }}</s> <b class="now promo-only">{{ fp.sale | money }}</b><b class="promo-hide">{{ fp.price | money }}</b>{% else %}{{ fp.price | money }}{% endif %}</p>{% endif %}
     <p class="product-ask"><a href="/contact/?about={{ ('Coaster ' + f.name + ' (' + f.sku + ')') | urlencode }}#form">Ask about this piece</a></p>
   </div>
 </article>

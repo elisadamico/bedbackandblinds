@@ -95,12 +95,24 @@
           "url": "/mattresses/"
         },
         {
+          "label": "Mattresses",
+          "url": "/mattresses/#mattresses"
+        },
+        {
+          "label": "Adjustable Bases & Foundations",
+          "url": "/mattresses/#bases"
+        },
+        {
           "label": "Tempur-Pedic",
           "url": "/tempur-pedic/"
         },
         {
           "label": "Sealy",
           "url": "/sealy/"
+        },
+        {
+          "label": "Malouf",
+          "url": "/mattresses/?brand=Malouf"
         }
       ]
     },
@@ -119,6 +131,10 @@
         {
           "label": "Bedroom",
           "url": "/furniture/bedroom/"
+        },
+        {
+          "label": "Headboards & Bed Frames",
+          "url": "/furniture/#malouf-headboards-frames"
         },
         {
           "label": "Dining",
@@ -163,12 +179,8 @@
           "url": "/malouf/#headboards-and-frames"
         },
         {
-          "label": "Malouf Mattresses",
-          "url": "/malouf/#mattresses"
-        },
-        {
-          "label": "Malouf Adjustable Bases",
-          "url": "/malouf/#adjustable-bases"
+          "label": "Malouf Mattresses & Bases",
+          "url": "/mattresses/?brand=Malouf"
         }
       ]
     },
