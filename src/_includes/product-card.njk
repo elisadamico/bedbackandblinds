@@ -6,5 +6,6 @@
     <p class="product-brand">{{ p.brand }}{% if p.feel %} · {{ p.feel }}{% endif %}{% if p.type == "base" %} · Adjustable base{% elif p.type == "foundation" %} · Foundation{% endif %}</p>
     <h3><a href="{{ p | productUrl }}">{{ p.name }}</a></h3>
     <p class="product-price">{% if p.price_from %}<span class="from">From</span> {% endif %}{% if promo %}<s class="was promo-only">{{ p.price | money }}</s> <b class="promo-only">{{ (p.price - promo.off) | money }}</b><b class="promo-hide">{{ p.price | money }}</b>{% else %}{{ p.price | money }}{% endif %} <span>{{ p.price_label }}</span></p>
+    {% if p.ship_free %}<p class="ship-badge"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 5h11v3h4l3 4v5h-2a2.5 2.5 0 0 1-5 0H9a2.5 2.5 0 0 1-5 0H3zm11 5v4h5v-1.4L17 10zM6.5 16a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm10 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg> Ships free by UPS</p>{% endif %}
   </div>
 </article>

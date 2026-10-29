@@ -74,6 +74,7 @@ featured: [sealy-golden-elegance-stately, tempur-adapt-medium, tempur-proadapt-m
 
 <section class="section">
   <div class="container">
+    {% if (products | shipsFree).length %}<a class="ship-band" href="/mattresses/#bed-in-a-box"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2 3 6.5v11L12 22l9-4.5v-11zm0 2.2 6.6 3.3L12 10.8 5.4 7.5zM5 9.1l6 3v7.6l-6-3zm8 10.6v-7.6l6-3v7.6z"/></svg><span><b>Bed in a Box ships free</b> to anywhere in the lower 48 states. See which mattresses</span></a>{% endif %}
     <div class="section-head"><h2>Select Products</h2><p>Check out a few of our most popular offerings</p></div>
     <div class="split highlight">
       <div class="highlight-img"><img src="/assets/img/site/black-tempur-pedic-adjustable-beds-25552132-31-600.jpg" alt="Woman relaxing on a Tempur-Pedic mattress on an adjustable base" loading="lazy"></div>

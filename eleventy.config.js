@@ -78,6 +78,7 @@ export default function (eleventyConfig) {
 
   // 1599 -> "$1,599"
   eleventyConfig.addFilter("money", (n) => "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: Number.isInteger(Number(n)) ? 0 : 2, maximumFractionDigits: 2 }));
+  eleventyConfig.addFilter("shipsFree", (products) => products.filter((p) => p.ship_free));
   eleventyConfig.addFilter("mattressesOnly", (products) => products.filter((p) => p.section !== "bedding"));
   eleventyConfig.addFilter("inCollection", (products, c) => products.filter((p) => p.collection === c));
   eleventyConfig.addFilter("productUrl", (p) => `/${p.section || "mattresses"}/${p.slug}/`);
