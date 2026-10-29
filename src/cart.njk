@@ -23,6 +23,7 @@ eleventyExcludeFromCollections: true
           <p class="price-note" data-zip-note aria-live="polite"></p>
         </div>
         <div class="cart-totals" data-totals aria-live="polite"></div>
+        <label class="cart-option cart-agree"><input type="checkbox" data-agree> <span>I agree to the <a href="/order-policy/" target="_blank" rel="noopener">order, cancellation, and return policy</a>.</span></label>
         <button class="btn cart-pay" type="button" data-pay disabled>Check out</button>
         <p class="cart-error" data-pay-error hidden role="alert"></p>
         <p class="price-note">You'll pay on Stripe's secure checkout page. We'll call you to schedule your delivery or pickup. Questions? Call <a href="{{ site.phone_href }}">{{ site.phone }}</a>.</p>

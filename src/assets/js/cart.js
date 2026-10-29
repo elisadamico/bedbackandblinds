@@ -125,9 +125,11 @@
         if (r[0] === "Total") row.className = "total";
         totals.appendChild(row);
       });
-    payBtn.disabled = !cart.length || !ok;
+    payBtn.disabled = !cart.length || !ok || !agree.checked;
   }
 
+  var agree = page.querySelector("[data-agree]");
+  agree.addEventListener("change", render);
   page.querySelectorAll("[name=method]").forEach(function (r) { r.addEventListener("change", render); });
   zipInput.addEventListener("input", render);
 
@@ -138,7 +140,7 @@
     fetch(checkoutUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ items: load(), method: method(), zip: zipInput.value.trim() })
+      body: JSON.stringify({ items: load(), method: method(), zip: zipInput.value.trim(), agreed: agree.checked })
     }).then(function (r) { return r.json(); }).then(function (res) {
       if (!res.url) throw new Error(res.error || "Checkout is not available right now.");
       location.href = res.url;

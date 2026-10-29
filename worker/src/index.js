@@ -25,7 +25,8 @@ export default {
   },
 };
 
-async function createCheckout({ items, method, zip }, env) {
+async function createCheckout({ items, method, zip, agreed }, env) {
+  if (agreed !== true) throw new Error("Please agree to the order policy before checking out.");
   const res = await fetch(`${SITE}/cart-catalog.json`, { cf: { cacheTtl: 300 } });
   if (!res.ok) throw new Error("Checkout is not available right now.");
   const catalog = await res.json();
@@ -61,7 +62,7 @@ async function createCheckout({ items, method, zip }, env) {
     phone_number_collection: { enabled: true },
     success_url: `${SITE}/order-thanks/`,
     cancel_url: `${SITE}/cart/`,
-    metadata: { method, zip: method === "delivery" ? zip : "" },
+    metadata: { method, zip: method === "delivery" ? zip : "", agreed_to_policy: `${SITE}/order-policy/ (${today})` },
   };
 
   if (method === "delivery") {
