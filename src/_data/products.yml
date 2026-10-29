@@ -1082,7 +1082,6 @@
   options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
     label: Infusion
     choices:
-      - { name: "Cooling gel", sku: ZZQQMPZG }
       - { name: "Bamboo charcoal", sku: ZZQQMPZB }
       - { name: "Lavender", sku: ZZQQMPASZL }
       - { name: "Peppermint", sku: ZZQQMPASZP }
@@ -1618,3 +1617,734 @@
     - "Machine washable and dryer safe"
     - "15-Year Limited Warranty"
 
+# Added Oct 29, 2026 from the Malouf MAP price list 26.3 (sales/MALOUF-PriceList-26.3-MAP.pdf). Prices are MAP.
+# --- Malouf products added from the MAP price list 26.3 (prices are MAP). ---
+
+# Adjustable bases
+
+- slug: malouf-e255-adjustable-base
+  name: "E255 Adjustable Bed Base"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Adjustable Bases"
+  type: base
+  price: 1229.99
+  price_label: "Queen base"
+  sku: STMAE255QQAB   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-e255-adjustable-base-1.jpg
+    - /assets/img/products/malouf/malouf-e255-adjustable-base-2.jpg
+  features:
+    - "Okin components and motors"
+    - "Independent head incline 0 to 60 degrees, foot incline 0 to 40 degrees"
+    - "Backlit wireless remote with Zero Gravity, Anti-Snore, and Flat presets plus two programmable positions"
+    - "True zero clearance, so the legs can be removed to sit on a platform or foundation"
+    - "750-pound weight capacity on all sizes"
+    - "10-year limited warranty"
+
+- slug: malouf-e455-smart-adjustable-base
+  name: "E455 Smart Adjustable Bed Base"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Adjustable Bases"
+  type: base
+  price: 1489.99
+  price_label: "Queen base"
+  sku: STMAE455QQAB   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-e455-smart-adjustable-base-1.jpg
+    - /assets/img/products/malouf/malouf-e455-smart-adjustable-base-2.jpg
+  features:
+    - "Okin components and motors, head incline 0 to 60 degrees and foot incline 0 to 40 degrees"
+    - "Backlit wireless remote with three presets and two programmable positions"
+    - "Works with the Malouf Base App over Bluetooth, including Siri Shortcuts and snore detection"
+    - "USB and USB-C charging ports on both sides"
+    - "850-pound weight capacity, true zero clearance"
+    - "20-year limited warranty"
+
+- slug: malouf-m455-smart-adjustable-base
+  name: "M455 Smart Adjustable Bed Base"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Adjustable Bases"
+  type: base
+  price: 1669.99
+  price_label: "Queen base"
+  sku: STMAM455QQAB   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-m455-smart-adjustable-base-1.jpg
+    - /assets/img/products/malouf/malouf-m455-smart-adjustable-base-2.jpg
+  features:
+    - "Zoned neck and back massage with three intensities"
+    - "Okin motors, head incline 0 to 60 degrees and foot incline 0 to 40 degrees"
+    - "Backlit wireless remote with Zero Gravity and Flat presets plus one programmable position"
+    - "Malouf Base App over Bluetooth, USB and USB-C ports on both sides"
+    - "850-pound weight capacity, true zero clearance"
+    - "20-year limited warranty"
+
+- slug: malouf-m555-smart-adjustable-base
+  name: "M555 Smart Adjustable Bed Base"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Adjustable Bases"
+  type: base
+  price: 1929.99
+  price_label: "Queen base"
+  sku: STMAM555QQAB   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-m555-smart-adjustable-base-1.jpg
+    - /assets/img/products/malouf/malouf-m555-smart-adjustable-base-2.jpg
+  features:
+    - "Dual-zone massage with a choice of times, intensities, and rhythms"
+    - "LED backlit wireless remote with five presets (Zero Gravity, Anti-Snore, Lounge, TV, Flat) and five programmable positions"
+    - "Underbed LED nightlights and a child-lock feature"
+    - "Malouf Base App over Bluetooth, USB and USB-C ports on both sides"
+    - "850-pound weight capacity, true zero clearance"
+    - "20-year limited warranty"
+
+- slug: malouf-s655-smart-adjustable-base
+  name: "S655 Smart Adjustable Bed Base"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Adjustable Bases"
+  type: base
+  price: 2099.99
+  price_label: "Queen base"
+  sku: STMAS655QQAB   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-s655-smart-adjustable-base-1.jpg
+    - /assets/img/products/malouf/malouf-s655-smart-adjustable-base-2.jpg
+  features:
+    - "Head tilt helps improve breathing and reduce snoring"
+    - "Motion-activated LED backlit remote with flashlight, five presets, and two custom positions"
+    - "Dual-zone massage with a choice of times, intensities, and rhythms"
+    - "Underbed LED nightlights, child lock, and a pair button for split sizes"
+    - "850-pound weight capacity, true zero clearance"
+    - "20-year limited warranty"
+
+- slug: malouf-s755-smart-adjustable-base
+  name: "S755 Smart Adjustable Bed Base"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Adjustable Bases"
+  type: base
+  price: 2799.99
+  price_label: "Queen base"
+  sku: STMAS755QQAB   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-s755-smart-adjustable-base-1.jpg
+    - /assets/img/products/malouf/malouf-s755-smart-adjustable-base-2.jpg
+  features:
+    - "Reach Assist moves the bed back as it rises so the nightstand stays within reach"
+    - "Adjustable lumbar support and head tilt"
+    - "Dual-zone massage with a choice of times, intensities, and rhythms"
+    - "Motion-activated LED backlit remote with flashlight, underbed nightlights, and child lock"
+    - "Head incline 0 to 55 degrees, foot incline 0 to 40 degrees, 850-pound weight capacity"
+    - "20-year limited warranty"
+
+# Mattresses
+
+- slug: malouf-neve-10-coolsync-mattress
+  name: "Neve 10\" CoolSync All-Foam Mattress"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Mattresses"
+  type: mattress
+  feel: "Medium Firm"
+  price: 1299.99
+  price_label: "Queen mattress"
+  sku: MM10QQNE38GB   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-neve-10-coolsync-mattress-1.jpg
+  features:
+    - "All-foam design with a medium-firm feel"
+    - "3-inch CoolSync memory foam with a cooling gel infusion contours to the body"
+    - "Transition and base foams stay flexible for use on an adjustable base"
+    - "CertiPUR-US certified foam, compressed and boxed, assembled in the USA"
+    - "10-year warranty"
+
+- slug: malouf-neve-12-activair-mattress
+  name: "Neve 12\" ActivAir All-Foam Mattress"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Mattresses"
+  type: mattress
+  feel: "Medium"
+  price: 1579.99
+  price_label: "Queen mattress"
+  sku: MM12QQNE40RB   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-neve-12-activair-mattress-1.jpg
+  features:
+    - "All-foam design with a medium feel"
+    - "Breathable ActivAir foam has the bounce-back of latex with the pressure relief of memory foam"
+    - "CoolSync memory foam with a cooling gel infusion"
+    - "Transition and base foams stay flexible for use on an adjustable base"
+    - "CertiPUR-US certified foam, compressed and boxed, assembled in the USA"
+    - "10-year warranty"
+
+- slug: malouf-polaris-12-coolsync-hybrid-mattress
+  name: "Polaris 12\" CoolSync Hybrid Mattress"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Mattresses"
+  type: mattress
+  feel: "Medium"
+  price: 1699.99
+  price_label: "Queen mattress"
+  sku: MM12QQPO38GH   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-polaris-12-coolsync-hybrid-mattress-1.jpg
+  features:
+    - "Layered hybrid design with a medium feel"
+    - "CoolSync memory foam with a cooling gel infusion"
+    - "8-inch individually encased zoned pocket coils support common pressure points"
+    - "Soft HyperChill cover is cool to the touch"
+    - "CertiPUR-US certified foam, compressed and boxed, assembled in the USA"
+    - "10-year warranty"
+
+- slug: malouf-polaris-12-activair-hybrid-mattress
+  name: "Polaris 12\" ActivAir Hybrid Mattress"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Mattresses"
+  type: mattress
+  feel: "Medium Plush"
+  price: 1929.99
+  price_label: "Queen mattress"
+  sku: MM12QQPO40RH   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-polaris-12-activair-hybrid-mattress-1.jpg
+  features:
+    - "Layered hybrid design with a medium-plush feel"
+    - "ActivAir foam has the bounce-back of latex with the pressure relief of memory foam"
+    - "CoolSync memory foam with a cooling gel infusion"
+    - "Individually encased zoned pocket coils support common pressure points"
+    - "Soft HyperChill cover is cool to the touch"
+    - "10-year warranty"
+
+- slug: malouf-polaris-12-aeroflex-hybrid-mattress
+  name: "Polaris 12\" AeroFlex Hybrid Mattress"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Mattresses"
+  type: mattress
+  feel: "Firm"
+  price: 2189.99
+  price_label: "Queen mattress"
+  sku: MM12QQPO70LH   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-polaris-12-aeroflex-hybrid-mattress-1.jpg
+  features:
+    - "Layered hybrid design with a firm feel"
+    - "Ventilated AeroFlex Talalay latex sleeps slightly firmer than memory foam and breathes well"
+    - "CoolSync memory foam with a cooling gel infusion"
+    - "8-inch individually encased zoned pocket coils support common pressure points"
+    - "Soft HyperChill cover is cool to the touch"
+    - "10-year warranty"
+
+- slug: malouf-ice-cloud-14-coolsync-hybrid-mattress
+  name: "Ice Cloud 14\" CoolSync Hybrid Mattress"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Mattresses"
+  type: mattress
+  feel: "Medium Plush"
+  price: 2629.99
+  price_label: "Queen mattress"
+  sku: MM14QQIC38GH   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-ice-cloud-14-coolsync-hybrid-mattress-1.jpg
+  features:
+    - "Premium layered hybrid with a medium-plush feel"
+    - "3-inch CoolSync memory foam coated with OmniPhase phase change material that absorbs and releases heat"
+    - "8-inch individually encased zoned pocket coils support common pressure points"
+    - "Soft HyperChill cover is cool to the touch"
+    - "CertiPUR-US certified foam, compressed and boxed, assembled in the USA"
+    - "10-year warranty"
+
+- slug: malouf-ice-cloud-13-activair-hybrid-mattress
+  name: "Ice Cloud 13\" ActivAir Hybrid Mattress"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Mattresses"
+  type: mattress
+  feel: "Ultra Plush"
+  price: 2899.99
+  price_label: "Queen mattress"
+  sku: MM13QQIC40RH   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-ice-cloud-13-activair-hybrid-mattress-1.jpg
+  features:
+    - "Premium layered hybrid with an ultra-plush feel"
+    - "ActivAir foam coated with OmniPhase phase change material that absorbs and releases heat"
+    - "CoolSync memory foam with a cooling gel infusion"
+    - "Individually encased zoned pocket coils support common pressure points"
+    - "Soft HyperChill cover is cool to the touch"
+    - "10-year warranty"
+
+- slug: malouf-ice-cloud-14-aeroflex-hybrid-mattress
+  name: "Ice Cloud 14\" AeroFlex Hybrid Mattress"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Mattresses"
+  type: mattress
+  feel: "Medium"
+  price: 2719.99
+  price_label: "Queen mattress"
+  sku: MM14QQIC70LH   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-ice-cloud-14-aeroflex-hybrid-mattress-1.jpg
+  features:
+    - "Premium layered hybrid with a medium feel"
+    - "Ventilated AeroFlex Talalay latex sleeps slightly firmer than memory foam and breathes well"
+    - "OmniPhase phase change material on the top foam layer absorbs and releases heat"
+    - "8-inch individually encased zoned pocket coils support common pressure points"
+    - "Soft HyperChill cover is cool to the touch"
+    - "10-year warranty"
+
+# Headboards and upholstered bases
+
+- slug: malouf-carlisle-upholstered-headboard
+  name: "Carlisle Upholstered Headboard"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 359.99
+  price_label: "Queen headboard"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "Oat", sku: STQQOACARLHB }
+      - { name: "Charcoal", sku: STQQCHCARLHB }
+      - { name: "Stone", sku: STQQSTCARLHB }
+  images:
+    - /assets/img/products/malouf/malouf-carlisle-upholstered-headboard-1.jpg
+    - /assets/img/products/malouf/malouf-carlisle-upholstered-headboard-2.jpg
+  features:
+    - "Rounded corners with buttonless tufting and ultra-plush padding"
+    - "Legs adjust the height from 46 to 58 inches in 2-inch steps, or mount it directly to the wall"
+    - "Finished back with a discreet storage compartment"
+    - "Pairs with Malouf upholstered bases"
+    - "15-year limited warranty"
+
+- slug: malouf-hennessy-upholstered-headboard
+  name: "Hennessy Upholstered Headboard"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 359.99
+  price_label: "Queen headboard"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "Oat", sku: STQQOAHENNHB }
+      - { name: "Charcoal", sku: STQQCHHENNHB }
+      - { name: "Stone", sku: STQQSTHENNHB }
+  images:
+    - /assets/img/products/malouf/malouf-hennessy-upholstered-headboard-1.jpg
+  features:
+    - "Square corners with buttonless tufting and ultra-plush padding"
+    - "Legs adjust the height from 46 to 58 inches in 2-inch steps, or mount it directly to the wall"
+    - "Finished back with a discreet storage compartment"
+    - "Pairs with Malouf upholstered bases"
+    - "15-year limited warranty"
+
+- slug: malouf-blackwell-designer-headboard
+  name: "Blackwell Designer Headboard"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 449.99
+  price_label: "Queen headboard"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "Oat", sku: STQQOABLWBHB }
+      - { name: "Charcoal", sku: STQQCHBLWBHB }
+      - { name: "Stone", sku: STQQSTBLWBHB }
+  images:
+    - /assets/img/products/malouf/malouf-blackwell-designer-headboard-1.jpg
+  features:
+    - "Vertical channel padding with wings"
+    - "Stands 56.75 inches tall (height is not adjustable)"
+    - "Finished back with a discreet storage compartment"
+    - "Pairs with Malouf upholstered bases"
+    - "15-year limited warranty"
+
+- slug: malouf-scoresby-designer-headboard
+  name: "Scoresby Designer Headboard"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 389.99
+  price_label: "Queen headboard"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "Oat", sku: STQQOASCORHB }
+      - { name: "Charcoal", sku: STQQCHSCORHB }
+      - { name: "Stone", sku: STQQSTSCORHB }
+  images:
+    - /assets/img/products/malouf/malouf-scoresby-designer-headboard-1.jpg
+    - /assets/img/products/malouf/malouf-scoresby-designer-headboard-2.jpg
+  features:
+    - "Deep square tufting"
+    - "Adjusts from 49.5 to 61.5 inches tall, or mount it directly to the wall"
+    - "Finished back with a discreet storage compartment"
+    - "Pairs with Malouf upholstered bases"
+    - "15-year limited warranty"
+
+- slug: malouf-eastman-upholstered-base
+  name: "Eastman Upholstered Base"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 529.99
+  price_label: "Queen upholstered base"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "Oat", sku: STQQOAEASTPL }
+      - { name: "Charcoal", sku: STQQCHEASTPL }
+      - { name: "Stone", sku: STQQSTEASTPL }
+  images:
+    - /assets/img/products/malouf/malouf-eastman-upholstered-base-1.jpg
+  features:
+    - "Traditional upholstered platform bed with wood-finish corner legs"
+    - "Slat roll with a 2.9-inch gap meets mattress warranty requirements"
+    - "Compatible with all Malouf adjustable bases and most others"
+    - "16 inches from floor to top rail, 800-pound weight capacity"
+    - "Pairs with Malouf headboards"
+    - "15-year limited warranty"
+
+- slug: malouf-watson-upholstered-base
+  name: "Watson Upholstered Storage Base"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 829.99
+  price_label: "Queen upholstered base"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "Oat", sku: STQQOAWATSPL }
+      - { name: "Charcoal", sku: STQQCHWATSPL }
+      - { name: "Stone", sku: STQQSTWATSPL }
+  images:
+    - /assets/img/products/malouf/malouf-watson-upholstered-base-1.jpg
+  features:
+    - "Four large underbed drawers on caster wheels"
+    - "Slat roll with a 2.9-inch gap meets mattress warranty requirements"
+    - "Compatible with zero-clearance adjustable bases"
+    - "14 inches from floor to top rail, 800-pound weight capacity"
+    - "Pairs with Malouf headboards"
+    - "15-year limited warranty"
+
+# Bed frames
+
+- slug: malouf-adjustable-bed-frame
+  name: "Adjustable Bed Frame"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 119.99
+  price_label: "Queen/Full/Twin frame"
+  options:   # Malouf Queen/Full/Twin SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Feet
+    choices:
+      - { name: "Glides (hard floors)", sku: MA5033GL }
+      - { name: "Rug rollers (carpet)", sku: MA5033BF }
+  images:
+    - /assets/img/products/malouf/malouf-adjustable-bed-frame-1.jpg
+    - /assets/img/products/malouf/malouf-adjustable-bed-frame-2.jpg
+    - /assets/img/products/malouf/malouf-adjustable-bed-frame-3.jpg
+  features:
+    - "Patented Tri-Support system reinforces the steel joints"
+    - "Extra-wide double rail center support"
+    - "Pre-installed headboard brackets fit most headboards"
+    - "Choose locking 2.5-inch rug rollers for carpet or glides for hard floors"
+    - "100% solid steel construction"
+    - "3 to 5-year limited warranty"
+
+- slug: malouf-highrise-lt-bed-frame
+  name: "HighRise LT Bed Frame"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 259.99
+  price_from: true
+  price_label: "Queen frame"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Height
+    choices:
+      - { name: "14 inch", sku: ST22QQFP }
+      - { name: "18 inch", sku: ST22QQ18FP, price: 299.99 }
+  images:
+    - /assets/img/products/malouf/malouf-highrise-lt-bed-frame-1.jpg
+    - /assets/img/products/malouf/malouf-highrise-lt-bed-frame-2.jpg
+  features:
+    - "Removes the need for a box spring"
+    - "14 or 18 inches of underbed storage space"
+    - "Tool-free tightening system for easy assembly"
+    - "Folds for storage and transport"
+    - "2,000-pound weight capacity"
+    - "5-year limited warranty"
+
+- slug: malouf-upholstered-highrise-bed-frame
+  name: "Upholstered HighRise Bed Frame"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Headboards & Frames"
+  type: frame
+  price: 449.99
+  price_label: "Queen frame"
+  sku: MA0001UPLQQCH   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-upholstered-highrise-bed-frame-1.jpg
+    - /assets/img/products/malouf/malouf-upholstered-highrise-bed-frame-2.jpg
+  features:
+    - "Solid steel frame upholstered in a charcoal linen-look fabric"
+    - "Works as a platform bed frame or a bunkie board"
+    - "3, 3, and 6-inch adjustable legs give a deck height of up to 14 inches"
+    - "Folds in half, all hardware and headboard brackets included"
+    - "800-pound weight capacity"
+    - "10-year warranty"
+
+# Toppers
+
+- slug: malouf-gel-memory-foam-topper
+  name: "2.5\" Gel Memory Foam Mattress Topper"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Toppers"
+  type: topper
+  price: 179.99
+  price_label: "Queen topper"
+  sku: IS25QQ45GT   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-gel-memory-foam-topper-1.jpg
+    - /assets/img/products/malouf/malouf-gel-memory-foam-topper-2.jpg
+  features:
+    - "2.5 inches of gel-infused memory foam for cooling"
+    - "Ventilated to increase airflow"
+    - "Soft, supportive foam quickly conforms to the body"
+    - "Removable rayon from bamboo cover"
+    - "CertiPUR-US certified foam"
+    - "3-year limited warranty"
+
+# Protectors
+
+- slug: malouf-prime-comfort-mattress-protector
+  name: "Prime Comfort Mattress Protector"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Protectors"
+  type: protector
+  price: 59.99
+  price_label: "Queen mattress protector"
+  sku: SL00QQMP   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-prime-comfort-mattress-protector-1.jpg
+    - /assets/img/products/malouf/malouf-prime-comfort-mattress-protector-2.jpg
+  features:
+    - "Plush cotton-blend terry adds a cozy feel to the top of the mattress"
+    - "Quiet, breathable H2Pro membrane is liquid proof and dust mite proof"
+    - "Universal Fit elastic fits mattresses 6 to 22 inches deep"
+    - "OEKO-TEX certified fabric"
+    - "15-year non-prorated warranty (covers the mattress too when bought on the same receipt)"
+
+- slug: malouf-five-sided-mattress-protector
+  name: "Five Sided Mattress Protector"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Protectors"
+  type: protector
+  price: 89.99
+  price_label: "Queen mattress protector"
+  sku: SL0PQQ5P   # Malouf queen SKU (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-five-sided-mattress-protector-1.jpg
+    - /assets/img/products/malouf/malouf-five-sided-mattress-protector-2.jpg
+  features:
+    - "Protects the top and sides of the mattress"
+    - "Plush, hypoallergenic fabric does not change the feel of the mattress"
+    - "Quiet, breathable H2Pro membrane is liquid proof and dust mite proof"
+    - "Universal Fit elastic fits mattresses 6 to 22 inches deep"
+    - "15-year non-prorated warranty (covers the mattress too when bought on the same receipt)"
+
+# Bedding set
+
+- slug: malouf-bed-in-a-bag
+  name: "Bed in a Bag Set"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Sheets"
+  type: sheets
+  price: 209.99
+  price_label: "Queen set"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "White", sku: MA01QQWHWHBB }
+      - { name: "Pacific/Ash", sku: MA01QQPAASBB }
+  images:
+    - /assets/img/products/malouf/malouf-bed-in-a-bag-1.jpg
+    - /assets/img/products/malouf/malouf-bed-in-a-bag-2.jpg
+  features:
+    - "Includes a reversible down-alternative comforter, down-alternative pillows, and a brushed microfiber sheet set"
+    - "Stain and wrinkle resistant white sheets (flat sheet, fitted sheet, and pillowcases)"
+    - "Pillows have a down feel without odors, allergens, or quills"
+    - "Duv8t fastening system with 8 loops holds a duvet cover in place"
+    - "3-year limited warranty"
+
+# Pillows
+
+- slug: malouf-zoned-gel-dough-pillow
+  name: "Zoned Gel Dough Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  price: 119.99
+  price_label: "Queen pillow"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Loft
+    choices:
+      - { name: "High loft", sku: ZZQQHPZG }
+      - { name: "Mid loft", sku: ZZQQMPZG }
+      - { name: "Low loft", sku: ZZQQLPZG }
+      - { name: "Shoulder", sku: ZZQQSCMPZG }
+  images:
+    - /assets/img/products/malouf/malouf-zoned-gel-dough-pillow-1.jpg
+    - /assets/img/products/malouf/malouf-zoned-gel-dough-pillow-2.jpg
+    - /assets/img/products/malouf/malouf-zoned-gel-dough-pillow-3.jpg
+  features:
+    - "Gel Dough memory foam is cooler and softer"
+    - "Zoned Technology cradles the head while supporting the neck"
+    - "Ventilated for airflow"
+    - "Removable TENCEL Lyocell cover"
+    - "Shoulder cutout version suits side sleepers"
+    - "5-year limited warranty"
+
+- slug: malouf-gel-dough-z-gel-pillow
+  name: "Gel Dough + Z Gel Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  price: 139.99
+  price_label: "Queen pillow"
+  options:   # Malouf queen SKUs (MAP price list 26.3); the cart asks which one. A choice with its own price overrides the product price
+    label: Loft
+    choices:
+      - { name: "High loft", sku: ZZQQHPGL }
+      - { name: "Mid loft", sku: ZZQQMPGL }
+      - { name: "Shoulder", sku: ZZQQSCMPGL }
+  images:
+    - /assets/img/products/malouf/malouf-gel-dough-z-gel-pillow-1.jpg
+    - /assets/img/products/malouf/malouf-gel-dough-z-gel-pillow-2.jpg
+    - /assets/img/products/malouf/malouf-gel-dough-z-gel-pillow-3.jpg
+  features:
+    - "Z Gel layer captures and dissipates heat"
+    - "Gel Dough memory foam is cooler and softer"
+    - "Removable TENCEL Lyocell cover"
+    - "Shoulder cutout version suits side sleepers"
+    - "5-year limited warranty"
+
+- slug: malouf-lounge-reading-pillow
+  name: "Lounge Reading Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  price: 89.99
+  price_label: "Reading pillow (one size)"
+  sku: ZZ00SFRP   # Malouf SKU, one size (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-lounge-reading-pillow-1.jpg
+    - /assets/img/products/malouf/malouf-lounge-reading-pillow-2.jpg
+  features:
+    - "Supports the arms and upper body for reading or watching TV in bed"
+    - "Shredded memory foam blend fill"
+    - "Soft rayon from bamboo cover with a jacquard design"
+    - "Measures 35 x 22 x 17 inches"
+    - "3-year limited warranty"
+
+- slug: malouf-wrap-around-body-pillow
+  name: "Wrap-Around Body Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  price: 129.99
+  price_label: "Body pillow (one size)"
+  sku: ZZPJHFGM   # Malouf SKU, one size (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-wrap-around-body-pillow-1.jpg
+    - /assets/img/products/malouf/malouf-wrap-around-body-pillow-2.jpg
+  features:
+    - "Elevates and aligns the hips for a neutral sleeping position"
+    - "Back and belly support helps with maternity discomfort"
+    - "Down-alternative fill without odors, allergens, or quills"
+    - "Removable TENCEL Lyocell cover, measures 52 x 28 x 7 inches"
+    - "3-year limited warranty"
+
+- slug: malouf-l-shape-body-pillow
+  name: "L-Shape Body Pillow"
+  brand: "Malouf"
+  brand_page: /malouf/
+  section: bedding
+  collection: "Pillows"
+  type: pillow
+  price: 109.99
+  price_label: "Body pillow (one size)"
+  sku: ZZ00LLGF   # Malouf SKU, one size (MAP price list 26.3)
+  images:
+    - /assets/img/products/malouf/malouf-l-shape-body-pillow-1.jpg
+    - /assets/img/products/malouf/malouf-l-shape-body-pillow-2.jpg
+  features:
+    - "Ergonomic L shape supports the head, neck, and shoulders"
+    - "Works for multiple sleep positions"
+    - "Gel Dough memory foam is cooler and softer"
+    - "Removable TENCEL Lyocell cover, measures 27 x 27 x 5 inches"
+    - "5-year limited warranty"

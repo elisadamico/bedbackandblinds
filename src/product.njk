@@ -28,9 +28,9 @@ eleventyComputed:
         <div class="tags">
           {% if product.feel %}<span class="tag">{{ product.feel }}{% if product.section != "bedding" %} feel{% endif %}</span>{% endif %}
           {% if "Hybrid" in product.name %}<span class="tag">Hybrid</span>{% endif %}
-          {% set tagnames = {"mattress": "Mattress", "base": "Adjustable base", "foundation": "Foundation", "pillow": "Pillow", "sheets": "Sheet set", "protector": "Protector"} %}<span class="tag">{{ tagnames[product.type] }}</span>
+          {% set tagnames = {"mattress": "Mattress", "base": "Adjustable base", "foundation": "Foundation", "pillow": "Pillow", "sheets": "Sheet set", "protector": "Protector", "frame": "Headboard or frame", "topper": "Topper"} %}<span class="tag">{{ tagnames[product.type] }}</span>
         </div>
-        {% set kinds = {"mattress": "mattress", "base": "base", "foundation": "foundation", "pillow": "pillow", "sheets": "sheet set", "protector": "protector"} %}{% set kind = kinds[product.type] %}
+        {% set kinds = {"mattress": "mattress", "base": "base", "foundation": "foundation", "pillow": "pillow", "sheets": "sheet set", "protector": "protector", "frame": "piece", "topper": "topper"} %}{% set kind = kinds[product.type] %}
         {% set promo = product | promo %}
         <div class="buy-box{% if promo and promo.live %} promo-live{% endif %}"{% if promo %} data-promo="{{ promo.dates }}"{% endif %}>
           {% if promo %}<p class="sale-line promo-only"><span class="sale-tag inline">Save {{ promo.off | money }}</span> {{ promo.name }} {{ promo.ends }}.{% if promo.details %} <a href="{{ promo.details }}">See offer details</a>{% endif %}</p>{% endif %}
@@ -47,7 +47,7 @@ eleventyComputed:
             <a class="btn" href="/contact/?about={{ (product.brand + ' ' + product.name) | urlencode }}#form">Ask about this {{ kind }}</a>
             <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>
           </div>
-          {% if product.section == "bedding" %}<ul class="perks"><li>See it in our Dubuque showroom</li><li>We'll help you choose the right pillow for the way you sleep</li></ul>{% else %}
+          {% if product.section == "bedding" %}<ul class="perks"><li>Ask us about it in our Dubuque showroom</li>{% if product.type == "pillow" %}<li>We'll help you choose the right pillow for the way you sleep</li>{% endif %}</ul>{% else %}
           <ul class="perks">
             <li>Try it in our Dubuque showroom</li>
             {% if product.ship_free %}<li>Ships free by UPS anywhere in the lower 48 states</li>{% endif %}
