@@ -1,0 +1,5 @@
+---
+permalink: /cart-catalog.json
+eleventyExcludeFromCollections: true
+---
+{{ products | cartCatalog(furniture, furniture_prices, shop, delivery_zips) | dump | safe }}

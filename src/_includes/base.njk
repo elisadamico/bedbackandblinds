@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"{% if shop.checkout_url %} data-checkout="{{ shop.checkout_url }}"{% endif %}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,5 +33,6 @@
   {% if sale.show %}<script type="application/json" id="ad-data">{{ sale.ads | dump | safe }}</script>
   <script src="/assets/js/ad-schedule.js" defer></script>{% endif %}
   <script src="/assets/js/site.js" defer></script>
+  {% if shop.checkout_url %}<script src="/assets/js/cart.js" defer></script>{% endif %}
 </body>
 </html>

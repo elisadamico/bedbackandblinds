@@ -1,0 +1,11 @@
+{
+  "note": "Online ordering. checkout_url is the address of the checkout worker (see worker/README.md); while it is empty the cart stays hidden. Delivery fees go by straight-line miles from the store to the center of the customer's ZIP code (delivery_zips.json lists every ZIP within the last max_miles). Sales tax applies to the items, not the delivery fee.",
+  "checkout_url": "",
+  "tax_rate": 0.07,
+  "tax_label": "Iowa sales tax (7%)",
+  "delivery": [
+    { "max_miles": 20, "fee": 50, "label": "Delivery within 20 miles" },
+    { "max_miles": 45, "fee": 100, "label": "Delivery 20 to 45 miles" }
+  ],
+  "pickup_label": "Pick up at our store, 806 Wacker Dr, Suite 142, Dubuque"
+}

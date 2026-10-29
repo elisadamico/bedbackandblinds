@@ -38,6 +38,35 @@ export default function (eleventyConfig) {
     return null;
   });
 
+  // Everything the cart can sell, with selling prices and the delivery and tax settings.
+  // Built to /cart-catalog.json, which both the cart page and the checkout worker read,
+  // so the browser never decides a price. Pillows priced "From" are left out.
+  eleventyConfig.addFilter("cartCatalog", (products, furniture, fprices, shop, zips) => {
+    const items = {};
+    const url = (p) => `/${p.section || "mattresses"}/${p.slug}/`;
+    for (const p of products) {
+      if (p.price_from) continue;
+      const promo = promos.flatMap((pr) => pr.offers.filter((o) => o.products.includes(p.slug))
+        .map((o) => ({ off: o.off, start: pr.start, end: pr.end })))[0];
+      const base = { image: p.images[0], url: url(p), ...(promo && { promo }) };
+      if (p.size_prices) {
+        p.size_prices.forEach((r, i) => {
+          items[`p:${p.slug}:${i}`] = { ...base, name: `${p.brand} ${p.name}, ${r.size} mattress`, price: r.mattress };
+        });
+      } else {
+        items[`p:${p.slug}`] = { ...base, name: `${p.brand} ${p.name} (${p.price_label})`, price: p.price };
+      }
+    }
+    for (const f of furniture.items) {
+      const fp = fprices[f.sku];
+      if (!fp) continue;
+      items[`f:${f.sku}`] = { name: `Coaster ${f.full_name} (item ${f.sku})`, price: fp.sale || fp.price,
+        ...(fp.sale && { was: fp.price }), image: f.image, url: `/furniture/item/${f.slug}/` };
+    }
+    const { note, checkout_url, ...settings } = shop;
+    return { ...settings, zips, items };
+  });
+
   // Furniture sale percent off, rounded down so it never overstates the savings.
   eleventyConfig.addFilter("percentOff", (fp) => Math.floor(100 * (1 - fp.sale / fp.price)));
   // Furniture with a sale price in furniture_prices.yml, biggest percent off first.

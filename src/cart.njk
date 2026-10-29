@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: Your Cart
+heading: Your Cart
+eleventyExcludeFromCollections: true
+---
+<section class="section">
+  <div class="container cart" data-cart-page>
+    <noscript><p>The cart needs JavaScript. Call us at <a href="{{ site.phone_href }}">{{ site.phone }}</a> to order by phone.</p></noscript>
+    <div data-cart-empty hidden>
+      <p>Your cart is empty.</p>
+      <p class="btn-row"><a class="btn" href="/mattresses/">Shop mattresses</a><a class="btn btn-outline" href="/furniture/">Shop furniture</a></p>
+    </div>
+    <div class="cart-layout" data-cart-order hidden>
+      <div class="cart-lines" data-cart-lines></div>
+      <aside class="buy-box cart-summary">
+        <h2>Pickup or delivery</h2>
+        <label class="cart-option"><input type="radio" name="method" value="pickup" checked> <span><b>Pick up at our store</b> Free. We'll call when your order is ready.</span></label>
+        <label class="cart-option"><input type="radio" name="method" value="delivery"> <span><b>Delivery and set up</b> {% for d in shop.delivery %}{{ d.fee | money }} {% if loop.first %}within {{ d.max_miles }} miles{% else %}up to {{ d.max_miles }} miles{% endif %}{% if not loop.last %}, {% endif %}{% endfor %} of our Dubuque store.</span></label>
+        <div class="cart-zip" data-zip-row hidden>
+          <label>Delivery ZIP code <input type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code" data-zip></label>
+          <p class="price-note" data-zip-note aria-live="polite"></p>
+        </div>
+        <div class="cart-totals" data-totals aria-live="polite"></div>
+        <button class="btn cart-pay" type="button" data-pay disabled>Check out</button>
+        <p class="cart-error" data-pay-error hidden role="alert"></p>
+        <p class="price-note">You'll pay on Stripe's secure checkout page. We'll call you to schedule your delivery or pickup. Questions? Call <a href="{{ site.phone_href }}">{{ site.phone }}</a>.</p>
+      </aside>
+    </div>
+  </div>
+</section>

@@ -32,6 +32,10 @@ eleventyComputed:
           <p class="big-price">{% if fp.sale %}<s class="was">{{ fp.price | money }}</s> <b class="now">{{ fp.sale | money }}</b>{% else %}{{ fp.price | money }}{% endif %}</p>
           <p class="price-note">Call or stop by to see it. If this piece isn't on our showroom floor, we can order it for you.</p>
           {% else %}<p class="price-note">Call or stop by for pricing. If this piece isn't on our showroom floor, we can order it for you.</p>{% endif %}
+          {% if shop.checkout_url and fp %}<div class="cart-add">
+            <button class="btn" type="button" data-cart-add="f:{{ f.sku }}">Add to cart</button>
+            <p class="cart-added" data-cart-added hidden>Added. <a href="/cart/">View cart</a></p>
+          </div>{% endif %}
           <div class="btn-row">
             <a class="btn" href="/contact/?about={{ ('Coaster ' + f.name + ' (' + f.sku + ')') | urlencode }}#form">Ask about this piece</a>
             <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>
