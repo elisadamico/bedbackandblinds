@@ -27,8 +27,9 @@ eleventyComputed:
           {% if f.new %}<span class="tag">New arrival</span>{% endif %}
         </div>
         <div class="buy-box">
-          {% set price = furniture_prices[f.sku] %}
-          {% if price %}<p class="big-price">{{ price | money }}</p>
+          {% set fp = furniture_prices[f.sku] %}
+          {% if fp %}{% if fp.sale %}<p class="sale-line"><span class="sale-tag inline">Save {{ fp | percentOff }}%</span> Sale price</p>{% endif %}
+          <p class="big-price">{% if fp.sale %}<s class="was">{{ fp.price | money }}</s> <b class="now">{{ fp.sale | money }}</b>{% else %}{{ fp.price | money }}{% endif %}</p>
           <p class="price-note">Call or stop by to see it. If this piece isn't on our showroom floor, we can order it for you.</p>
           {% else %}<p class="price-note">Call or stop by for pricing. If this piece isn't on our showroom floor, we can order it for you.</p>{% endif %}
           <div class="btn-row">

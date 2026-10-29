@@ -38,6 +38,12 @@ export default function (eleventyConfig) {
     return null;
   });
 
+  // Furniture sale percent off, rounded down so it never overstates the savings.
+  eleventyConfig.addFilter("percentOff", (fp) => Math.floor(100 * (1 - fp.sale / fp.price)));
+  // Furniture with a sale price in furniture_prices.yml, biggest percent off first.
+  eleventyConfig.addFilter("furnitureOnSale", (items, prices) =>
+    items.filter((i) => prices[i.sku]?.sale).sort((a, b) => prices[a.sku].sale / prices[a.sku].price - prices[b.sku].sale / prices[b.sku].price));
+
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({ "src/favicon.png": "favicon.png" });
 

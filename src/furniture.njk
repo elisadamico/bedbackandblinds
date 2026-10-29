@@ -13,6 +13,15 @@ description: Coaster Fine Furniture at Bed Back & Blinds in Dubuque, Iowa. Brows
     </div>
   </div>
 </section>
+{% set list = furniture.items | furnitureOnSale(furniture_prices) %}
+{% if list.length %}
+<section class="section" id="sale">
+  <div class="container">
+    <div class="section-head"><h2>Furniture on Sale</h2><p>{{ list.length }} pieces at sale prices, biggest savings first. Call or stop by to see them.</p></div>
+    {% set groupBy = "cat_title" %}{% set groupLabel = "type" %}{% include "furniture-grid.njk" %}
+  </div>
+</section>
+{% endif %}
 {% set fresh = furniture.items | furnitureNew(8) %}
 <section class="section section-soft">
   <div class="container">
