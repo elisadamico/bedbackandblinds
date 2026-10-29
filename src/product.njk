@@ -31,9 +31,11 @@ eleventyComputed:
           {% set tagnames = {"mattress": "Mattress", "base": "Adjustable base", "foundation": "Foundation", "pillow": "Pillow", "sheets": "Sheet set", "protector": "Protector"} %}<span class="tag">{{ tagnames[product.type] }}</span>
         </div>
         {% set kinds = {"mattress": "mattress", "base": "base", "foundation": "foundation", "pillow": "pillow", "sheets": "sheet set", "protector": "protector"} %}{% set kind = kinds[product.type] %}
-        <div class="buy-box">
-          {% if sale.show and product.section != "bedding" %}<p class="sale-line"><span class="sale-tag inline" data-sale-ribbon>{{ sale.ribbon }}</span> <span data-sale-ends>{{ sale.ends }}</span>. Ask us about current savings.</p>{% endif %}
-          <p class="big-price">{% if product.price_from %}<span>From</span> {% endif %}{{ product.price | money }} <span>{{ product.price_label }}</span></p>
+        {% set promo = product | promo %}
+        <div class="buy-box{% if promo and promo.live %} promo-live{% endif %}"{% if promo %} data-promo="{{ promo.dates }}"{% endif %}>
+          {% if promo %}<p class="sale-line promo-only"><span class="sale-tag inline">Save {{ promo.off | money }}</span> {{ promo.name }} {{ promo.ends }}.</p>{% endif %}
+          {% if sale.show and product.section != "bedding" %}<p class="sale-line{% if promo %} promo-hide{% endif %}"><span class="sale-tag inline" data-sale-ribbon>{{ sale.ribbon }}</span> <span data-sale-ends>{{ sale.ends }}</span>. Ask us about current savings.</p>{% endif %}
+          <p class="big-price">{% if product.price_from %}<span>From</span> {% endif %}{% if promo %}<s class="was promo-only">{{ product.price | money }}</s> <b class="promo-only">{{ (product.price - promo.off) | money }}</b><b class="promo-hide">{{ product.price | money }}</b>{% else %}{{ product.price | money }}{% endif %} <span>{{ product.price_label }}</span></p>
           <p class="price-note">{% if product.section == "bedding" %}Other sizes are available. Call or stop by for pricing.{% elif product.size_prices %}Prices for every size are listed below. Call or stop by to ask about current sales.{% else %}Other sizes are available. Call or stop by for pricing and current sales.{% endif %}</p>
           <div class="btn-row">
             <a class="btn" href="/contact/?about={{ (product.brand + ' ' + product.name) | urlencode }}#form">Ask about this {{ kind }}</a>

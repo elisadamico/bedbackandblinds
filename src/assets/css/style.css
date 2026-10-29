@@ -210,6 +210,12 @@ p { margin: 0 0 1em; }
 .sale-tag { position: absolute; top: 0.6rem; left: 0.6rem; z-index: 2; background: #b3283b; color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.25rem 0.55rem; border-radius: 3px; }
 .sale-tag.inline { position: static; display: inline-block; margin-right: 0.4rem; }
 .sale-line { font-size: 0.95rem; margin-bottom: 0.6rem; color: var(--ink); }
+/* Manufacturer promotions: site.js adds .promo-live while a promo's dates are current */
+[data-promo]:not(.promo-live) .promo-only, .promo-live .promo-hide { display: none; }
+.product-price b, .big-price b { font-weight: inherit; }
+.promo-live .product-price b, .promo-live .big-price b { color: #b3283b; }
+s.was { color: var(--muted); font-size: 0.8em; margin-right: 0.15rem; }
+.furniture-price { margin-bottom: 0.4rem; }
 .product-thumb { display: flex; align-items: center; justify-content: center; background: #fff; height: 190px; padding: 0.75rem; border-bottom: 1px solid var(--line); overflow: hidden; }
 .product-thumb img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
 .product-body { padding: 0.9rem 1rem 1.1rem; display: flex; flex-direction: column; flex: 1; }

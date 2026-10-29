@@ -1,0 +1,57 @@
+# Manufacturer promotions shown on product cards and product pages.
+# Each one switches on by itself on its start date and comes down after its end date (both days count),
+# so it can be added ahead of time. Products are listed by slug (see products.yml).
+# "off" is dollars off the listed price.
+
+# Tempur Sealy Black Friday promo (from Tim Giles, Tempur Sealy, and sales/FINAL BFE_2026_1000_Promo_Overview.pdf).
+# The official dates are Nov 3 to Dec 1, but the store started it early on the site. Last day to order is Dec 2 by 9 AM.
+# Not listed here because the site doesn't carry them: the Tempur pillows ($25 off ProHi, ProLo, and
+# ProAdjust) and Stearns & Foster. The ActiveBreeze offer is for select retailers only and wasn't in Tim's list.
+- name: "Black Friday Savings"
+  start: "2026-10-29"
+  end: "2026-12-01"
+  offers:
+    # Sealy Posturepedic High Point II Hybrid
+    - off: 200
+      products:
+        - sealy-posturepedic-elite-hybrid-high-point-ii-firm
+        - sealy-posturepedic-elite-hybrid-high-point-ii-medium
+        - sealy-posturepedic-elite-hybrid-high-point-ii-soft
+    # Sealy Posturepedic Brenham II and Albany II, Hybrid or Spring
+    - off: 100
+      products:
+        - sealy-posturepedic-elite-hybrid-brenham-ii-firm
+        - sealy-posturepedic-elite-hybrid-brenham-ii-soft
+        - sealy-posturepedic-elite-spring-brenham-ii-tight-top-medium
+        - sealy-posturepedic-elite-spring-brenham-ii-pillow-top-firm
+        - sealy-posturepedic-elite-spring-brenham-ii-pillow-top-medium
+        - sealy-posturepedic-elite-spring-brenham-ii-pillow-top-soft
+        - sealy-posturepedic-elite-hybrid-albany-ii-medium
+        - sealy-posturepedic-elite-spring-albany-ii-tight-top-firm
+        - sealy-posturepedic-elite-spring-albany-ii-pillow-top-soft
+    # TEMPUR-LuxeAdapt, ProBreeze, and LuxeBreeze
+    - off: 300
+      products:
+        - tempur-luxeadapt-soft
+        - tempur-luxeadapt-medium-hybrid
+        - tempur-luxeadapt-firm
+        - tempur-probreeze-medium
+        - tempur-probreeze-medium-hybrid
+        - tempur-luxebreeze-soft
+        - tempur-luxebreeze-medium-hybrid
+        - tempur-luxebreeze-firm
+    # TEMPUR-ProAdapt and Adapt, and the Ergo Smart and ProSmart bases
+    - off: 200
+      products:
+        - tempur-proadapt-soft
+        - tempur-proadapt-medium
+        - tempur-proadapt-medium-hybrid
+        - tempur-proadapt-firm
+        - tempur-adapt-medium
+        - tempur-adapt-medium-hybrid
+        - tempur-ergo-smart-base
+        - tempur-ergo-prosmart-base
+    # TEMPUR-Ergo Power Base
+    - off: 100
+      products:
+        - tempur-ergo-base

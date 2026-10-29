@@ -19,6 +19,25 @@ export default function (eleventyConfig) {
     return { show, ads, ...ads[now.id], ends: now.ends };
   });
 
+  // The manufacturer promotion a product is in (src/_data/promos.yml), if any. "live" is for the
+  // day the site is built. The browser checks the dates again (site.js), so promos switch on schedule.
+  const promos = loadYaml(readFileSync("src/_data/promos.yml", "utf8")) || [];
+  const localDay = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+  eleventyConfig.addFilter("promo", (p) => {
+    for (const promo of promos) {
+      const offer = promo.offers.find((o) => o.products.includes(p.slug));
+      if (!offer) continue;
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const end = localDay(promo.end);
+      return {
+        name: promo.name, off: offer.off, dates: `${promo.start}|${promo.end}`,
+        ends: `through ${end.toLocaleString("en-US", { month: "long" })} ${end.getDate()}`,
+        live: today >= localDay(promo.start) && today <= end,
+      };
+    }
+    return null;
+  });
+
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({ "src/favicon.png": "favicon.png" });
 

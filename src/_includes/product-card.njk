@@ -1,9 +1,11 @@
-<article class="product-card" data-brand="{{ p.brand }}" data-type="{{ p.type }}" data-price="{{ p.price }}">
-  {% if sale.show and p.section != "bedding" %}<span class="sale-tag" data-sale-ribbon>{{ sale.ribbon }}</span>{% endif %}
+{% set promo = p | promo %}
+<article class="product-card{% if promo and promo.live %} promo-live{% endif %}" data-brand="{{ p.brand }}" data-type="{{ p.type }}" data-price="{{ p.price }}"{% if promo %} data-promo="{{ promo.dates }}"{% endif %}>
+  {% if promo %}<span class="sale-tag promo-only">Save {{ promo.off | money }}</span>{% endif %}
+  {% if sale.show and p.section != "bedding" %}<span class="sale-tag{% if promo %} promo-hide{% endif %}" data-sale-ribbon>{{ sale.ribbon }}</span>{% endif %}
   <a class="product-thumb" href="{{ p | productUrl }}"><img src="{{ p.images[0] }}" alt="{{ p.brand }} {{ p.name }}" loading="lazy"></a>
   <div class="product-body">
     <p class="product-brand">{{ p.brand }}{% if p.feel %} · {{ p.feel }}{% endif %}{% if p.type == "base" %} · Adjustable base{% elif p.type == "foundation" %} · Foundation{% endif %}</p>
     <h3><a href="{{ p | productUrl }}">{{ p.name }}</a></h3>
-    <p class="product-price">{% if p.price_from %}<span class="from">From</span> {% endif %}{{ p.price | money }} <span>{{ p.price_label }}</span></p>
+    <p class="product-price">{% if p.price_from %}<span class="from">From</span> {% endif %}{% if promo %}<s class="was promo-only">{{ p.price | money }}</s> <b class="promo-only">{{ (p.price - promo.off) | money }}</b><b class="promo-hide">{{ p.price | money }}</b>{% else %}{{ p.price | money }}{% endif %} <span>{{ p.price_label }}</span></p>
   </div>
 </article>

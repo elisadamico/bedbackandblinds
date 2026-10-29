@@ -104,6 +104,14 @@
     document.querySelectorAll("[data-sale-ends]").forEach(function (el) { el.textContent = live.ends; });
   }
 
+  // --- Manufacturer promotions (src/_data/promos.yml): show each one only between its dates ---
+  function localDay(s) { var p = s.split("-"); return new Date(+p[0], p[1] - 1, +p[2]); }
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  document.querySelectorAll("[data-promo]").forEach(function (el) {
+    var d = el.getAttribute("data-promo").split("|");
+    el.classList.toggle("promo-live", today >= localDay(d[0]) && today <= localDay(d[1]));
+  });
+
   // --- Contact form: fill in the product someone asked about ---
   var about = new URLSearchParams(location.search).get("about");
   var msg = document.querySelector("[data-message]");
