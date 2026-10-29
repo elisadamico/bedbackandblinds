@@ -49,7 +49,7 @@ eleventyComputed:
           <ul class="perks">
             <li>Try it in our Dubuque showroom</li>
             {% if product.ship_free %}<li>Ships free by UPS anywhere in the lower 48 states</li>{% endif %}
-            <li>Free delivery or bed frame, free in-home set up, and free removal of your old mattress (ask for details)</li>
+            {% if promo %}<li class="promo-only">On sale in our store: free delivery or bed frame, free in-home set up, and free removal of your old mattress (ask for details)</li>{% endif %}
           </ul>{% endif %}
         </div>
         {% if product.size_prices %}
