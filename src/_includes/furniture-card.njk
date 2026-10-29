@@ -4,6 +4,7 @@
   <div class="product-body">
     <p class="product-brand">Coaster{% if f.collection %} · {{ f.collection }}{% endif %}</p>
     <h3><a href="/furniture/item/{{ f.slug }}/">{{ f.name }}</a></h3>
+    {% if furniture_prices[f.sku] %}<p class="product-price furniture-price">{{ furniture_prices[f.sku] | money }}</p>{% endif %}
     <p class="product-ask"><a href="/contact/?about={{ ('Coaster ' + f.name + ' (' + f.sku + ')') | urlencode }}#form">Ask about this piece</a></p>
   </div>
 </article>

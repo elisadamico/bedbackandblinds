@@ -27,7 +27,10 @@ eleventyComputed:
           {% if f.new %}<span class="tag">New arrival</span>{% endif %}
         </div>
         <div class="buy-box">
-          <p class="price-note">Call or stop by for pricing. If this piece isn't on our showroom floor, we can order it for you.</p>
+          {% set price = furniture_prices[f.sku] %}
+          {% if price %}<p class="big-price">{{ price | money }}</p>
+          <p class="price-note">Call or stop by to see it. If this piece isn't on our showroom floor, we can order it for you.</p>
+          {% else %}<p class="price-note">Call or stop by for pricing. If this piece isn't on our showroom floor, we can order it for you.</p>{% endif %}
           <div class="btn-row">
             <a class="btn" href="/contact/?about={{ ('Coaster ' + f.name + ' (' + f.sku + ')') | urlencode }}#form">Ask about this piece</a>
             <a class="btn btn-cyan" href="{{ site.phone_href }}">Call {{ site.phone }}</a>

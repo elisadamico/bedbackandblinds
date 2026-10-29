@@ -1,0 +1,50 @@
+# Prices for Coaster furniture, by Coaster item number (the SKU on each furniture page).
+# Pieces not listed here show "Call or stop by for pricing" instead.
+# Set Oct 29, 2026 from Coaster promo HP0226 (sales/coaster.pdf) at twice the promo price.
+# Only selling prices go in this file, never costs, because the site's files are public.
+
+"900769": 78  # Achelle 11 Hook Freestanding Coat Rack Hat Hanger Tobacco
+"302161": 398  # Mockern Upholstered Twin Daybed with Trundle Grey
+"460510": 398  # Wyatt Wood Twin Over Twin Bunk Bed White and Natural
+"935934": 578  # Umbridge 3-drawer Vanity Set with Lighting Chrome and White
+"300685": 398  # Calinda Wood Twin Daybed With Trundle Natural
+"935933": 58  # Umbridge Upholstered Square Padded Cushion Vanity Stool
+"504778": 998  # Storey Upholstered Sleeper Sectional Chaise Sofa Camel
+"931143": 578  # Acena 7-drawer Vanity Set with Lighting White High Gloss
+"223191Q-S5": 2198  # Ravenne 5-piece Velvet Upholstered Queen LED Bedroom Set Black
+"223192": 248  # Ravenne 2-drawer Velvet Upholstered LED Nightstand with USB Black
+"182785": 198  # Topanga Engineered Wood Freestanding Home Bar Mango
+"223191Q": 738  # Ravenne Velvet Upholstered Queen LED Panel Bed Black
+"223195": 516  # Ravenne 5-drawer Velvet Upholstered LED Chest of Drawers Black
+"953477": 298  # Hawthorne 4-shelf Glass Door Tall Cabinet with Drawers White
+"305811Q": 698  # Senna Upholstered Queen Audio Flame Visualizer Bed Brown
+"223194": 204  # Ravenne Velvet Upholstered LED Dresser Mirror Black
+"223193M": 852  # Ravenne 8-drawer Velvet Upholstered LED Dresser and Mirror Black
+"223471Q-S5": 1998  # Bexhill 5-piece Queen Bedroom Set White
+"223193": 648  # Ravenne 8-drawer Velvet Upholstered LED Dresser Cabinet Black
+"223472": 336  # Bexhill 1-drawer Nightstand Bedside Table White
+"223475": 704  # Bexhill 8-drawer Chest of Drawers White
+"601499P": 398  # Grant Upholstered Power Recliner Chair Grey
+"223065": 672  # Emberlyn 5-drawer Bedroom Chest Brown
+"223061Q-S5": 1998  # Emberlyn 5-piece Queen Bedroom Set Brown
+"223062": 272  # Emberlyn 2-drawer Nightstand Brown
+"223342": 136  # Wright 2-drawer Nightstand Bedside Table Brown Oak
+"224710Q": 538  # Brookmead 60-inch Upholstered Queen Bed Black
+"115100": 398  # Twyla 60-inch Round Dining Table with Drawer Dark Cocoa
+"223345": 324  # Wright 4-drawer Chest of Drawers Brown Oak
+"902453": 398  # Serra Full-Circle Swivel Glider Chair with Shelter Arms Sandy Beige
+"223061Q": 798  # Emberlyn Wood Queen Poster Bed Brown
+"223341Q-S5": 1098  # Wright 5-piece Queen Bedroom Set Brown Oak
+"223473": 788  # Bexhill 10-drawer Dresser Cabinet White
+"223441Q-S5": 1098  # Welsley 5-piece Queen Bedroom Set Walnut
+"223474": 160  # Bexhill Dresser Mirror White
+"115100-S5": 1058  # Twyla 5-piece 60-inch Round Wood Dining Table Set Dark Cocoa
+"223064": 124  # Emberlyn Dresser Mirror Brown
+"223341Q": 258  # Wright 52-inch Upholstered Queen Bed Brown Oak
+"223063M": 888  # Emberlyn 6-drawer Dresser with Mirror Brown
+"223471Q": 538  # Bexhill 56-inch Upholstered Queen Panel Bed White
+"223063": 764  # Emberlyn 6-drawer Dresser Brown
+"223343": 412  # Wright 6-drawer Dresser Cabinet Brown Oak
+"223343M": 464  # Wright 6-drawer Dresser and Mirror Brown Oak
+"223344": 52  # Wright Dresser Mirror Brown Oak
+"223473M": 948  # Bexhill 10-drawer Dresser and Mirror White
