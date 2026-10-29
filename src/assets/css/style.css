@@ -375,7 +375,7 @@ button.btn { font: inherit; font-weight: 700; cursor: pointer; }
 .cart-option input { margin-top: 0.3rem; }
 .cart-option b { display: block; }
 .cart-zip input { display: block; width: 8rem; margin-top: 0.3rem; padding: 0.45rem; border: 1px solid var(--line); border-radius: 4px; font: inherit; }
-.cart-zip[hidden], .cart-error[hidden] { display: none; }
+.cart-zip[hidden], .cart-error[hidden], .cart-option[hidden] { display: none; }
 .cart-totals { margin: 1rem 0; border-top: 1px solid var(--line); padding-top: 0.75rem; }
 .cart-totals div { display: flex; justify-content: space-between; padding: 0.2rem 0; }
 .cart-totals .total { font-weight: 700; font-size: 1.15rem; border-top: 1px solid var(--line); margin-top: 0.4rem; padding-top: 0.5rem; }

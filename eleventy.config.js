@@ -48,7 +48,7 @@ export default function (eleventyConfig) {
       if (p.price_from) continue;
       const promo = promos.flatMap((pr) => pr.offers.filter((o) => o.products.includes(p.slug))
         .map((o) => ({ off: o.off, start: pr.start, end: pr.end })))[0];
-      const base = { image: p.images[0], url: url(p), ...(promo && { promo }) };
+      const base = { image: p.images[0], url: url(p), ...(promo && { promo }), ...(p.ship_free && { ship: true }) };
       if (p.size_prices) {
         p.size_prices.forEach((r, i) => {
           items[`p:${p.slug}:${i}`] = { ...base, name: `${p.brand} ${p.name}, ${r.size} mattress`, price: r.mattress };

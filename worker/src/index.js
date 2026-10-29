@@ -35,10 +35,11 @@ async function createCheckout({ items, method, zip }, env) {
   const today = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Chicago" }).format(new Date());
   const cents = (dollars) => Math.round(dollars * 100);
 
-  let subtotal = 0;
+  let subtotal = 0, allShip = true;
   const lines = items.map(({ id, qty }) => {
     const item = catalog.items[id];
     if (!item) throw new Error("Something in your cart is no longer available. Please refresh the cart page.");
+    allShip = allShip && !!item.ship;
     const quantity = Math.floor(Number(qty));
     if (!(quantity >= 1 && quantity <= 20)) throw new Error("Quantities must be between 1 and 20.");
     const p = item.promo;
@@ -47,8 +48,12 @@ async function createCheckout({ items, method, zip }, env) {
     return { price_data: { currency: "usd", unit_amount: each, product_data: { name: item.name, images: [SITE + item.image] } }, quantity };
   });
 
-  // Sales tax on the items (not on the delivery fee), as its own line.
-  lines.push({ price_data: { currency: "usd", unit_amount: Math.round(subtotal * catalog.tax_rate), product_data: { name: catalog.tax_label } }, quantity: 1 });
+  // Sales tax on the items (not on the delivery fee), as its own line. Orders shipped
+  // by UPS outside Iowa aren't taxed.
+  const prefix = Number(String(zip || "").slice(0, 3));
+  if (method !== "ship" || (prefix >= 500 && prefix <= 528)) {
+    lines.push({ price_data: { currency: "usd", unit_amount: Math.round(subtotal * catalog.tax_rate), product_data: { name: catalog.tax_label } }, quantity: 1 });
+  }
 
   const params = {
     mode: "payment",
@@ -67,6 +72,18 @@ async function createCheckout({ items, method, zip }, env) {
     params.shipping_address_collection = { allowed_countries: ["US"] };
     params.shipping_options = [{ shipping_rate_data: { type: "fixed_amount", display_name: zone.label, fixed_amount: { amount: cents(zone.fee), currency: "usd" } } }];
     params.custom_text = { shipping_address: { message: `Delivery is priced for ZIP code ${zip}. Please enter an address in that ZIP code. We'll call to schedule delivery and set up.` } };
+  } else if (method === "ship") {
+    // Free UPS shipping from Tempur Sealy, lower 48 states only. The store orders it on the
+    // Tempur Sealy B2B portal with the shipping address from the Stripe order.
+    if (!allShip) throw new Error("Free shipping is only for items marked as shipping free. Choose pickup or delivery.");
+    const p = prefix;
+    if (!/^\d{5}$/.test(zip) || (p >= 6 && p <= 9) || (p >= 90 && p <= 98) || p === 340 || (p >= 962 && p <= 969) || p >= 995) {
+      throw new Error("Free shipping is for the lower 48 states only.");
+    }
+    params.metadata.zip = zip;
+    params.shipping_address_collection = { allowed_countries: ["US"] };
+    params.shipping_options = [{ shipping_rate_data: { type: "fixed_amount", display_name: catalog.ship_label, fixed_amount: { amount: 0, currency: "usd" } } }];
+    params.custom_text = { shipping_address: { message: `Tax was worked out for ZIP code ${zip}, so please ship to an address in that ZIP code. Your mattress ships by UPS straight from Tempur-Pedic.` } };
   } else if (method === "pickup") {
     params.custom_text = { submit: { message: `${catalog.pickup_label}. We'll call when your order is ready.` } };
   } else {

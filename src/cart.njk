@@ -17,8 +17,9 @@ eleventyExcludeFromCollections: true
         <h2>Pickup or delivery</h2>
         <label class="cart-option"><input type="radio" name="method" value="pickup" checked> <span><b>Pick up at our store</b> Free. We'll call when your order is ready.</span></label>
         <label class="cart-option"><input type="radio" name="method" value="delivery"> <span><b>Delivery and set up</b> {% for d in shop.delivery %}{{ d.fee | money }} {% if loop.first %}within {{ d.max_miles }} miles{% else %}up to {{ d.max_miles }} miles{% endif %}{% if not loop.last %}, {% endif %}{% endfor %} of our Dubuque store.</span></label>
+        <label class="cart-option" data-ship-option hidden><input type="radio" name="method" value="ship"> <span><b>{{ shop.ship_label }}</b> Free to anywhere in the lower 48 states, shipped straight from Tempur-Pedic.</span></label>
         <div class="cart-zip" data-zip-row hidden>
-          <label>Delivery ZIP code <input type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code" data-zip></label>
+          <label>ZIP code <input type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code" data-zip></label>
           <p class="price-note" data-zip-note aria-live="polite"></p>
         </div>
         <div class="cart-totals" data-totals aria-live="polite"></div>

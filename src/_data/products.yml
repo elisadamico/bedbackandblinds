@@ -840,6 +840,9 @@
   feel: Medium
   price: 1999
   price_label: "Queen mattress"
+  # Tempur Sealy ships TEMPUR-Cloud free by UPS anywhere in the lower 48 states. We order it on the
+  # Tempur Sealy B2B portal with the customer's address after they pay online.
+  ship_free: true
   images:
     - /assets/img/products/tp-tempur-cloud-medium.png
   features:

@@ -48,6 +48,7 @@ eleventyComputed:
           {% if product.section == "bedding" %}<ul class="perks"><li>See it in our Dubuque showroom</li><li>We'll help you choose the right pillow for the way you sleep</li></ul>{% else %}
           <ul class="perks">
             <li>Try it in our Dubuque showroom</li>
+            {% if product.ship_free %}<li>Ships free by UPS anywhere in the lower 48 states</li>{% endif %}
             <li>Free delivery or bed frame, free in-home set up, and free removal of your old mattress (ask for details)</li>
           </ul>{% endif %}
         </div>

@@ -52,7 +52,14 @@
   var error = page.querySelector("[data-pay-error]");
   var catalog;
 
+  var shipOption = page.querySelector("[data-ship-option]");
   function method() { var r = page.querySelector("[name=method]:checked"); return r ? r.value : "pickup"; }
+  // UPS shipping goes to the lower 48 states only (no Alaska, Hawaii, territories, or military ZIPs).
+  function lower48(zip) {
+    var p = +zip.slice(0, 3);
+    return /^\d{5}$/.test(zip) && !((p >= 6 && p <= 9) || (p >= 90 && p <= 98) || p === 340 || (p >= 962 && p <= 969) || p >= 995);
+  }
+  function iowa(zip) { var p = +zip.slice(0, 3); return p >= 500 && p <= 528; }
   function delivery(zip) {
     var miles = catalog.zips[zip];
     if (miles == null) return null;
@@ -88,26 +95,37 @@
       list.appendChild(row);
     });
 
-    var m = method(), zip = zipInput.value.trim(), d = null;
-    page.querySelector("[data-zip-row]").hidden = m !== "delivery";
+    // Free UPS shipping is offered only when everything in the cart ships free.
+    var canShip = cart.length > 0 && cart.every(function (i) { return catalog.items[i.id].ship; });
+    shipOption.hidden = !canShip;
+    if (!canShip && method() === "ship") page.querySelector("[name=method][value=pickup]").checked = true;
+
+    var m = method(), zip = zipInput.value.trim(), d = null, ok = m === "pickup";
+    page.querySelector("[data-zip-row]").hidden = m === "pickup";
     zipNote.textContent = "";
     if (m === "delivery" && zip.length === 5) {
-      d = delivery(zip);
+      d = delivery(zip); ok = !!d;
       zipNote.textContent = d ? d.label + ": " + money(d.fee) : "Sorry, we only deliver within 45 miles of our Dubuque store. You can choose store pickup instead.";
     }
-    var tax = Math.round(subtotal * catalog.tax_rate * 100) / 100;
+    if (m === "ship" && zip.length === 5) {
+      ok = lower48(zip);
+      zipNote.textContent = ok ? "Ships free by UPS." : "Sorry, free shipping is for the lower 48 states only.";
+    }
+    var taxed = m !== "ship" || iowa(zip);
+    var tax = taxed ? Math.round(subtotal * catalog.tax_rate * 100) / 100 : 0;
     var fee = m === "delivery" && d ? d.fee : 0;
+    var feeRow = m === "pickup" ? ["Store pickup", "Free"] : m === "ship" ? ["UPS shipping", "Free"] : ["Delivery", d ? money(fee) : "Enter your ZIP code"];
     totals.innerHTML = "";
-    [["Subtotal", subtotal], [m === "delivery" ? "Delivery" : "Store pickup", m === "delivery" ? (d ? fee : null) : 0], [catalog.tax_label, tax], ["Total", subtotal + fee + tax]]
+    [["Subtotal", money(subtotal)], feeRow, [catalog.tax_label, m === "ship" && zip.length < 5 ? "Enter your ZIP code" : taxed ? money(tax) : "None outside Iowa"], ["Total", money(subtotal + fee + tax)]]
       .forEach(function (r) {
         var row = document.createElement("div");
         row.innerHTML = "<span></span><span></span>";
         row.firstChild.textContent = r[0];
-        row.lastChild.textContent = r[1] == null ? "Enter your ZIP code" : (r[1] === 0 && r[0] === "Store pickup" ? "Free" : money(r[1]));
+        row.lastChild.textContent = r[1];
         if (r[0] === "Total") row.className = "total";
         totals.appendChild(row);
       });
-    payBtn.disabled = !cart.length || (m === "delivery" && !d);
+    payBtn.disabled = !cart.length || !ok;
   }
 
   page.querySelectorAll("[name=method]").forEach(function (r) { r.addEventListener("change", render); });

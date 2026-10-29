@@ -1,5 +1,5 @@
 {
-  "note": "Online ordering. checkout_url is the address of the checkout worker (see worker/README.md); while it is empty the cart stays hidden. Delivery fees go by straight-line miles from the store to the center of the customer's ZIP code (delivery_zips.json lists every ZIP within the last max_miles). Sales tax applies to the items, not the delivery fee.",
+  "note": "Online ordering. checkout_url is the address of the checkout worker (see worker/README.md); while it is empty the cart stays hidden. Delivery fees go by straight-line miles from the store to the center of the customer's ZIP code (delivery_zips.json lists every ZIP within the last max_miles). Sales tax applies to the items, not the delivery fee. Products marked ship_free in products.yml can also ship free by UPS to the lower 48 states when everything in the cart is ship_free. Shipped orders are taxed only when the ZIP code is in Iowa (ZIPs starting 500 to 528).",
   "checkout_url": "",
   "tax_rate": 0.07,
   "tax_label": "Iowa sales tax (7%)",
@@ -7,5 +7,6 @@
     { "max_miles": 20, "fee": 50, "label": "Delivery within 20 miles" },
     { "max_miles": 45, "fee": 100, "label": "Delivery 20 to 45 miles" }
   ],
-  "pickup_label": "Pick up at our store, 806 Wacker Dr, Suite 142, Dubuque"
+  "pickup_label": "Pick up at our store, 806 Wacker Dr, Suite 142, Dubuque",
+  "ship_label": "Free shipping by UPS"
 }
