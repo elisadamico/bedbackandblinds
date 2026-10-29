@@ -29,6 +29,7 @@ sizes:
       </div>
     </div>
     <p class="price-note">Prices shown are for Queen size. Call or stop by for other sizes and current sales.</p>
+    {% for pr in promos %}{% if pr.details %}<p class="price-note" data-promo="{{ pr.start }}|{{ pr.end }}"><span class="promo-only">{{ pr.name }} on select models. <a href="{{ pr.details }}">See offer details</a></span></p>{% endif %}{% endfor %}
     <div class="product-grid" data-product-grid>
       {% for p in products | mattressesOnly %}{% include "product-card.njk" %}{% endfor %}
     </div>

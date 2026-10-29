@@ -10,6 +10,7 @@
 - name: "Black Friday Savings"
   start: "2026-10-29"
   end: "2026-12-01"
+  details: /offer-details/   # the page with Tempur Sealy's required legal wording
   offers:
     # Sealy Posturepedic High Point II Hybrid
     - off: 200

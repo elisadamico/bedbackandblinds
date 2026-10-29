@@ -30,7 +30,7 @@ export default function (eleventyConfig) {
       const today = new Date(); today.setHours(0, 0, 0, 0);
       const end = localDay(promo.end);
       return {
-        name: promo.name, off: offer.off, dates: `${promo.start}|${promo.end}`,
+        name: promo.name, off: offer.off, dates: `${promo.start}|${promo.end}`, details: promo.details,
         ends: `through ${end.toLocaleString("en-US", { month: "long" })} ${end.getDate()}`,
         live: today >= localDay(promo.start) && today <= end,
       };
