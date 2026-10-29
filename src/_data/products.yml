@@ -961,6 +961,7 @@
   feel: "Plush to Medium Plush"
   price: 119.99
   price_label: "Queen pillow"
+  sku: ZZQQX2QC   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-quilted-convolution-pillow-1.jpg
     - /assets/img/products/malouf-quilted-convolution-pillow-2.jpg
@@ -982,6 +983,7 @@
   feel: "Medium Plush"
   price: 149.99
   price_label: "Queen pillow"
+  sku: ZZQQX1XC   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-hexcurve-pillow-1.jpg
     - /assets/img/products/malouf-hexcurve-pillow-2.jpg
@@ -1004,6 +1006,7 @@
   feel: "Medium"
   price: 164.99
   price_label: "Queen pillow"
+  sku: ZZQQMPCCLT   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-carboncool-pillow-1.jpg
     - /assets/img/products/malouf-carboncool-pillow-2.jpg
@@ -1026,6 +1029,13 @@
   feel: "Medium"
   price: 119.99
   price_label: "Queen pillow"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Infusion
+    choices:
+      - { name: "Cooling gel", sku: ZZQQMPZG }
+      - { name: "Bamboo charcoal", sku: ZZQQMPZB }
+      - { name: "Lavender", sku: ZZQQMPASZL }
+      - { name: "CBD", sku: ZZQQMPASZS, price: 149.99 }
   price_from: true
   images:
     - /assets/img/products/malouf-zoned-dough-pillow-1.jpg
@@ -1048,6 +1058,13 @@
   feel: "Plush"
   price: 119.99
   price_label: "Queen pillow"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Infusion
+    choices:
+      - { name: "Cooling gel", sku: ZZQQMPADZG }
+      - { name: "Bamboo charcoal", sku: ZZQQMPADZB }
+      - { name: "Lavender", sku: ZZQQMPADASZL }
+      - { name: "CBD", sku: ZZQQMPADASZS }
   price_from: true
   images:
     - /assets/img/products/malouf-zoned-activedough-pillow-1.jpg
@@ -1070,6 +1087,12 @@
   feel: "Medium"
   price: 179.99
   price_label: "Queen pillow"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Loft
+    choices:
+      - { name: "Mid loft", sku: ZZQQMPICGF }
+      - { name: "High loft", sku: ZZQQHPICGF }
+      - { name: "Low loft", sku: ZZQQLPICGF }
   images:
     - /assets/img/products/malouf-ice-cloud-pillow-1.jpg
     - /assets/img/products/malouf-ice-cloud-pillow-2.jpg
@@ -1092,6 +1115,7 @@
   feel: "Plush"
   price: 99.99
   price_label: "Queen pillow"
+  sku: ZZQQPEHFSD   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-flexfill-pillow-1.jpg
     - /assets/img/products/malouf-flexfill-pillow-2.jpg
@@ -1112,6 +1136,7 @@
   feel: "Plush"
   price: 99.99
   price_label: "Queen pillow"
+  sku: ZZQQSCPEHFSD   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-shoulder-flexfill-pillow-1.jpg
     - /assets/img/products/malouf-shoulder-flexfill-pillow-2.jpg
@@ -1133,6 +1158,7 @@
   feel: "Plush"
   price: 84.99
   price_label: "Queen pillow"
+  sku: ZZQQX2CG   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-convolution-pillow-1.jpg
     - /assets/img/products/malouf-convolution-pillow-2.jpg
@@ -1153,6 +1179,7 @@
   feel: "Plush"
   price: 59.99
   price_label: "Queen pillow"
+  sku: ZZQQ00GM   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-gelled-microfiber-pillow-1.jpg
     - /assets/img/products/malouf-gelled-microfiber-pillow-2.jpg
@@ -1173,6 +1200,7 @@
   feel: "Plush"
   price: 149.99
   price_label: "Queen pillow"
+  sku: ZZQQHPLX   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-zoned-talalay-latex-pillow-1.jpg
     - /assets/img/products/malouf-zoned-talalay-latex-pillow-2.jpg
@@ -1193,6 +1221,7 @@
   feel: "Plush"
   price: 119.99
   price_label: "Queen pillow"
+  sku: ZZQQSCMPADZG   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-shoulder-zoned-gel-activedough-1.jpg
     - /assets/img/products/malouf-shoulder-zoned-gel-activedough-2.jpg
@@ -1215,6 +1244,7 @@
   feel: "Medium"
   price: 179.99
   price_label: "Queen pillow"
+  sku: ZZQQSCMPCCLT   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-shoulder-carboncool-pillow-1.jpg
     - /assets/img/products/malouf-shoulder-carboncool-pillow-2.jpg
@@ -1237,6 +1267,12 @@
   feel: "Medium"
   price: 119.99
   price_label: "Queen pillow"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Infusion
+    choices:
+      - { name: "Bamboo charcoal", sku: ZZQQSCMPZB }
+      - { name: "Lavender", sku: ZZQQSCMPASZL }
+      - { name: "CBD", sku: ZZQQSCMPASZS, price: 149.99 }
   price_from: true
   images:
     - /assets/img/products/malouf-shoulder-zoned-dough-pillow-1.jpg
@@ -1257,8 +1293,15 @@
   section: bedding
   collection: "Sheets"
   type: sheets
-  price: 194.99
+  price: 199.99
   price_label: "Queen sheet set"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "White", sku: MA25QQWHBS }
+      - { name: "Ash", sku: MA25QQASBS }
+      - { name: "Driftwood", sku: MA25QQDRBS }
+      - { name: "Rain", sku: MA25QQRABS }
   images:
     - /assets/img/products/malouf-smooth-bamboo-rayon-sheet-set-1.jpg
     - /assets/img/products/malouf-smooth-bamboo-rayon-sheet-set-2.jpg
@@ -1297,8 +1340,15 @@
   section: bedding
   collection: "Sheets"
   type: sheets
-  price: 194.99
+  price: 199.99
   price_label: "Queen sheet set"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "White", sku: MA03QQWHTS }
+      - { name: "Opal", sku: MA03QQOPTS }
+      - { name: "Ecru", sku: MA03QQECTS }
+      - { name: "Dusk", sku: MA03QQDUTS }
   images:
     - /assets/img/products/malouf-botanical-sheet-set-with-tencel-lyocell-fiber-1.jpg
     - /assets/img/products/malouf-botanical-sheet-set-with-tencel-lyocell-fiber-2.jpg
@@ -1319,6 +1369,12 @@
   type: sheets
   price: 329.99
   price_label: "Queen sheet set"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "White", sku: MAS6QQWHSS }
+      - { name: "Smoke", sku: MAS6QQSMSS }
+      - { name: "Charcoal", sku: MAS6QQCCSS }
   images:
     - /assets/img/products/malouf-natural-supima-cotton-sheet-set-1.jpg
     - /assets/img/products/malouf-natural-supima-cotton-sheet-set-2.jpg
@@ -1339,6 +1395,13 @@
   type: sheets
   price: 139.99
   price_label: "Queen sheet set"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "White", sku: MA02QQWHCS }
+      - { name: "Cream", sku: MA02QQCRCS }
+      - { name: "Charcoal", sku: MA02QQCHCS }
+      - { name: "Marine", sku: MA02QQMRCS }
   images:
     - /assets/img/products/malouf-classic-cotton-sheet-set-1.jpg
     - /assets/img/products/malouf-classic-cotton-sheet-set-2.jpg
@@ -1359,6 +1422,13 @@
   type: sheets
   price: 74.99
   price_label: "Queen sheet set"
+  options:   # Malouf queen SKUs (2026 price list); the cart asks which one. A choice with its own price overrides the product price
+    label: Color
+    choices:
+      - { name: "White", sku: MA90QQWHMS }
+      - { name: "Ash", sku: MA90QQASMS }
+      - { name: "Driftwood", sku: MA90QQDRMS }
+      - { name: "Pacific", sku: MA90QQPAMS }
   images:
     - /assets/img/products/malouf-brushed-microfiber-sheet-set-1.jpg
     - /assets/img/products/malouf-brushed-microfiber-sheet-set-2.jpg
@@ -1379,6 +1449,7 @@
   type: protector
   price: 64.99
   price_label: "Queen mattress protector"
+  sku: SL0PQQMP   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-prime-mattress-protector-1.jpg
     - /assets/img/products/malouf-prime-mattress-protector-2.jpg
@@ -1400,6 +1471,7 @@
   type: protector
   price: 124.99
   price_label: "Queen mattress protector"
+  sku: SLOTQQ5P   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-five-sided-omniphase-mattress-protector-1.jpg
     - /assets/img/products/malouf-five-sided-omniphase-mattress-protector-2.jpg
@@ -1421,6 +1493,7 @@
   type: protector
   price: 244.99
   price_label: "Queen mattress protector"
+  sku: SLICQQ5P   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-five-sided-hyperchill-mattress-protector-1.jpg
     - /assets/img/products/malouf-five-sided-hyperchill-mattress-protector-2.jpg
@@ -1442,6 +1515,7 @@
   type: protector
   price: 119.99
   price_label: "Queen mattress protector"
+  sku: SL0PQQEP   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-encase-360-mattress-protector-1.jpg
     - /assets/img/products/malouf-encase-360-mattress-protector-2.jpg
@@ -1460,7 +1534,8 @@
   collection: "Protectors"
   type: protector
   price: 54.99
-  price_label: "Queen pillow protector"
+  price_label: "Queen pillow protectors, set of 2"
+  sku: SL0PQQPP   # Malouf queen SKU (2026 price list), for ordering on the WRC
   images:
     - /assets/img/products/malouf-prime-pillow-protector-1.jpg
     - /assets/img/products/malouf-prime-pillow-protector-2.jpg

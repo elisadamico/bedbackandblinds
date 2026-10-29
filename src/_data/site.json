@@ -67,10 +67,6 @@
         {
           "label": "Sealy",
           "url": "/sealy/"
-        },
-        {
-          "label": "Malouf Bedding",
-          "url": "/malouf/"
         }
       ]
     },
@@ -135,6 +131,28 @@
         {
           "label": "Accents",
           "url": "/furniture/accents/"
+        }
+      ]
+    },
+    {
+      "label": "Bedding",
+      "url": "/malouf/",
+      "children": [
+        {
+          "label": "All Bedding",
+          "url": "/malouf/"
+        },
+        {
+          "label": "Pillows",
+          "url": "/malouf/#pillows"
+        },
+        {
+          "label": "Sheets",
+          "url": "/malouf/#sheets"
+        },
+        {
+          "label": "Protectors",
+          "url": "/malouf/#protectors"
         }
       ]
     },

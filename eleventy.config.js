@@ -45,11 +45,20 @@ export default function (eleventyConfig) {
     const items = {};
     const url = (p) => `/${p.section || "mattresses"}/${p.slug}/`;
     for (const p of products) {
-      if (p.price_from) continue;
+      // Bedding needs a Malouf SKU (or a choice of SKUs) so the order can be placed on the WRC.
+      if (p.section === "bedding" && !p.sku && !p.options) continue;
+      if (p.price_from && !p.options) continue;
       const promo = promos.flatMap((pr) => pr.offers.filter((o) => o.products.includes(p.slug))
         .map((o) => ({ off: o.off, start: pr.start, end: pr.end })))[0];
       const base = { image: p.images[0], url: url(p), ...(promo && { promo }), ...(p.ship_free && { ship: true }) };
-      if (p.size_prices) {
+      const size = p.price_label.split(" ")[0];
+      if (p.options) {
+        for (const c of p.options.choices) {
+          items[`p:${p.slug}|${c.sku}`] = { ...base, name: `${p.brand} ${p.name}, ${size}, ${c.name} (SKU ${c.sku})`, price: c.price || p.price };
+        }
+      } else if (p.sku) {
+        items[`p:${p.slug}`] = { ...base, name: `${p.brand} ${p.name} (${p.price_label}, SKU ${p.sku})`, price: p.price };
+      } else if (p.size_prices) {
         p.size_prices.forEach((r, i) => {
           items[`p:${p.slug}:${i}`] = { ...base, name: `${p.brand} ${p.name}, ${r.size} mattress`, price: r.mattress };
         });

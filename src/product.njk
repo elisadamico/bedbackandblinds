@@ -36,7 +36,9 @@ eleventyComputed:
           {% if promo %}<p class="sale-line promo-only"><span class="sale-tag inline">Save {{ promo.off | money }}</span> {{ promo.name }} {{ promo.ends }}.{% if promo.details %} <a href="{{ promo.details }}">See offer details</a>{% endif %}</p>{% endif %}
           <p class="big-price">{% if product.price_from %}<span>From</span> {% endif %}{% if promo %}<s class="was promo-only">{{ product.price | money }}</s> <b class="promo-only">{{ (product.price - promo.off) | money }}</b><b class="promo-hide">{{ product.price | money }}</b>{% else %}{{ product.price | money }}{% endif %} <span>{{ product.price_label }}</span></p>
           <p class="price-note">{% if product.section == "bedding" %}Other sizes are available. Call or stop by for pricing.{% elif product.size_prices %}Prices for every size are listed below. Call or stop by to ask about current sales.{% else %}Other sizes are available. Call or stop by for pricing and current sales.{% endif %}</p>
-          {% if shop.checkout_url and not product.price_from %}<div class="cart-add">
+          {% set sellable = (product.sku or product.options) if product.section == "bedding" else not product.price_from %}
+          {% if shop.checkout_url and sellable %}<div class="cart-add">
+            {% if product.options %}<label>{{ product.options.label }} <select data-cart-size>{% for c in product.options.choices %}<option value="p:{{ product.slug }}|{{ c.sku }}">{{ c.name }}, {{ (c.price or product.price) | money }}</option>{% endfor %}</select></label>{% endif %}
             {% if product.size_prices %}<label>Size <select data-cart-size>{% for r in product.size_prices %}<option value="p:{{ product.slug }}:{{ loop.index0 }}"{% if r.size == "Queen" %} selected{% endif %}>{{ r.size }}, mattress {{ r.mattress | money }}</option>{% endfor %}</select></label>{% if promo %}<span class="price-note promo-only">Sale savings come off in the cart.</span>{% endif %}{% endif %}
             <button class="btn" type="button" data-cart-add="p:{{ product.slug }}">Add to cart</button>
             <p class="cart-added" data-cart-added hidden>Added. <a href="/cart/">View cart</a></p>
