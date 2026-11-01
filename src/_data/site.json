@@ -65,6 +65,10 @@
           "url": "/motorization/"
         },
         {
+          "label": "Hunter Douglas",
+          "url": "/hunter-douglas/"
+        },
+        {
           "label": "Alta Window Fashions",
           "url": "/alta-window-fashions/"
         },
@@ -73,16 +77,12 @@
           "url": "/carole-fabrics/"
         },
         {
-          "label": "Draper (Commercial)",
-          "url": "/draper-inc/"
-        },
-        {
           "label": "Graber",
           "url": "/graber-blinds/"
         },
         {
-          "label": "Hunter Douglas",
-          "url": "/hunter-douglas/"
+          "label": "Draper (Commercial)",
+          "url": "/draper-inc/"
         }
       ]
     },

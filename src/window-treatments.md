@@ -25,11 +25,11 @@ From our experienced decorator to our professional installation service, we are 
 <div>
 <h2 style="font-size:1.5rem">Our Brands</h2>
 <div class="brand-cards" style="grid-template-columns:1fr">
+<a class="brand-card" href="/hunter-douglas/"><img src="/assets/img/brands/logo-hunter-douglas.jpg" alt="" loading="lazy">Hunter Douglas</a>
 <a class="brand-card" href="/alta-window-fashions/"><img src="/assets/img/brands/alta.png" alt="" loading="lazy">Alta Window Fashions</a>
 <a class="brand-card" href="/carole-fabrics/"><img src="/assets/img/brands/carole.png" alt="" loading="lazy">Carole Fabrics</a>
-<a class="brand-card" href="/draper-inc/"><img src="/assets/img/brands/draper-raleigh-nc-window-blinds-shades-and-shutters.png" alt="" loading="lazy">Draper (Commercial)</a>
 <a class="brand-card" href="/graber-blinds/"><img src="/assets/img/brands/graber.jpg" alt="" loading="lazy">Graber</a>
-<a class="brand-card" href="/hunter-douglas/"><img src="/assets/img/brands/logo-hunter-douglas.jpg" alt="" loading="lazy">Hunter Douglas</a>
+<a class="brand-card" href="/draper-inc/"><img src="/assets/img/brands/draper-raleigh-nc-window-blinds-shades-and-shutters.png" alt="" loading="lazy">Draper (Commercial)</a>
 </div>
 </div>
 </div>
