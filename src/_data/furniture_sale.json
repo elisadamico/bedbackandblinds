@@ -1,6 +1,6 @@
 {
-  "note": "Dates for the Coaster sale prices in furniture_prices.yml (the 'sale' numbers). Sale prices, tags, and the Furniture on Sale section show only between these dates (both days count), then the regular prices come back on their own. Ends with the Tempur Sealy Black Friday sale.",
+  "note": "Dates for the Coaster sale prices in furniture_prices.yml (the 'sale' numbers). Sale prices, tags, and the Furniture on Sale section show only between these dates (both days count), then the regular prices come back on their own. Runs through the Holiday ad (Sale Ends January 5).",
   "name": "Furniture Sale",
   "start": "2026-10-29",
-  "end": "2026-12-01"
+  "end": "2027-01-05"
 }
