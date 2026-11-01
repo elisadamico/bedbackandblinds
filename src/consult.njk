@@ -1,0 +1,17 @@
+---
+title: Free Window Treatment Consultation
+permalink: /consult/
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+{# Short address for printed ads and the QR code. It forwards to the consultation form, so printed codes keep working if the form changes. #}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>{{ title }} · {{ site.name }}</title>
+  <meta http-equiv="refresh" content="0; url={{ site.consultation_form }}">
+  <link rel="canonical" href="{{ site.consultation_form }}">
+</head>
+<body><p><a href="{{ site.consultation_form }}">Schedule your free window treatment consultation</a></p></body>
+</html>
