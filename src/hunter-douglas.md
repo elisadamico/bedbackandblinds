@@ -5,7 +5,7 @@ description: Hunter Douglas window treatments at Bed Back & Blinds in Dubuque, I
 ---
 <section class="section">
 <div class="container">
-<img class="brand-logo" src="/assets/img/brands/logo-hunter-douglas.jpg" alt="Hunter Douglas">
+<img class="brand-logo" src="/assets/img/brands/hunter-douglas-logo.png" alt="Hunter Douglas">
 <div class="split">
 <div><img class="rounded" src="/assets/img/site/hunter-douglas-feature.jpg" alt="Hunter Douglas window treatments in a living space" width="1400" height="1050"><p class="center" style="margin-top:1rem"><a class="btn" href="{{ site.consultation_form }}">Schedule a Complimentary Consultation</a></p></div>
 <div class="prose">
