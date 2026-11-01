@@ -14,7 +14,7 @@ export default function (eleventyConfig) {
   // the date again (src/assets/js/site.js), so the ad changes on schedule anyway.
   eleventyConfig.addGlobalData("sale", () => {
     const { show, ads } = JSON.parse(readFileSync("src/_data/ads.json", "utf8"));
-    for (const ad of Object.values(ads)) ad.alt = `${ad.ribbon} at Bed Back & Blinds. ${AD_OFFERS}`;
+    for (const ad of Object.values(ads)) ad.alt = `${ad.ribbon} at Bed Back & Blinds. ${ad.offers || AD_OFFERS}`;
     const now = adSchedule.BBBAdSchedule.current(new Date());
     return { show, ads, ...ads[now.id], ends: now.ends };
   });

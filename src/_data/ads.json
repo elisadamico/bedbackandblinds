@@ -9,6 +9,6 @@
     "labor": { "image": "/assets/img/ads/labor-day-sale.jpg", "ribbon": "Labor Day Sale" },
     "fall": { "image": "/assets/img/ads/fall-savings-event.jpg", "ribbon": "Fall Savings Event" },
     "blackfriday": { "image": "/assets/img/ads/black-friday-sale.jpg", "ribbon": "Black Friday Sale" },
-    "holiday": { "image": "/assets/img/ads/holiday-savings-event.jpg", "ribbon": "Holiday Savings Event" }
+    "holiday": { "image": "/assets/img/ads/holiday-savings-event.jpg", "ribbon": "Holiday Savings Event", "offers": "Sale ends January 5. Save up to $500 on select adjustable mattress sets, buy more and save more on blinds, shades, shutters, and drapery, select Coaster furniture up to 53% off, Malouf bedding, and free delivery or a bed frame, free in-home setup, and free removal. Scan the QR code to book a free in-home window treatment consultation." }
   }
 }
