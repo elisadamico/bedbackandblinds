@@ -61,10 +61,13 @@ p { margin: 0 0 1em; }
 .topbar .sep { margin: 0 0.5rem; }
 
 .site-header { background: #fff; position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 0 var(--line); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 0.9rem; }
-.logo img { width: 210px; }
+/* The logo fills whatever the menu leaves, up to the logo file's own width. The header is a bit wider than the page so it can get there. */
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 0.6rem; max-width: 1320px; }
+.logo { display: block; flex: 1 1 0; min-width: 0; max-width: 423px; }
+.logo img { width: 100%; height: auto; }
+.site-nav { flex: none; }
 .nav-list, .sub-list { list-style: none; margin: 0; padding: 0; }
-.nav-list { display: flex; align-items: center; gap: 0.25rem; flex-wrap: wrap; }
+.nav-list { display: flex; align-items: center; gap: 0.25rem; flex-wrap: nowrap; white-space: nowrap; }
 .nav-list a, .sub-toggle {
   display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.5rem 0.7rem; color: var(--ink); background: none;
   border: 0; font: inherit; font-size: 0.98rem; text-decoration: none; cursor: pointer; border-bottom: 2px solid transparent;
@@ -88,8 +91,7 @@ p { margin: 0 0 1em; }
 .consult-bar { display: block; background: var(--cyan); color: #fff; text-align: center; font-weight: 700; font-size: 0.95rem; padding: 0.45rem var(--gutter); text-decoration: none; }
 .consult-bar:hover { background: var(--cyan-dark); color: #fff; }
 
-@media (max-width: 900px) {
-  .logo img { width: 170px; }
+@media (max-width: 1100px) {
   .js .nav-toggle {
     display: inline-flex; align-items: center; gap: 0.5rem; background: none; border: 2px solid var(--ink); border-radius: 3px;
     padding: 0.45rem 0.8rem; font: inherit; font-weight: 700; color: var(--ink); cursor: pointer;
@@ -100,7 +102,7 @@ p { margin: 0 0 1em; }
   .site-nav { width: 100%; }
   .js .site-nav { display: none; }
   .js .site-header.is-open .site-nav { display: block; }
-  .nav-list { flex-direction: column; align-items: stretch; gap: 0; padding-bottom: 0.75rem; }
+  .nav-list { flex-direction: column; align-items: stretch; gap: 0; padding-bottom: 0.75rem; white-space: normal; }
   .nav-list a, .sub-toggle { width: 100%; justify-content: space-between; padding: 0.75rem 0.25rem; border-bottom: 1px solid var(--line); }
   .sub-list, .has-sub:hover .sub-list { position: static; box-shadow: none; border: 0; padding: 0 0 0 1rem; display: none; }
   .sub-toggle[aria-expanded="true"] + .sub-list { display: block; }
